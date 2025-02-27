@@ -1,5 +1,5 @@
 from libs.JsonFileFactory import JsonFileFactory
-from models.Booking import Booking
+from models.booking import Booking
 
 jff=JsonFileFactory()
 filename="../dataset/categories.json"

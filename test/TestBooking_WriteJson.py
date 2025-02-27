@@ -1,4 +1,4 @@
-from models.Booking import Booking
+from models.booking import Booking
 from libs.JsonFileFactory import JsonFileFactory
 import random
 from datetime import datetime, timedelta
