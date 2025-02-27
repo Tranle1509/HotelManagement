@@ -1,0 +1,22 @@
+from models.Booking import Booking
+from libs.JsonFileFactory import JsonFileFactory
+import random
+from datetime import datetime, timedelta
+
+bookings = []
+for i in range(1, 21):
+    customer_code = f"cus{i}"
+    room_code = f"room{random.randint(1, 10)}"
+    start_date = datetime(2025, 3, random.randint(1, 20))
+    end_date = start_date + timedelta(days=random.randint(1, 10))
+    booking = Booking(customer_code, room_code, start_date.strftime("%Y-%m-%d"), end_date.strftime("%Y-%m-%d"))
+    bookings.append(booking)
+
+print("List of Bookings:")
+for booking in bookings:
+    print(booking)
+
+# Write data to JSON file:
+jff = JsonFileFactory()
+filename = "../dataset/bookings.json"
+jff.write_data(bookings, filename)
