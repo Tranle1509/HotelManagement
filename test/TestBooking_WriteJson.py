@@ -2,11 +2,12 @@ from models.booking import Booking
 from libs.JsonFileFactory import JsonFileFactory
 import random
 from datetime import datetime, timedelta
+bookings=[]
+room_codes = [f"{i}0{j}" for i in range(1, 4) for j in range(1, 6)]
 
-bookings = []
 for i in range(1, 21):
     customer_code = f"cus{i}"
-    room_code = f"room{random.randint(1, 10)}"
+    room_code = random.choice(room_codes)  # Chọn một mã phòng ngẫu nhiên
     start_date = datetime(2025, 3, random.randint(1, 20))
     end_date = start_date + timedelta(days=random.randint(1, 10))
     booking = Booking(customer_code, room_code, start_date.strftime("%Y-%m-%d"), end_date.strftime("%Y-%m-%d"))
