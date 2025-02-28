@@ -1,0 +1,127 @@
+[
+    {
+        "roomcode": "101",
+        "roomname": "Room1",
+        "roomtype": "VIP"
+    },
+    {
+        "roomcode": "102",
+        "roomname": "Room2",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "103",
+        "roomname": "Room3",
+        "roomtype": "VIP"
+    },
+    {
+        "roomcode": "104",
+        "roomname": "Room4",
+        "roomtype": "VIP"
+    },
+    {
+        "roomcode": "105",
+        "roomname": "Room5",
+        "roomtype": "VIP"
+    },
+    {
+        "roomcode": "201",
+        "roomname": "Room6",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "202",
+        "roomname": "Room7",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "203",
+        "roomname": "Room8",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "204",
+        "roomname": "Room9",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "205",
+        "roomname": "Room10",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "301",
+        "roomname": "Room11",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "302",
+        "roomname": "Room12",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "303",
+        "roomname": "Room13",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "304",
+        "roomname": "Room14",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "305",
+        "roomname": "Room15",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "401",
+        "roomname": "Room16",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "402",
+        "roomname": "Room17",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "403",
+        "roomname": "Room18",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "404",
+        "roomname": "Room19",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "405",
+        "roomname": "Room20",
+        "roomtype": "Regular"
+    },
+    {
+        "roomcode": "501",
+        "roomname": "Room21",
+        "roomtype": "VIP"
+    },
+    {
+        "roomcode": "502",
+        "roomname": "Room22",
+        "roomtype": "VIP"
+    },
+    {
+        "roomcode": "503",
+        "roomname": "Room23",
+        "roomtype": "VIP"
+    },
+    {
+        "roomcode": "504",
+        "roomname": "Room24",
+        "roomtype": "VIP"
+    },
+    {
+        "roomcode": "505",
+        "roomname": "Room25",
+        "roomtype": "VIP"
+    }
+]
