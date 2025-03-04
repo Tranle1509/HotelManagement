@@ -12,11 +12,11 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(814, 600)
+        MainWindow.resize(862, 603)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(280, 180, 311, 51))
+        self.label.setGeometry(QtCore.QRect(190, 170, 501, 61))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(25)
@@ -30,42 +30,36 @@ class Ui_MainWindow(object):
         self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(150, 250, 101, 31))
+        self.label_2.setGeometry(QtCore.QRect(60, 240, 201, 31))
         self.label_2.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(64, 0, 128);\n"
 "")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(150, 300, 101, 21))
+        self.label_3.setGeometry(QtCore.QRect(60, 300, 101, 31))
         self.label_3.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(64, 0, 128);\n"
 "")
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(150, 340, 101, 21))
+        self.label_4.setGeometry(QtCore.QRect(60, 350, 171, 51))
         self.label_4.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(64, 0, 128);\n"
 "")
         self.label_4.setObjectName("label_4")
         self.lineEditUserName = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEditUserName.setGeometry(QtCore.QRect(270, 260, 341, 21))
+        self.lineEditUserName.setGeometry(QtCore.QRect(270, 240, 351, 41))
         self.lineEditUserName.setObjectName("lineEditUserName")
         self.lineEditPassword = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEditPassword.setGeometry(QtCore.QRect(270, 340, 341, 21))
+        self.lineEditPassword.setGeometry(QtCore.QRect(270, 360, 351, 41))
         self.lineEditPassword.setObjectName("lineEditPassword")
-        self.radioButtonSaveLogin = QtWidgets.QRadioButton(parent=self.centralwidget)
-        self.radioButtonSaveLogin.setGeometry(QtCore.QRect(340, 380, 171, 31))
-        self.radioButtonSaveLogin.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(64, 0, 128);\n"
-"")
-        self.radioButtonSaveLogin.setObjectName("radioButtonSaveLogin")
         self.pushButtonLogin = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButtonLogin.setGeometry(QtCore.QRect(240, 430, 121, 41))
+        self.pushButtonLogin.setGeometry(QtCore.QRect(240, 430, 131, 61))
         self.pushButtonLogin.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(128, 0, 2);")
         self.pushButtonLogin.setObjectName("pushButtonLogin")
         self.pushButtonExit = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButtonExit.setGeometry(QtCore.QRect(490, 430, 121, 41))
+        self.pushButtonExit.setGeometry(QtCore.QRect(490, 430, 121, 61))
         self.pushButtonExit.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(128, 0, 2);")
         self.pushButtonExit.setObjectName("pushButtonExit")
@@ -77,11 +71,11 @@ class Ui_MainWindow(object):
         self.label_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_5.setObjectName("label_5")
         self.comboBoxRole = QtWidgets.QComboBox(parent=self.centralwidget)
-        self.comboBoxRole.setGeometry(QtCore.QRect(270, 300, 341, 26))
+        self.comboBoxRole.setGeometry(QtCore.QRect(270, 300, 351, 41))
         self.comboBoxRole.setObjectName("comboBoxRole")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 814, 24))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 862, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -89,6 +83,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+        self.pushButtonExit.clicked.connect(MainWindow.close) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -98,6 +93,5 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "User Name:"))
         self.label_3.setText(_translate("MainWindow", "Role:"))
         self.label_4.setText(_translate("MainWindow", "Password:"))
-        self.radioButtonSaveLogin.setText(_translate("MainWindow", "Save Login Infor"))
         self.pushButtonLogin.setText(_translate("MainWindow", "Log In"))
         self.pushButtonExit.setText(_translate("MainWindow", "Exit"))

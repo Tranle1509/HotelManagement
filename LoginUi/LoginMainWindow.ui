@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>814</width>
-    <height>600</height>
+    <width>862</width>
+    <height>603</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>180</y>
-      <width>311</width>
-      <height>51</height>
+      <x>190</x>
+      <y>170</y>
+      <width>501</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -47,9 +47,9 @@ color: rgb(128, 0, 2);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>250</y>
-      <width>101</width>
+      <x>60</x>
+      <y>240</y>
+      <width>201</width>
       <height>31</height>
      </rect>
     </property>
@@ -65,10 +65,10 @@ color: rgb(64, 0, 128);
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>60</x>
       <y>300</y>
       <width>101</width>
-      <height>21</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -83,10 +83,10 @@ color: rgb(64, 0, 128);
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>340</y>
-      <width>101</width>
-      <height>21</height>
+      <x>60</x>
+      <y>350</y>
+      <width>171</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -102,9 +102,9 @@ color: rgb(64, 0, 128);
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>260</y>
-      <width>341</width>
-      <height>21</height>
+      <y>240</y>
+      <width>351</width>
+      <height>41</height>
      </rect>
     </property>
    </widget>
@@ -112,28 +112,10 @@ color: rgb(64, 0, 128);
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>340</y>
-      <width>341</width>
-      <height>21</height>
+      <y>360</y>
+      <width>351</width>
+      <height>41</height>
      </rect>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButtonSaveLogin">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>380</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 75 20pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(64, 0, 128);
-</string>
-    </property>
-    <property name="text">
-     <string>Save Login Infor</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonLogin">
@@ -141,8 +123,8 @@ color: rgb(64, 0, 128);
      <rect>
       <x>240</x>
       <y>430</y>
-      <width>121</width>
-      <height>41</height>
+      <width>131</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -159,7 +141,7 @@ color: rgb(128, 0, 2);</string>
       <x>490</x>
       <y>430</y>
       <width>121</width>
-      <height>41</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -197,8 +179,8 @@ color: rgb(128, 0, 2);</string>
      <rect>
       <x>270</x>
       <y>300</y>
-      <width>341</width>
-      <height>26</height>
+      <width>351</width>
+      <height>41</height>
      </rect>
     </property>
    </widget>
@@ -208,13 +190,30 @@ color: rgb(128, 0, 2);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>814</width>
-     <height>24</height>
+     <width>862</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButtonExit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>550</x>
+     <y>486</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>301</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
