@@ -412,6 +412,10 @@ class Ui_MainWindow(object):
         self.pushButton_checkout.setObjectName("pushButton_checkout")
         self.gridLayout.addWidget(self.pushButton_checkout, 0, 2, 1, 1)
         self.pushButton_close = QtWidgets.QPushButton(parent=self.gridFrame)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("D:\\FinalProject\\ui\\../images/close_red.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButton_close.setIcon(icon)
+        self.pushButton_close.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_close.setObjectName("pushButton_close")
         self.gridLayout.addWidget(self.pushButton_close, 1, 2, 1, 1)
         self.pushButton_update = QtWidgets.QPushButton(parent=self.gridFrame)
@@ -430,6 +434,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+        self.pushButton_close.clicked.connect(MainWindow.close) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
