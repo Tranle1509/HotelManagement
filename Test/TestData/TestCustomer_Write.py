@@ -15,5 +15,5 @@ for i in range(1,20):
         print(c)
 
 jff = JsonFileFactory()
-filename = "../dataset/customers.json"
+filename = "../../dataset/customers.json"
 jff.write_data(customers, filename)

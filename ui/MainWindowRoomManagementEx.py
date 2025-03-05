@@ -1,13 +1,4 @@
-import json
-
-from PyQt6.QtCore import QDate, Qt
-from PyQt6.QtGui import QColor
-from PyQt6.QtWidgets import QTableWidgetItem
-
 from libs.DataConnector import DataConnector
-from model.Booking import Booking
-from model.Customer import Customer
-from model.Room import Room
 from ui.MainWindowRoomManagement import Ui_MainWindow
 
 
