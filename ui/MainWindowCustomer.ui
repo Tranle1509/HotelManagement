@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>470</width>
+    <width>525</width>
     <height>561</height>
    </rect>
   </property>
@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>160</x>
       <y>0</y>
       <width>221</width>
       <height>61</height>
@@ -44,7 +44,7 @@
      <rect>
       <x>10</x>
       <y>60</y>
-      <width>451</width>
+      <width>491</width>
       <height>461</height>
      </rect>
     </property>
@@ -70,12 +70,12 @@ color: rgb(128, 0, 2);</string>
       <rect>
        <x>10</x>
        <y>50</y>
-       <width>71</width>
+       <width>171</width>
        <height>41</height>
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Id:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Customer code:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -117,10 +117,10 @@ color: rgb(128, 0, 2);</string>
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Email:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_Id">
+    <widget class="QLineEdit" name="lineEdit_CusCode">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>170</x>
        <y>60</y>
        <width>281</width>
        <height>31</height>
@@ -133,7 +133,7 @@ color: rgb(128, 0, 2);</string>
     <widget class="QLineEdit" name="lineEdit_Name">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>170</x>
        <y>110</y>
        <width>281</width>
        <height>31</height>
@@ -146,7 +146,7 @@ color: rgb(128, 0, 2);</string>
     <widget class="QLineEdit" name="lineEdit_Email">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>170</x>
        <y>320</y>
        <width>281</width>
        <height>31</height>
@@ -159,7 +159,7 @@ color: rgb(128, 0, 2);</string>
     <widget class="QLineEdit" name="lineEdit_Phone">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>170</x>
        <y>260</y>
        <width>281</width>
        <height>31</height>
@@ -172,7 +172,7 @@ color: rgb(128, 0, 2);</string>
     <widget class="QPushButton" name="pushButton_Close">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>330</x>
        <y>370</y>
        <width>101</width>
        <height>41</height>
@@ -191,7 +191,7 @@ color: rgb(128, 0, 2);</string>
     <widget class="QPushButton" name="pushButton_Save">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>180</x>
        <y>370</y>
        <width>91</width>
        <height>41</height>
@@ -216,7 +216,7 @@ color: rgb(128, 0, 2);</string>
     <widget class="QLineEdit" name="lineEdit_Identity">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>170</x>
        <y>200</y>
        <width>281</width>
        <height>31</height>
@@ -242,7 +242,7 @@ color: rgb(128, 0, 2);</string>
     <widget class="QRadioButton" name="radioButtonMale">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>220</x>
        <y>160</y>
        <width>95</width>
        <height>20</height>
@@ -267,7 +267,7 @@ color: rgb(128, 0, 2);</string>
     <widget class="QRadioButton" name="radioButtonFemale">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>330</x>
        <y>160</y>
        <width>95</width>
        <height>20</height>
@@ -296,7 +296,7 @@ color: rgb(128, 0, 2);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>470</width>
+     <width>525</width>
      <height>26</height>
     </rect>
    </property>
