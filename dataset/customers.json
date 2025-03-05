@@ -1,0 +1,116 @@
+[
+    {
+        "code": "1",
+        "name": "Customer1",
+        "phone": "0926150380",
+        "email": "customer1@gmail.com"
+    },
+    {
+        "code": "2",
+        "name": "Customer2",
+        "phone": "0962235384",
+        "email": "customer2@gmail.com"
+    },
+    {
+        "code": "3",
+        "name": "Customer3",
+        "phone": "0983632230",
+        "email": "customer3@gmail.com"
+    },
+    {
+        "code": "4",
+        "name": "Customer4",
+        "phone": "0913560670",
+        "email": "customer4@gmail.com"
+    },
+    {
+        "code": "5",
+        "name": "Customer5",
+        "phone": "0913660985",
+        "email": "customer5@gmail.com"
+    },
+    {
+        "code": "6",
+        "name": "Customer6",
+        "phone": "0984266134",
+        "email": "customer6@gmail.com"
+    },
+    {
+        "code": "7",
+        "name": "Customer7",
+        "phone": "0942159203",
+        "email": "customer7@gmail.com"
+    },
+    {
+        "code": "8",
+        "name": "Customer8",
+        "phone": "0919765380",
+        "email": "customer8@gmail.com"
+    },
+    {
+        "code": "9",
+        "name": "Customer9",
+        "phone": "0956442613",
+        "email": "customer9@gmail.com"
+    },
+    {
+        "code": "10",
+        "name": "Customer10",
+        "phone": "0958399821",
+        "email": "customer10@gmail.com"
+    },
+    {
+        "code": "11",
+        "name": "Customer11",
+        "phone": "0971412014",
+        "email": "customer11@gmail.com"
+    },
+    {
+        "code": "12",
+        "name": "Customer12",
+        "phone": "0954370252",
+        "email": "customer12@gmail.com"
+    },
+    {
+        "code": "13",
+        "name": "Customer13",
+        "phone": "0988034105",
+        "email": "customer13@gmail.com"
+    },
+    {
+        "code": "14",
+        "name": "Customer14",
+        "phone": "0960979089",
+        "email": "customer14@gmail.com"
+    },
+    {
+        "code": "15",
+        "name": "Customer15",
+        "phone": "0914064510",
+        "email": "customer15@gmail.com"
+    },
+    {
+        "code": "16",
+        "name": "Customer16",
+        "phone": "0977482013",
+        "email": "customer16@gmail.com"
+    },
+    {
+        "code": "17",
+        "name": "Customer17",
+        "phone": "0941941650",
+        "email": "customer17@gmail.com"
+    },
+    {
+        "code": "18",
+        "name": "Customer18",
+        "phone": "0990571634",
+        "email": "customer18@gmail.com"
+    },
+    {
+        "code": "19",
+        "name": "Customer19",
+        "phone": "0991653959",
+        "email": "customer19@gmail.com"
+    }
+]
