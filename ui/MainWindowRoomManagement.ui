@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>978</width>
+    <height>817</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 16pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>398</width>
+         <height>754</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>Detail Info</string>
+            </property>
+            <widget class="QLineEdit" name="lineEdit_Roomstatus">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>50</y>
+               <width>221</width>
+               <height>21</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>121</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>#9Slide03 SFU Toledo Bold</family>
+               <pointsize>16</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Room Status:</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_Customer">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>90</y>
+               <width>221</width>
+               <height>21</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_7">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>121</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>#9Slide03 SFU Toledo Bold</family>
+               <pointsize>16</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Customer:</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_Bookingcode">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>140</y>
+               <width>221</width>
+               <height>21</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_8">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>130</y>
+               <width>141</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>#9Slide03 SFU Toledo Bold</family>
+               <pointsize>16</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Booking code:</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_9">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>180</y>
+               <width>141</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>#9Slide03 SFU Toledo Bold</family>
+               <pointsize>16</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Check in:</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_10">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>240</y>
+               <width>121</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>#9Slide03 SFU Toledo Bold</family>
+               <pointsize>16</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Check out:</string>
+             </property>
+            </widget>
+            <widget class="QDateTimeEdit" name="dateTimeEdit_checkin">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>180</y>
+               <width>241</width>
+               <height>31</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QDateTimeEdit" name="dateTimeEdit_checkout">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>240</y>
+               <width>241</width>
+               <height>31</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_save">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>300</y>
+               <width>131</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Save</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_clear">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>300</y>
+               <width>131</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Clear</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Sort Room</string>
+            </property>
+            <widget class="QPushButton" name="pushButton_Sortvip">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>40</y>
+               <width>131</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 215, 0);</string>
+             </property>
+             <property name="text">
+              <string>VIP</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_Sortregular">
+             <property name="geometry">
+              <rect>
+               <x>210</x>
+               <y>40</y>
+               <width>131</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 252, 246);</string>
+             </property>
+             <property name="text">
+              <string>Regular</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_Sortinhouse">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>100</y>
+               <width>131</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>In House</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_Sortready">
+             <property name="geometry">
+              <rect>
+               <x>210</x>
+               <y>100</y>
+               <width>131</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 255, 127);</string>
+             </property>
+             <property name="text">
+              <string>Ready</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="title">
+             <string>Statictics</string>
+            </property>
+            <widget class="QLabel" name="label_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>141</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>#9Slide03 SFU Toledo Bold</family>
+               <pointsize>16</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Booked rooms:</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_Bookedrooms">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>50</y>
+               <width>191</width>
+               <height>21</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_Vacancy">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>90</y>
+               <width>191</width>
+               <height>21</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_11">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>141</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>#9Slide03 SFU Toledo Bold</family>
+               <pointsize>16</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Vancancy:</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_Totalcustomers">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>130</y>
+               <width>191</width>
+               <height>21</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_12">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>120</y>
+               <width>151</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>#9Slide03 SFU Toledo Bold</family>
+               <pointsize>16</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Total customers:</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>#9Slide03 SFU Toledo Bold</family>
+          <pointsize>30</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(128, 0, 2);
+color: rgb(255, 215, 0);</string>
+        </property>
+        <property name="text">
+         <string>Room Management</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>#9Slide03 SFU Toledo Bold</family>
+          <pointsize>8</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 8pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="title">
+         <string>Status</string>
+        </property>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>20</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>8</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>In House</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>19</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 0, 0);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>20</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>8</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ready</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>19</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 255, 127);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>20</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>8</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cleaning</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>19</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 0);</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCalendarWidget" name="calendarWidget">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableRooms">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>#9Slide04 SFU Toledo</family>
+          <pointsize>16</pointsize>
+          <weight>7</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 57 16pt &quot;#9Slide04 SFU Toledo&quot;;</string>
+        </property>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>3</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>4</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>5</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Floor 1</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Floor 2</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Floor 3</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Floor 4</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Floor 5</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>#9Slide03 SFU Toledo Bold</family>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>101</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>201</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>301</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>401</string>
+         </property>
+        </item>
+        <item row="0" column="4">
+         <property name="text">
+          <string>501</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>102</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>202</string>
+         </property>
+        </item>
+        <item row="1" column="2">
+         <property name="text">
+          <string>302</string>
+         </property>
+        </item>
+        <item row="1" column="3">
+         <property name="text">
+          <string>402</string>
+         </property>
+        </item>
+        <item row="1" column="4">
+         <property name="text">
+          <string>502</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>103</string>
+         </property>
+        </item>
+        <item row="2" column="1">
+         <property name="text">
+          <string>203</string>
+         </property>
+        </item>
+        <item row="2" column="2">
+         <property name="text">
+          <string>303</string>
+         </property>
+        </item>
+        <item row="2" column="3">
+         <property name="text">
+          <string>403</string>
+         </property>
+        </item>
+        <item row="2" column="4">
+         <property name="text">
+          <string>503</string>
+         </property>
+        </item>
+        <item row="3" column="0">
+         <property name="text">
+          <string>104</string>
+         </property>
+        </item>
+        <item row="3" column="1">
+         <property name="text">
+          <string>204</string>
+         </property>
+        </item>
+        <item row="3" column="2">
+         <property name="text">
+          <string>304</string>
+         </property>
+        </item>
+        <item row="3" column="3">
+         <property name="text">
+          <string>404</string>
+         </property>
+        </item>
+        <item row="3" column="4">
+         <property name="text">
+          <string>504</string>
+         </property>
+        </item>
+        <item row="4" column="0">
+         <property name="text">
+          <string>105</string>
+         </property>
+        </item>
+        <item row="4" column="1">
+         <property name="text">
+          <string>205</string>
+         </property>
+        </item>
+        <item row="4" column="2">
+         <property name="text">
+          <string>305</string>
+         </property>
+        </item>
+        <item row="4" column="3">
+         <property name="text">
+          <string>405</string>
+         </property>
+        </item>
+        <item row="4" column="4">
+         <property name="text">
+          <string>505</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>10000000</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>#9Slide03 SFU Toledo Bold</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Functions</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QFrame" name="gridFrame">
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="1">
+             <widget class="QPushButton" name="pushButton_checkin">
+              <property name="text">
+               <string>Check in</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="pushButton_checkout">
+              <property name="text">
+               <string>Check out</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QPushButton" name="pushButton_close">
+              <property name="text">
+               <string>Close</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../images/close_red.webp</normaloff>../images/close_red.webp</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="pushButton_update">
+              <property name="text">
+               <string>Update</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>978</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_close</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>821</x>
+     <y>743</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>488</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
