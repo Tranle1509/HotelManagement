@@ -43,7 +43,7 @@
     },
     {
         "EmployeeId": "Emp8",
-        "EmployeeRole": "Security",
+        "EmployeeRole": "Security_Vip",
         "UserName": "Huy",
         "Password": "0507"
     },
@@ -61,7 +61,7 @@
     },
     {
         "EmployeeId": "Emp11",
-        "EmployeeRole": "Security",
+        "EmployeeRole": "Security_Regular",
         "UserName": "Dong",
         "Password": "0708"
     }

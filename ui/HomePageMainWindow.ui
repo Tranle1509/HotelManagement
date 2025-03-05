@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>889</width>
-    <height>709</height>
+    <width>963</width>
+    <height>798</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -58,8 +58,8 @@
    <widget class="QPushButton" name="pushButtonRoom">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>580</y>
+      <x>210</x>
+      <y>630</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -82,8 +82,8 @@
    <widget class="QPushButton" name="pushButtonBooking">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>580</y>
+      <x>520</x>
+      <y>630</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -109,21 +109,24 @@
       <x>40</x>
       <y>360</y>
       <width>811</width>
-      <height>171</height>
+      <height>231</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>18</pointsize>
-      <italic>true</italic>
+      <family>#9Slide03 SFU Toledo Bold</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
      </font>
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:18pt; font-weight:400; font-style:italic;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'GillSans,Arial,Helvetica,sans-serif'; font-weight:96; color:#333333; background-color:#f0f1f2;&quot;&gt;At D'anteria Exclusive, the golden beaches and sparking waters of Main Beach and Gold Coast Broadwater are right at your fingertips. Enjoy the holiday glow that radiates throughout the city which boasts one of the world's best coastlines and a delightful climate all year round. Located in the premier playground of blue-water yachting, magnificent fishing and diving, surfing, world-class golfing, tennis, or simply relaxing on the golden sand beaches, the opportunities for adventure and relaxation are endless.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'#9Slide03 SFU Toledo Bold'; font-size:15pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'GillSans,Arial,Helvetica,sans-serif'; font-size:14pt; font-weight:96; font-style:italic; color:#333333; background-color:#f0f1f2;&quot;&gt;At D'anteria Exclusive, the golden beaches and sparking waters of Main Beach and Gold Coast Broadwater are right at your fingertips. Enjoy the holiday glow that radiates throughout the city which boasts one of the world's best coastlines and a delightful climate all year round. Located in the premier playground of blue-water yachting, magnificent fishing and diving, surfing, world-class golfing, tennis, or simply relaxing on the golden sand beaches, the opportunities for adventure and relaxation are endless.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <zorder>hotel2</zorder>
@@ -137,8 +140,8 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>889</width>
-     <height>24</height>
+     <width>963</width>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAbout">
