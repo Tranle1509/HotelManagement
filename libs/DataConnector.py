@@ -1,6 +1,7 @@
-from libs.JsonFileFactory import JsonFileFactory
-from models.Room import Room
-from models.booking import Booking
+from libs.FileFactory import JsonFileFactory
+from model.Booking import Booking
+from model.Customer import Customer
+from model.Room import Room
 
 
 class DataConnector:
