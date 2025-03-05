@@ -254,6 +254,9 @@
                <height>41</height>
               </rect>
              </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 215, 0);</string>
+             </property>
              <property name="text">
               <string>VIP</string>
              </property>
@@ -266,6 +269,9 @@
                <width>131</width>
                <height>41</height>
               </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 252, 246);</string>
              </property>
              <property name="text">
               <string>Regular</string>
@@ -280,6 +286,9 @@
                <height>41</height>
               </rect>
              </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 0, 0);</string>
+             </property>
              <property name="text">
               <string>In House</string>
              </property>
@@ -292,6 +301,9 @@
                <width>131</width>
                <height>41</height>
               </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 255, 127);</string>
              </property>
              <property name="text">
               <string>Ready</string>
@@ -306,6 +318,10 @@
               <width>16777215</width>
               <height>200</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);</string>
             </property>
             <property name="title">
              <string>Statictics</string>
@@ -389,7 +405,7 @@
               <rect>
                <x>10</x>
                <y>120</y>
-               <width>181</width>
+               <width>151</width>
                <height>31</height>
               </rect>
              </property>
@@ -462,7 +478,8 @@ color: rgb(255, 215, 0);</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">font: 75 8pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+         <string notr="true">font: 75 8pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background-color: rgb(255, 255, 255);</string>
         </property>
         <property name="title">
          <string>Status</string>
