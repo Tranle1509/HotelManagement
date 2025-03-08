@@ -16,5 +16,5 @@ for c in customers:
     print(c)
 
 jff = JsonFileFactory()
-filename = "../dataset/customers.json"
+filename = "../../dataset/customers.json"
 jff.write_data(customers, filename)

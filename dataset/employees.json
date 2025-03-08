@@ -1,0 +1,68 @@
+[
+    {
+        "EmployeeId": "Emp1",
+        "EmployeeRole": "HR Manager",
+        "UserName": "Qanh",
+        "Password": "1505"
+    },
+    {
+        "EmployeeId": "Emp2",
+        "EmployeeRole": "Front Office Manager",
+        "UserName": "Tran",
+        "Password": "1509"
+    },
+    {
+        "EmployeeId": "Emp3",
+        "EmployeeRole": "Customer Service Manager",
+        "UserName": "Duyen",
+        "Password": "0210"
+    },
+    {
+        "EmployeeId": "Emp4",
+        "EmployeeRole": "Housekeeping Manager",
+        "UserName": "Tam",
+        "Password": "1803"
+    },
+    {
+        "EmployeeId": "Emp5",
+        "EmployeeRole": "Operations Manager",
+        "UserName": "Nguyen",
+        "Password": "1512"
+    },
+    {
+        "EmployeeId": "Emp6",
+        "EmployeeRole": "Staff_Vip",
+        "UserName": "Bao",
+        "Password": "1811"
+    },
+    {
+        "EmployeeId": "Emp7",
+        "EmployeeRole": "Cleaner_Vip",
+        "UserName": "Khoa",
+        "Password": "1705"
+    },
+    {
+        "EmployeeId": "Emp8",
+        "EmployeeRole": "Security_Vip",
+        "UserName": "Huy",
+        "Password": "0507"
+    },
+    {
+        "EmployeeId": "Emp9",
+        "EmployeeRole": "Staff_Regular",
+        "UserName": "Thao",
+        "Password": "0810"
+    },
+    {
+        "EmployeeId": "Emp10",
+        "EmployeeRole": "Cleaner_Regular",
+        "UserName": "PAnh",
+        "Password": "1002"
+    },
+    {
+        "EmployeeId": "Emp11",
+        "EmployeeRole": "Security_Regular",
+        "UserName": "Dong",
+        "Password": "0708"
+    }
+]

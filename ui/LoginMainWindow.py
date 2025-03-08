@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file '/Users/quynhanh/Downloads/HotelManagement/LoginUi/LoginMainWindow.ui'
+# Form implementation generated from reading ui file 'D:\KTLT\HotelManagement\ui\LoginMainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -12,76 +12,116 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(814, 600)
+        MainWindow.resize(1065, 719)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(280, 180, 311, 51))
+        self.label.setGeometry(QtCore.QRect(210, 220, 711, 61))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
-        font.setPointSize(25)
+        font.setPointSize(30)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(9)
         self.label.setFont(font)
-        self.label.setStyleSheet("font: 20pt \"#9Slide04 Prata\";\n"
-"font: 75 25pt \"#9Slide03 SFU Toledo Bold\";\n"
+        self.label.setStyleSheet("font: 30pt \"#9Slide04 Prata\";\n"
+"font: 75 30pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(128, 0, 2);")
         self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(150, 250, 101, 31))
+        self.label_2.setGeometry(QtCore.QRect(160, 350, 221, 31))
+        font = QtGui.QFont()
+        font.setFamily("#9Slide03 SFU Toledo Bold")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(9)
+        self.label_2.setFont(font)
         self.label_2.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(64, 0, 128);\n"
+"color: rgb(255, 255, 255);\n"
 "")
+        self.label_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(150, 300, 101, 21))
+        self.label_3.setGeometry(QtCore.QRect(170, 430, 101, 31))
+        font = QtGui.QFont()
+        font.setFamily("#9Slide03 SFU Toledo Bold")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(9)
+        self.label_3.setFont(font)
         self.label_3.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(64, 0, 128);\n"
+"color: rgb(255, 255, 255);\n"
 "")
+        self.label_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(150, 340, 101, 21))
+        self.label_4.setGeometry(QtCore.QRect(160, 490, 201, 51))
+        font = QtGui.QFont()
+        font.setFamily("#9Slide03 SFU Toledo Bold")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(9)
+        self.label_4.setFont(font)
         self.label_4.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(64, 0, 128);\n"
+"color: rgb(255, 255, 255);\n"
 "")
+        self.label_4.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_4.setObjectName("label_4")
         self.lineEditUserName = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEditUserName.setGeometry(QtCore.QRect(270, 260, 341, 21))
+        self.lineEditUserName.setGeometry(QtCore.QRect(400, 350, 351, 41))
         self.lineEditUserName.setObjectName("lineEditUserName")
         self.lineEditPassword = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEditPassword.setGeometry(QtCore.QRect(270, 340, 341, 21))
+        self.lineEditPassword.setGeometry(QtCore.QRect(400, 500, 351, 41))
+        self.lineEditPassword.setText("")
+        self.lineEditPassword.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
         self.lineEditPassword.setObjectName("lineEditPassword")
-        self.radioButtonSaveLogin = QtWidgets.QRadioButton(parent=self.centralwidget)
-        self.radioButtonSaveLogin.setGeometry(QtCore.QRect(340, 380, 171, 31))
-        self.radioButtonSaveLogin.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(64, 0, 128);\n"
-"")
-        self.radioButtonSaveLogin.setObjectName("radioButtonSaveLogin")
         self.pushButtonLogin = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButtonLogin.setGeometry(QtCore.QRect(240, 430, 121, 41))
+        self.pushButtonLogin.setGeometry(QtCore.QRect(310, 580, 141, 61))
         self.pushButtonLogin.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(128, 0, 2);")
         self.pushButtonLogin.setObjectName("pushButtonLogin")
         self.pushButtonExit = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButtonExit.setGeometry(QtCore.QRect(490, 430, 121, 41))
+        self.pushButtonExit.setGeometry(QtCore.QRect(640, 580, 131, 61))
         self.pushButtonExit.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(128, 0, 2);")
         self.pushButtonExit.setObjectName("pushButtonExit")
         self.label_5 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_5.setGeometry(QtCore.QRect(360, 10, 151, 151))
+        self.label_5.setGeometry(QtCore.QRect(420, 10, 251, 201))
         self.label_5.setText("")
-        self.label_5.setPixmap(QtGui.QPixmap("/Users/quynhanh/Downloads/HotelManagement/LoginUi/../images/logo hotel.png"))
+        self.label_5.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/logo hotel.png"))
         self.label_5.setScaledContents(True)
         self.label_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_5.setObjectName("label_5")
         self.comboBoxRole = QtWidgets.QComboBox(parent=self.centralwidget)
-        self.comboBoxRole.setGeometry(QtCore.QRect(270, 300, 341, 26))
+        self.comboBoxRole.setGeometry(QtCore.QRect(400, 420, 351, 51))
         self.comboBoxRole.setObjectName("comboBoxRole")
+        self.label_6 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(0, -20, 1071, 691))
+        font = QtGui.QFont()
+        font.setPointSize(21)
+        self.label_6.setFont(font)
+        self.label_6.setText("")
+        self.label_6.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/hotel.png"))
+        self.label_6.setScaledContents(True)
+        self.label_6.setObjectName("label_6")
+        self.label_6.raise_()
+        self.label.raise_()
+        self.label_2.raise_()
+        self.label_3.raise_()
+        self.label_4.raise_()
+        self.lineEditUserName.raise_()
+        self.lineEditPassword.raise_()
+        self.pushButtonLogin.raise_()
+        self.pushButtonExit.raise_()
+        self.label_5.raise_()
+        self.comboBoxRole.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 814, 24))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1065, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -89,6 +129,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+        self.pushButtonExit.clicked.connect(MainWindow.close) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -98,6 +139,5 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "User Name:"))
         self.label_3.setText(_translate("MainWindow", "Role:"))
         self.label_4.setText(_translate("MainWindow", "Password:"))
-        self.radioButtonSaveLogin.setText(_translate("MainWindow", "Save Login Infor"))
         self.pushButtonLogin.setText(_translate("MainWindow", "Log In"))
         self.pushButtonExit.setText(_translate("MainWindow", "Exit"))

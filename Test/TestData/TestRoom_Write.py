@@ -31,5 +31,5 @@ print("Lists of rooms:")
 for r in rooms:
     print(r)
 jff=JsonFileFactory()
-filename= "../dataset/rooms.json"
+filename= "../../dataset/rooms.json"
 jff.write_data(rooms,filename)

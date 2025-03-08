@@ -1,0 +1,122 @@
+[
+    {
+        "customer_code": "cus1",
+        "room_code": "101",
+        "start_date": "2025-03-08",
+        "end_date": "2025-03-13"
+    },
+    {
+        "customer_code": "cus2",
+        "room_code": "203",
+        "start_date": "2025-03-04",
+        "end_date": "2025-03-14"
+    },
+    {
+        "customer_code": "cus3",
+        "room_code": "104",
+        "start_date": "2025-03-10",
+        "end_date": "2025-03-14"
+    },
+    {
+        "customer_code": "cus4",
+        "room_code": "301",
+        "start_date": "2025-03-01",
+        "end_date": "2025-03-10"
+    },
+    {
+        "customer_code": "cus5",
+        "room_code": "204",
+        "start_date": "2025-03-01",
+        "end_date": "2025-03-06"
+    },
+    {
+        "customer_code": "cus6",
+        "room_code": "103",
+        "start_date": "2025-03-10",
+        "end_date": "2025-03-17"
+    },
+    {
+        "customer_code": "cus7",
+        "room_code": "103",
+        "start_date": "2025-03-03",
+        "end_date": "2025-03-11"
+    },
+    {
+        "customer_code": "cus8",
+        "room_code": "101",
+        "start_date": "2025-03-07",
+        "end_date": "2025-03-11"
+    },
+    {
+        "customer_code": "cus9",
+        "room_code": "104",
+        "start_date": "2025-03-10",
+        "end_date": "2025-03-13"
+    },
+    {
+        "customer_code": "cus10",
+        "room_code": "304",
+        "start_date": "2025-03-08",
+        "end_date": "2025-03-11"
+    },
+    {
+        "customer_code": "cus11",
+        "room_code": "302",
+        "start_date": "2025-03-14",
+        "end_date": "2025-03-22"
+    },
+    {
+        "customer_code": "cus12",
+        "room_code": "205",
+        "start_date": "2025-03-07",
+        "end_date": "2025-03-12"
+    },
+    {
+        "customer_code": "cus13",
+        "room_code": "105",
+        "start_date": "2025-03-03",
+        "end_date": "2025-03-08"
+    },
+    {
+        "customer_code": "cus14",
+        "room_code": "102",
+        "start_date": "2025-03-15",
+        "end_date": "2025-03-25"
+    },
+    {
+        "customer_code": "cus15",
+        "room_code": "201",
+        "start_date": "2025-03-13",
+        "end_date": "2025-03-22"
+    },
+    {
+        "customer_code": "cus16",
+        "room_code": "201",
+        "start_date": "2025-03-05",
+        "end_date": "2025-03-11"
+    },
+    {
+        "customer_code": "cus17",
+        "room_code": "202",
+        "start_date": "2025-03-03",
+        "end_date": "2025-03-07"
+    },
+    {
+        "customer_code": "cus18",
+        "room_code": "202",
+        "start_date": "2025-03-20",
+        "end_date": "2025-03-24"
+    },
+    {
+        "customer_code": "cus19",
+        "room_code": "105",
+        "start_date": "2025-03-12",
+        "end_date": "2025-03-14"
+    },
+    {
+        "customer_code": "cus20",
+        "room_code": "303",
+        "start_date": "2025-03-03",
+        "end_date": "2025-03-12"
+    }
+]

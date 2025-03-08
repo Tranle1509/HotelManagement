@@ -22,5 +22,5 @@ for booking in bookings:
 
 # Write data to JSON file:
 jff = JsonFileFactory()
-filename = "../dataset/bookings.json"
+filename = "../../dataset/bookings.json"
 jff.write_data(bookings, filename)
