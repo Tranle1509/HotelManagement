@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QMainWindow, QApplication
+from PyQt6.QtWidgets import QApplication, QMainWindow
 
 from ui.MainWindow_NewReservationExt import MainWindow_NewReservationExt
 
