@@ -73,6 +73,7 @@ class MainWindow_NewReservationExt(Ui_MainWindow,QMainWindow):
         except Exception as e:
             QMessageBox.critical(self.MainWindow, "Lỗi", f"Lưu dữ liệu thất bại:\n{str(e)}")
 
+
     def clear_data(self):
         """ Xóa nội dung của các ô nhập liệu """
         self.lineEdit_Cuscode.clear()
