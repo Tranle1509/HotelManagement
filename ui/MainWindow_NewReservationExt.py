@@ -1,5 +1,4 @@
-
-from PyQt6.QtWidgets import QMessageBox, QLabel, QLineEdit, QDateEdit, QPushButton, QMainWindow, QSizePolicy
+from PyQt6.QtWidgets import QMainWindow, QMessageBox
 
 from libs.FileFactory import JsonFileFactory
 from model.Booking import Booking
@@ -23,6 +22,7 @@ class MainWindow_NewReservationExt(Ui_MainWindow,QMainWindow):
         # Kết nối nút Save với phương thức save_data
         self.pushButton_Save.clicked.connect(self.save_data)
         self.pushButton_Close.clicked.connect(self.close)
+        self.pushButton_Clear.clicked.connect(self.clear_data)
 
     def showWindow(self):
         self.MainWindow.show()
@@ -72,3 +72,19 @@ class MainWindow_NewReservationExt(Ui_MainWindow,QMainWindow):
 
         except Exception as e:
             QMessageBox.critical(self.MainWindow, "Lỗi", f"Lưu dữ liệu thất bại:\n{str(e)}")
+
+    def clear_data(self):
+        """ Xóa nội dung của các ô nhập liệu """
+        self.lineEdit_Cuscode.clear()
+        self.lineEdit_Phone.clear()
+        self.lineEdit_Cusname.clear()
+        self.lineEdit_Email.clear()
+        self.lineEdit_Identify.clear()
+
+        self.lineEdit_Roomcode.clear()
+
+
+        self.lineEdit_guest.clear()
+        self.lineEdit_guest_7.clear()
+
+        self.lineEdit_Requirement.clear()
