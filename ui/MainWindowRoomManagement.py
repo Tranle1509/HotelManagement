@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1023, 742)
+        MainWindow.resize(1023, 884)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(20)
         sizePolicy.setVerticalStretch(20)
@@ -21,7 +21,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tableWidget_Room = QtWidgets.QTableWidget(parent=self.centralwidget)
-        self.tableWidget_Room.setGeometry(QtCore.QRect(10, 180, 1001, 411))
+        self.tableWidget_Room.setGeometry(QtCore.QRect(10, 340, 1001, 291))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -52,7 +52,7 @@ class Ui_MainWindow(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_Room.setHorizontalHeaderItem(3, item)
         self.groupBox = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox.setGeometry(QtCore.QRect(10, 80, 581, 91))
+        self.groupBox.setGeometry(QtCore.QRect(10, 240, 581, 91))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(20)
@@ -98,7 +98,7 @@ class Ui_MainWindow(object):
 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
         self.pushButton_regular.setObjectName("pushButton_regular")
         self.pushButton_checkin = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_checkin.setGeometry(QtCore.QRect(270, 610, 141, 51))
+        self.pushButton_checkin.setGeometry(QtCore.QRect(180, 700, 141, 51))
         self.pushButton_checkin.setStyleSheet("border-radius: 15px;\n"
 "font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(255, 232, 137);\n"
@@ -110,7 +110,7 @@ class Ui_MainWindow(object):
         self.pushButton_checkin.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_checkin.setObjectName("pushButton_checkin")
         self.pushButton_checkout = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_checkout.setGeometry(QtCore.QRect(430, 610, 151, 51))
+        self.pushButton_checkout.setGeometry(QtCore.QRect(450, 700, 151, 51))
         self.pushButton_checkout.setStyleSheet("border-radius: 15px;\n"
 "font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(255, 232, 137);\n"
@@ -122,7 +122,7 @@ class Ui_MainWindow(object):
         self.pushButton_checkout.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_checkout.setObjectName("pushButton_checkout")
         self.pushButton_exit = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_exit.setGeometry(QtCore.QRect(600, 610, 131, 51))
+        self.pushButton_exit.setGeometry(QtCore.QRect(720, 700, 131, 51))
         self.pushButton_exit.setStyleSheet("border-radius: 15px;\n"
 "font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(255, 232, 137);\n"
@@ -134,18 +134,24 @@ class Ui_MainWindow(object):
         self.pushButton_exit.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_exit.setObjectName("pushButton_exit")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(660, 120, 71, 31))
+        self.label.setGeometry(QtCore.QRect(610, 280, 91, 31))
         self.label.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(0, 0, 0);\n"
 "\n"
 "")
         self.label.setObjectName("label")
         self.dateEdit_date = QtWidgets.QDateEdit(parent=self.centralwidget)
-        self.dateEdit_date.setGeometry(QtCore.QRect(730, 120, 271, 31))
+        self.dateEdit_date.setGeometry(QtCore.QRect(710, 270, 271, 51))
         self.dateEdit_date.setObjectName("dateEdit_date")
+        self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(40, 10, 951, 241))
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/Cover.png"))
+        self.label_2.setScaledContents(True)
+        self.label_2.setObjectName("label_2")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1023, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1023, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
