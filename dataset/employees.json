@@ -31,38 +31,20 @@
     },
     {
         "EmployeeId": "Emp6",
-        "EmployeeRole": "Staff_Vip",
+        "EmployeeRole": "Staff",
         "UserName": "Bao",
         "Password": "1811"
     },
     {
         "EmployeeId": "Emp7",
-        "EmployeeRole": "Cleaner_Vip",
+        "EmployeeRole": "Staff",
         "UserName": "Khoa",
         "Password": "1705"
     },
     {
         "EmployeeId": "Emp8",
-        "EmployeeRole": "Security_Vip",
+        "EmployeeRole": "Staff",
         "UserName": "Huy",
         "Password": "0507"
-    },
-    {
-        "EmployeeId": "Emp9",
-        "EmployeeRole": "Staff_Regular",
-        "UserName": "Thao",
-        "Password": "0810"
-    },
-    {
-        "EmployeeId": "Emp10",
-        "EmployeeRole": "Cleaner_Regular",
-        "UserName": "PAnh",
-        "Password": "1002"
-    },
-    {
-        "EmployeeId": "Emp11",
-        "EmployeeRole": "Security_Regular",
-        "UserName": "Dong",
-        "Password": "0708"
     }
 ]
