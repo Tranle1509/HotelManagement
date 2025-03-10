@@ -4,6 +4,7 @@ from ui.MainWindowBookingManagementExt import MainWindowBookingManagementEx
 
 app=QApplication([])
 mainwindow=QMainWindow()
+
 myui=MainWindowBookingManagementEx()
 myui.setupUi(mainwindow)
 myui.showWindow()

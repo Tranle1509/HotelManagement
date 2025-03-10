@@ -12,12 +12,16 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1318, 762)
+        MainWindow.resize(1280, 780)
+        MainWindow.setMinimumSize(QtCore.QSize(1280, 780))
+        MainWindow.setMaximumSize(QtCore.QSize(1280, 780))
         MainWindow.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.groupBoxWarehouse = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBoxWarehouse.setGeometry(QtCore.QRect(0, 250, 501, 461))
+        self.groupBoxWarehouse.setGeometry(QtCore.QRect(0, 250, 1280, 780))
+        self.groupBoxWarehouse.setMinimumSize(QtCore.QSize(1280, 780))
+        self.groupBoxWarehouse.setMaximumSize(QtCore.QSize(1280, 780))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -51,7 +55,7 @@ class Ui_MainWindow(object):
 " border:transparent;")
         self.label_7.setObjectName("label_7")
         self.label_8 = QtWidgets.QLabel(parent=self.groupBoxWarehouse)
-        self.label_8.setGeometry(QtCore.QRect(10, 130, 151, 31))
+        self.label_8.setGeometry(QtCore.QRect(10, 150, 151, 51))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -62,7 +66,7 @@ class Ui_MainWindow(object):
         self.label_8.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_8.setObjectName("label_8")
         self.label_9 = QtWidgets.QLabel(parent=self.groupBoxWarehouse)
-        self.label_9.setGeometry(QtCore.QRect(10, 180, 151, 31))
+        self.label_9.setGeometry(QtCore.QRect(10, 200, 151, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -73,7 +77,7 @@ class Ui_MainWindow(object):
         self.label_9.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_9.setObjectName("label_9")
         self.label_10 = QtWidgets.QLabel(parent=self.groupBoxWarehouse)
-        self.label_10.setGeometry(QtCore.QRect(10, 230, 151, 31))
+        self.label_10.setGeometry(QtCore.QRect(10, 240, 151, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -84,7 +88,7 @@ class Ui_MainWindow(object):
         self.label_10.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_10.setObjectName("label_10")
         self.label_11 = QtWidgets.QLabel(parent=self.groupBoxWarehouse)
-        self.label_11.setGeometry(QtCore.QRect(10, 280, 191, 31))
+        self.label_11.setGeometry(QtCore.QRect(10, 270, 101, 51))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -95,7 +99,7 @@ class Ui_MainWindow(object):
         self.label_11.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_11.setObjectName("label_11")
         self.label_12 = QtWidgets.QLabel(parent=self.groupBoxWarehouse)
-        self.label_12.setGeometry(QtCore.QRect(10, 320, 191, 31))
+        self.label_12.setGeometry(QtCore.QRect(10, 110, 81, 51))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -105,16 +109,16 @@ class Ui_MainWindow(object):
         self.label_12.setFont(font)
         self.label_12.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_12.setObjectName("label_12")
-        self.pushButtonClear_3 = QtWidgets.QPushButton(parent=self.groupBoxWarehouse)
-        self.pushButtonClear_3.setGeometry(QtCore.QRect(30, 400, 91, 51))
+        self.pushButtonUpdate = QtWidgets.QPushButton(parent=self.groupBoxWarehouse)
+        self.pushButtonUpdate.setGeometry(QtCore.QRect(40, 440, 91, 51))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
-        self.pushButtonClear_3.setFont(font)
-        self.pushButtonClear_3.setStyleSheet("\n"
+        self.pushButtonUpdate.setFont(font)
+        self.pushButtonUpdate.setStyleSheet("\n"
 "QPushButton {\n"
 "    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,\n"
 "                                      stop:0.0681818 rgba(80, 11, 40, 255),\n"
@@ -140,17 +144,17 @@ class Ui_MainWindow(object):
 "    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */\n"
 "}\n"
 "")
-        self.pushButtonClear_3.setObjectName("pushButtonClear_3")
-        self.pushButtonClear_4 = QtWidgets.QPushButton(parent=self.groupBoxWarehouse)
-        self.pushButtonClear_4.setGeometry(QtCore.QRect(180, 400, 91, 51))
+        self.pushButtonUpdate.setObjectName("pushButtonUpdate")
+        self.pushButtonDelete = QtWidgets.QPushButton(parent=self.groupBoxWarehouse)
+        self.pushButtonDelete.setGeometry(QtCore.QRect(190, 440, 91, 51))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
-        self.pushButtonClear_4.setFont(font)
-        self.pushButtonClear_4.setStyleSheet("\n"
+        self.pushButtonDelete.setFont(font)
+        self.pushButtonDelete.setStyleSheet("\n"
 "QPushButton {\n"
 "    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,\n"
 "                                      stop:0.0681818 rgba(80, 11, 40, 255),\n"
@@ -176,17 +180,17 @@ class Ui_MainWindow(object):
 "    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */\n"
 "}\n"
 "")
-        self.pushButtonClear_4.setObjectName("pushButtonClear_4")
-        self.pushButtonClear_5 = QtWidgets.QPushButton(parent=self.groupBoxWarehouse)
-        self.pushButtonClear_5.setGeometry(QtCore.QRect(330, 400, 101, 51))
+        self.pushButtonDelete.setObjectName("pushButtonDelete")
+        self.pushButtonReset = QtWidgets.QPushButton(parent=self.groupBoxWarehouse)
+        self.pushButtonReset.setGeometry(QtCore.QRect(340, 440, 101, 51))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
-        self.pushButtonClear_5.setFont(font)
-        self.pushButtonClear_5.setStyleSheet("\n"
+        self.pushButtonReset.setFont(font)
+        self.pushButtonReset.setStyleSheet("\n"
 "QPushButton {\n"
 "    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,\n"
 "                                      stop:0.0681818 rgba(80, 11, 40, 255),\n"
@@ -212,9 +216,9 @@ class Ui_MainWindow(object):
 "    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */\n"
 "}\n"
 "")
-        self.pushButtonClear_5.setObjectName("pushButtonClear_5")
+        self.pushButtonReset.setObjectName("pushButtonReset")
         self.label_14 = QtWidgets.QLabel(parent=self.groupBoxWarehouse)
-        self.label_14.setGeometry(QtCore.QRect(170, 30, 321, 351))
+        self.label_14.setGeometry(QtCore.QRect(180, 30, 321, 391))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(10)
@@ -235,48 +239,11 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.label_14.setText("")
-        self.label_14.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/HomePage.jpg"))
+        self.label_14.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/booking.jpg"))
         self.label_14.setScaledContents(True)
         self.label_14.setObjectName("label_14")
-        self.lineEdit = QtWidgets.QLineEdit(parent=self.groupBoxWarehouse)
-        self.lineEdit.setGeometry(QtCore.QRect(190, 40, 281, 31))
-        self.lineEdit.setStyleSheet("border: 2px solid transparent;\n"
-"background-color: rgb(255, 255, 255,200);\n"
-"color: rgb(0, 0, 0);")
-        self.lineEdit.setObjectName("lineEdit")
-        self.dateEdit = QtWidgets.QDateEdit(parent=self.groupBoxWarehouse)
-        self.dateEdit.setGeometry(QtCore.QRect(190, 130, 281, 31))
-        self.dateEdit.setStyleSheet("border: 2px solid transparent;\n"
-"background-color: rgb(255, 255, 255,200);\n"
-"color: rgb(0, 0, 0);")
-        self.dateEdit.setObjectName("dateEdit")
-        self.dateEdit_2 = QtWidgets.QDateEdit(parent=self.groupBoxWarehouse)
-        self.dateEdit_2.setGeometry(QtCore.QRect(190, 180, 281, 31))
-        self.dateEdit_2.setStyleSheet("border: 2px solid transparent;\n"
-"background-color: rgb(255, 255, 255,200);\n"
-"color: rgb(0, 0, 0);")
-        self.dateEdit_2.setObjectName("dateEdit_2")
-        self.comboBox_2 = QtWidgets.QComboBox(parent=self.groupBoxWarehouse)
-        self.comboBox_2.setGeometry(QtCore.QRect(190, 230, 281, 31))
-        self.comboBox_2.setStyleSheet("border: 2px solid transparent;\n"
-"background-color: rgb(255, 255, 255,200);\n"
-"color: rgb(0, 0, 0);")
-        self.comboBox_2.setObjectName("comboBox_2")
-        self.comboBox_2.addItem("")
-        self.comboBox_2.addItem("")
-        self.comboBox_3 = QtWidgets.QComboBox(parent=self.groupBoxWarehouse)
-        self.comboBox_3.setGeometry(QtCore.QRect(190, 280, 281, 31))
-        self.comboBox_3.setStyleSheet("border: 2px solid transparent;\n"
-"background-color: rgb(255, 255, 255,200);\n"
-"color: rgb(0, 0, 0);")
-        self.comboBox_3.setObjectName("comboBox_3")
-        self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
         self.lineEdit_3 = QtWidgets.QLineEdit(parent=self.groupBoxWarehouse)
-        self.lineEdit_3.setGeometry(QtCore.QRect(190, 90, 281, 31))
+        self.lineEdit_3.setGeometry(QtCore.QRect(190, 90, 291, 31))
         self.lineEdit_3.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
@@ -295,13 +262,47 @@ class Ui_MainWindow(object):
 " border:transparent;")
         self.label_15.setObjectName("label_15")
         self.lineEdit_4 = QtWidgets.QLineEdit(parent=self.groupBoxWarehouse)
-        self.lineEdit_4.setGeometry(QtCore.QRect(190, 320, 281, 31))
+        self.lineEdit_4.setGeometry(QtCore.QRect(190, 370, 291, 31))
         self.lineEdit_4.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
         self.lineEdit_4.setObjectName("lineEdit_4")
+        self.lineEdit_5 = QtWidgets.QLineEdit(parent=self.groupBoxWarehouse)
+        self.lineEdit_5.setGeometry(QtCore.QRect(190, 150, 291, 31))
+        self.lineEdit_5.setStyleSheet("border: 2px solid transparent;\n"
+"background-color: rgb(255, 255, 255,200);\n"
+"color: rgb(0, 0, 0);")
+        self.lineEdit_5.setText("")
+        self.lineEdit_5.setObjectName("lineEdit_5")
+        self.lineEdit_6 = QtWidgets.QLineEdit(parent=self.groupBoxWarehouse)
+        self.lineEdit_6.setGeometry(QtCore.QRect(190, 210, 291, 31))
+        self.lineEdit_6.setStyleSheet("border: 2px solid transparent;\n"
+"background-color: rgb(255, 255, 255,200);\n"
+"color: rgb(0, 0, 0);")
+        self.lineEdit_6.setText("")
+        self.lineEdit_6.setObjectName("lineEdit_6")
+        self.lineEdit_7 = QtWidgets.QLineEdit(parent=self.groupBoxWarehouse)
+        self.lineEdit_7.setGeometry(QtCore.QRect(190, 270, 291, 31))
+        self.lineEdit_7.setStyleSheet("border: 2px solid transparent;\n"
+"background-color: rgb(255, 255, 255,200);\n"
+"color: rgb(0, 0, 0);")
+        self.lineEdit_7.setText("")
+        self.lineEdit_7.setObjectName("lineEdit_7")
+        self.lineEdit_8 = QtWidgets.QLineEdit(parent=self.groupBoxWarehouse)
+        self.lineEdit_8.setGeometry(QtCore.QRect(190, 320, 291, 31))
+        self.lineEdit_8.setStyleSheet("border: 2px solid transparent;\n"
+"background-color: rgb(255, 255, 255,200);\n"
+"color: rgb(0, 0, 0);")
+        self.lineEdit_8.setObjectName("lineEdit_8")
+        self.lineEdit_9 = QtWidgets.QLineEdit(parent=self.groupBoxWarehouse)
+        self.lineEdit_9.setGeometry(QtCore.QRect(190, 40, 291, 31))
+        self.lineEdit_9.setStyleSheet("border: 2px solid transparent;\n"
+"background-color: rgb(255, 255, 255,200);\n"
+"color: rgb(0, 0, 0);")
+        self.lineEdit_9.setText("")
+        self.lineEdit_9.setObjectName("lineEdit_9")
         self.groupBoxListProduct = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBoxListProduct.setGeometry(QtCore.QRect(500, 250, 831, 461))
+        self.groupBoxListProduct.setGeometry(QtCore.QRect(490, 250, 781, 461))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -364,7 +365,7 @@ class Ui_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(5, item)
         self.verticalLayout_2.addWidget(self.tableWidget)
         self.label_3 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(-50, 0, 1361, 311))
+        self.label_3.setGeometry(QtCore.QRect(-70, -30, 1361, 311))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -450,7 +451,7 @@ class Ui_MainWindow(object):
         self.line.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1318, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1280, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -468,18 +469,11 @@ class Ui_MainWindow(object):
         self.label_8.setText(_translate("MainWindow", "Check-in Date :"))
         self.label_9.setText(_translate("MainWindow", "Check-out Date :"))
         self.label_10.setText(_translate("MainWindow", "Room Type :"))
-        self.label_11.setText(_translate("MainWindow", "Available Room :"))
-        self.label_12.setText(_translate("MainWindow", "Number of days :"))
-        self.pushButtonClear_3.setText(_translate("MainWindow", "Update"))
-        self.pushButtonClear_4.setText(_translate("MainWindow", "Delete"))
-        self.pushButtonClear_5.setText(_translate("MainWindow", "Reset"))
-        self.comboBox_2.setItemText(0, _translate("MainWindow", "Regular"))
-        self.comboBox_2.setItemText(1, _translate("MainWindow", "VIP"))
-        self.comboBox_3.setItemText(0, _translate("MainWindow", "1"))
-        self.comboBox_3.setItemText(1, _translate("MainWindow", "2"))
-        self.comboBox_3.setItemText(2, _translate("MainWindow", "3"))
-        self.comboBox_3.setItemText(3, _translate("MainWindow", "4"))
-        self.comboBox_3.setItemText(4, _translate("MainWindow", "5"))
+        self.label_11.setText(_translate("MainWindow", "Identify :"))
+        self.label_12.setText(_translate("MainWindow", "Phone :"))
+        self.pushButtonUpdate.setText(_translate("MainWindow", "Update"))
+        self.pushButtonDelete.setText(_translate("MainWindow", "Delete"))
+        self.pushButtonReset.setText(_translate("MainWindow", "Reset"))
         self.label_15.setText(_translate("MainWindow", "Name :"))
         self.groupBoxListProduct.setTitle(_translate("MainWindow", "View Booking Details + Search System"))
         item = self.tableWidget.verticalHeaderItem(1)

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1023</width>
-    <height>884</height>
+    <height>780</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -15,6 +15,12 @@
     <horstretch>20</horstretch>
     <verstretch>20</verstretch>
    </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>780</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -24,7 +30,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>340</y>
+      <y>450</y>
       <width>1001</width>
       <height>291</height>
      </rect>
@@ -96,7 +102,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>240</y>
+      <y>340</y>
       <width>581</width>
       <height>91</height>
      </rect>
@@ -213,8 +219,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
    <widget class="QPushButton" name="pushButton_checkin">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>700</y>
+      <x>170</x>
+      <y>760</y>
       <width>141</width>
       <height>51</height>
      </rect>
@@ -243,8 +249,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
    <widget class="QPushButton" name="pushButton_checkout">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>700</y>
+      <x>460</x>
+      <y>760</y>
       <width>151</width>
       <height>51</height>
      </rect>
@@ -273,8 +279,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
    <widget class="QPushButton" name="pushButton_exit">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>700</y>
+      <x>730</x>
+      <y>760</y>
       <width>131</width>
       <height>51</height>
      </rect>
@@ -303,8 +309,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>280</y>
+      <x>640</x>
+      <y>380</y>
       <width>91</width>
       <height>31</height>
      </rect>
@@ -322,21 +328,97 @@ color: rgb(0, 0, 0);
    <widget class="QDateEdit" name="dateEdit_date">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>270</y>
+      <x>740</x>
+      <y>370</y>
       <width>271</width>
       <height>51</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QPushButton" name="pushButton_RoomManagement">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>10</y>
-      <width>951</width>
-      <height>241</height>
+      <x>320</x>
+      <y>300</y>
+      <width>331</width>
+      <height>51</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>#9Slide03 SFU Toledo Bold</family>
+      <pointsize>16</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+color: rgb(170, 0, 0);
+
+
+    border-radius: 10px;
+    padding: 5px;
+
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Room Management</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_BookingManagement">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>300</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>#9Slide03 SFU Toledo Bold</family>
+      <pointsize>16</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+color: rgb(170, 0, 0);
+
+
+    border-radius: 10px;
+    padding: 5px;
+
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Booking Management</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1021</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="text">
      <string/>
@@ -348,6 +430,66 @@ color: rgb(0, 0, 0);
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>320</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>300</y>
+      <width>321</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>#9Slide03 SFU Toledo Bold</family>
+      <pointsize>16</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+color: rgb(170, 0, 0);
+
+
+    border-radius: 5px;
+    padding: 5px;
+
+background-color: rgb(186, 186, 186);</string>
+    </property>
+    <property name="text">
+     <string>New reservation</string>
+    </property>
+   </widget>
+   <zorder>label_3</zorder>
+   <zorder>tableWidget_Room</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>pushButton_checkin</zorder>
+   <zorder>pushButton_checkout</zorder>
+   <zorder>pushButton_exit</zorder>
+   <zorder>label</zorder>
+   <zorder>dateEdit_date</zorder>
+   <zorder>pushButton_RoomManagement</zorder>
+   <zorder>pushButton_BookingManagement</zorder>
+   <zorder>label_2</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

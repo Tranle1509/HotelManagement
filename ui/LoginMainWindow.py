@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         self.groupBox = QtWidgets.QGroupBox(parent=self.centralwidget)
         self.groupBox.setGeometry(QtCore.QRect(80, 30, 911, 611))
         self.groupBox.setStyleSheet("QGroupBox {\n"
-"    background-color: rgba(0, 0, 0, 80);  /* Màu nền semi-transparent */\n"
+"    background-color: rgba(0, 0, 0, 120);  /* Màu nền semi-transparent */\n"
 "    border-radius: 15px;  /* Bo góc */\n"
 "    margin-top: 10px;  /* Khoảng cách giữa tiêu đề và groupbox */\n"
 "    padding: 10px;  /* Khoảng cách nội dung bên trong */\n"
@@ -142,21 +142,27 @@ class Ui_MainWindow(object):
         self.lineEditPassword.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
         self.lineEditPassword.setObjectName("lineEditPassword")
         self.pushButtonLogin = QtWidgets.QPushButton(parent=self.groupBox)
-        self.pushButtonLogin.setGeometry(QtCore.QRect(240, 530, 141, 61))
+        self.pushButtonLogin.setGeometry(QtCore.QRect(390, 530, 141, 61))
         self.pushButtonLogin.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(255, 232, 137);\n"
 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
         self.pushButtonLogin.setObjectName("pushButtonLogin")
         self.pushButtonExit = QtWidgets.QPushButton(parent=self.groupBox)
-        self.pushButtonExit.setGeometry(QtCore.QRect(580, 530, 131, 61))
+        self.pushButtonExit.setGeometry(QtCore.QRect(670, 530, 131, 61))
         self.pushButtonExit.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(255, 232, 137);\n"
 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
         self.pushButtonExit.setObjectName("pushButtonExit")
+        self.pushButtonBack = QtWidgets.QPushButton(parent=self.groupBox)
+        self.pushButtonBack.setGeometry(QtCore.QRect(90, 530, 141, 61))
+        self.pushButtonBack.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
+"color: rgb(255, 232, 137);\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
+        self.pushButtonBack.setObjectName("pushButtonBack")
         self.label_6 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_6.setGeometry(QtCore.QRect(10, 10, 1041, 671))
         self.label_6.setText("")
-        self.label_6.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/LoginPic.jpg"))
+        self.label_6.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/login.png"))
         self.label_6.setScaledContents(True)
         self.label_6.setObjectName("label_6")
         self.label_6.raise_()
@@ -183,3 +189,4 @@ class Ui_MainWindow(object):
         self.label_4.setText(_translate("MainWindow", "Password:"))
         self.pushButtonLogin.setText(_translate("MainWindow", "Log In"))
         self.pushButtonExit.setText(_translate("MainWindow", "Exit"))
+        self.pushButtonBack.setText(_translate("MainWindow", "Back"))
