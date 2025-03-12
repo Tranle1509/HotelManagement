@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\FinalProject\ui\MainWindowInvoices.ui'
+# Form implementation generated from reading ui file 'D:\Final_Project\HotelManagement\ui\MainWindowInvoices.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -158,7 +158,7 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
         self.label.setGeometry(QtCore.QRect(6, 3, 791, 671))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("D:\\FinalProject\\ui\\../images/HomePage.jpg"))
+        self.label.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/HomePage.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label.raise_()

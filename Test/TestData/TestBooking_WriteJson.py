@@ -13,7 +13,7 @@ for i in range(1, 21):
     room_code = random.choice(room_codes)  # Chọn một mã phòng ngẫu nhiên
     start_date = datetime(2025, 3, random.randint(1, 20))
     end_date = start_date + timedelta(days=random.randint(1, 10))
-    booking = Booking(customer_code, room_code, start_date.strftime("%Y-%m-%d"), end_date.strftime("%Y-%m-%d"))
+    booking = Booking(customer_code, room_code, start_date.strftime("%Y/%m/%d"), end_date.strftime("%Y/%m/%d"))
     bookings.append(booking)
 
 print("List of Bookings:")

@@ -21,9 +21,9 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.rooms = []
         self.bookings = []
         self.jff = JsonFileFactory()
-        self.customer_filename = "../dataset/customers.json"
-        self.booking_filename = "../dataset/bookings.json"
-        self.room_filename = "../dataset/rooms.json"
+        self.customer_filename = "../../dataset/customers.json"
+        self.booking_filename = "../../dataset/bookings.json"
+        self.room_filename = "../../dataset/rooms.json"
 
         self.setupUi(self)
         self.configure_table_appearance()  # 🔹 Cấu hình bảng sau khi UI đã load
