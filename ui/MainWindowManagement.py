@@ -24,13 +24,13 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tabWidget = QtWidgets.QTabWidget(parent=self.centralwidget)
-        self.tabWidget.setGeometry(QtCore.QRect(0, 180, 1281, 601))
+        self.tabWidget.setGeometry(QtCore.QRect(0, 180, 1281, 561))
         self.tabWidget.setStyleSheet("font: 57 14pt \"SFU Toledo\";")
         self.tabWidget.setObjectName("tabWidget")
         self.tab_8 = QtWidgets.QWidget()
         self.tab_8.setObjectName("tab_8")
         self.groupBox = QtWidgets.QGroupBox(parent=self.tab_8)
-        self.groupBox.setGeometry(QtCore.QRect(530, 10, 741, 461))
+        self.groupBox.setGeometry(QtCore.QRect(530, 10, 741, 481))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -97,7 +97,7 @@ class Ui_MainWindow(object):
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.groupBoxCustomerDetails = QtWidgets.QGroupBox(parent=self.tab_8)
-        self.groupBoxCustomerDetails.setGeometry(QtCore.QRect(10, 10, 511, 461))
+        self.groupBoxCustomerDetails.setGeometry(QtCore.QRect(10, 10, 511, 481))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -119,7 +119,7 @@ class Ui_MainWindow(object):
         self.groupBoxCustomerDetails.setFlat(False)
         self.groupBoxCustomerDetails.setObjectName("groupBoxCustomerDetails")
         self.label_168 = QtWidgets.QLabel(parent=self.groupBoxCustomerDetails)
-        self.label_168.setGeometry(QtCore.QRect(10, 80, 121, 31))
+        self.label_168.setGeometry(QtCore.QRect(10, 190, 121, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -131,7 +131,7 @@ class Ui_MainWindow(object):
 " border:transparent;")
         self.label_168.setObjectName("label_168")
         self.label_169 = QtWidgets.QLabel(parent=self.groupBoxCustomerDetails)
-        self.label_169.setGeometry(QtCore.QRect(10, 130, 151, 31))
+        self.label_169.setGeometry(QtCore.QRect(10, 240, 151, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -142,7 +142,7 @@ class Ui_MainWindow(object):
         self.label_169.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_169.setObjectName("label_169")
         self.label_170 = QtWidgets.QLabel(parent=self.groupBoxCustomerDetails)
-        self.label_170.setGeometry(QtCore.QRect(10, 180, 151, 31))
+        self.label_170.setGeometry(QtCore.QRect(10, 290, 151, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -153,7 +153,7 @@ class Ui_MainWindow(object):
         self.label_170.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_170.setObjectName("label_170")
         self.label_171 = QtWidgets.QLabel(parent=self.groupBoxCustomerDetails)
-        self.label_171.setGeometry(QtCore.QRect(10, 230, 151, 31))
+        self.label_171.setGeometry(QtCore.QRect(10, 340, 151, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -164,7 +164,7 @@ class Ui_MainWindow(object):
         self.label_171.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_171.setObjectName("label_171")
         self.label_172 = QtWidgets.QLabel(parent=self.groupBoxCustomerDetails)
-        self.label_172.setGeometry(QtCore.QRect(10, 280, 191, 31))
+        self.label_172.setGeometry(QtCore.QRect(10, 140, 191, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -175,7 +175,7 @@ class Ui_MainWindow(object):
         self.label_172.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_172.setObjectName("label_172")
         self.label_173 = QtWidgets.QLabel(parent=self.groupBoxCustomerDetails)
-        self.label_173.setGeometry(QtCore.QRect(10, 330, 191, 31))
+        self.label_173.setGeometry(QtCore.QRect(10, 90, 91, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -186,7 +186,7 @@ class Ui_MainWindow(object):
         self.label_173.setStyleSheet("background-color: transparent; border:transparent;")
         self.label_173.setObjectName("label_173")
         self.pushButtonUpdate = QtWidgets.QPushButton(parent=self.groupBoxCustomerDetails)
-        self.pushButtonUpdate.setGeometry(QtCore.QRect(30, 400, 91, 51))
+        self.pushButtonUpdate.setGeometry(QtCore.QRect(10, 420, 91, 51))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(-1)
@@ -222,7 +222,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButtonUpdate.setObjectName("pushButtonUpdate")
         self.pushButtonDelete = QtWidgets.QPushButton(parent=self.groupBoxCustomerDetails)
-        self.pushButtonDelete.setGeometry(QtCore.QRect(180, 400, 91, 51))
+        self.pushButtonDelete.setGeometry(QtCore.QRect(130, 420, 91, 51))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(-1)
@@ -258,7 +258,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButtonDelete.setObjectName("pushButtonDelete")
         self.pushButtonreset = QtWidgets.QPushButton(parent=self.groupBoxCustomerDetails)
-        self.pushButtonreset.setGeometry(QtCore.QRect(330, 400, 101, 51))
+        self.pushButtonreset.setGeometry(QtCore.QRect(260, 420, 101, 51))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(-1)
@@ -315,7 +315,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.label_174.setText("")
-        self.label_174.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/booking.jpg"))
+        self.label_174.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../../Final_Project/HotelManagement/images/booking.jpg"))
         self.label_174.setScaledContents(True)
         self.label_174.setObjectName("label_174")
         self.lineEdit = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
@@ -324,17 +324,6 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
         self.lineEdit.setObjectName("lineEdit")
-        self.comboBox_3 = QtWidgets.QComboBox(parent=self.groupBoxCustomerDetails)
-        self.comboBox_3.setGeometry(QtCore.QRect(190, 280, 281, 31))
-        self.comboBox_3.setStyleSheet("border: 2px solid transparent;\n"
-"background-color: rgb(255, 255, 255,200);\n"
-"color: rgb(0, 0, 0);")
-        self.comboBox_3.setObjectName("comboBox_3")
-        self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
-        self.comboBox_3.addItem("")
         self.lineEdit_3 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
         self.lineEdit_3.setGeometry(QtCore.QRect(190, 90, 281, 31))
         self.lineEdit_3.setStyleSheet("border: 2px solid transparent;\n"
@@ -343,7 +332,7 @@ class Ui_MainWindow(object):
         self.lineEdit_3.setText("")
         self.lineEdit_3.setObjectName("lineEdit_3")
         self.label_175 = QtWidgets.QLabel(parent=self.groupBoxCustomerDetails)
-        self.label_175.setGeometry(QtCore.QRect(10, 30, 121, 41))
+        self.label_175.setGeometry(QtCore.QRect(10, 30, 151, 41))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -355,37 +344,80 @@ class Ui_MainWindow(object):
 " border:transparent;")
         self.label_175.setObjectName("label_175")
         self.lineEdit_4 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_4.setGeometry(QtCore.QRect(190, 330, 281, 31))
+        self.lineEdit_4.setGeometry(QtCore.QRect(190, 340, 281, 31))
         self.lineEdit_4.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
         self.lineEdit_4.setObjectName("lineEdit_4")
         self.lineEdit_5 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_5.setGeometry(QtCore.QRect(190, 130, 281, 31))
+        self.lineEdit_5.setGeometry(QtCore.QRect(190, 140, 281, 31))
         self.lineEdit_5.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
         self.lineEdit_5.setText("")
         self.lineEdit_5.setObjectName("lineEdit_5")
         self.lineEdit_6 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_6.setGeometry(QtCore.QRect(190, 180, 281, 31))
+        self.lineEdit_6.setGeometry(QtCore.QRect(190, 190, 281, 31))
         self.lineEdit_6.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
         self.lineEdit_6.setText("")
         self.lineEdit_6.setObjectName("lineEdit_6")
         self.lineEdit_7 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_7.setGeometry(QtCore.QRect(190, 230, 281, 31))
+        self.lineEdit_7.setGeometry(QtCore.QRect(190, 240, 281, 31))
         self.lineEdit_7.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
         self.lineEdit_7.setText("")
         self.lineEdit_7.setObjectName("lineEdit_7")
+        self.lineEdit_8 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
+        self.lineEdit_8.setGeometry(QtCore.QRect(190, 290, 281, 31))
+        self.lineEdit_8.setStyleSheet("border: 2px solid transparent;\n"
+"background-color: rgb(255, 255, 255,200);\n"
+"color: rgb(0, 0, 0);")
+        self.lineEdit_8.setText("")
+        self.lineEdit_8.setObjectName("lineEdit_8")
+        self.pushButtonReport = QtWidgets.QPushButton(parent=self.groupBoxCustomerDetails)
+        self.pushButtonReport.setGeometry(QtCore.QRect(400, 420, 91, 51))
+        font = QtGui.QFont()
+        font.setFamily("#9Slide03 SFU Toledo Bold")
+        font.setPointSize(-1)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.pushButtonReport.setFont(font)
+        self.pushButtonReport.setStyleSheet("\n"
+"QPushButton {\n"
+"    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,\n"
+"                                      stop:0.0681818 rgba(80, 11, 40, 255),\n"
+"                                      stop:1 rgba(211, 26, 48, 243)); /* Gradient màu nền */\n"
+"    color: white;\n"
+"    border-radius: 10px;\n"
+"    padding: 8px;\n"
+"    font-size: 14px;\n"
+"\n"
+"    /* Viền sáng ở trên & tối ở dưới để tạo hiệu ứng 3D */\n"
+"    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */\n"
+"    border-top: 3px solid rgb(255, 255, 255); /* Viền trên sáng hơn */\n"
+"    border-left: 3px solid rgb(255, 255, 255);\n"
+"    border-bottom: 3px solid rgb(150, 0, 20); /* Viền dưới tối hơn */\n"
+"    border-right: 3px solid rgb(150, 0, 20);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-top: 3px solid rgb(150, 0, 20); /* Khi nhấn, đổi viền trên tối hơn */\n"
+"    border-left: 3px solid rgb(150, 0, 20);\n"
+"    border-bottom: 3px solid rgb(255, 255, 255); /* Viền dưới sáng hơn */\n"
+"    border-right: 3px solid rgb(255, 255, 255);\n"
+"    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */\n"
+"}\n"
+"")
+        self.pushButtonReport.setObjectName("pushButtonReport")
         self.tabWidget.addTab(self.tab_8, "")
         self.widget = QtWidgets.QWidget()
         self.widget.setObjectName("widget")
         self.pushButton_exit = QtWidgets.QPushButton(parent=self.widget)
-        self.pushButton_exit.setGeometry(QtCore.QRect(750, 450, 131, 51))
+        self.pushButton_exit.setGeometry(QtCore.QRect(740, 470, 131, 51))
         self.pushButton_exit.setStyleSheet("border-radius: 15px;\n"
 "font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(255, 232, 137);\n"
@@ -397,7 +429,7 @@ class Ui_MainWindow(object):
         self.pushButton_exit.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_exit.setObjectName("pushButton_exit")
         self.pushButton_checkout = QtWidgets.QPushButton(parent=self.widget)
-        self.pushButton_checkout.setGeometry(QtCore.QRect(570, 450, 151, 51))
+        self.pushButton_checkout.setGeometry(QtCore.QRect(570, 470, 151, 51))
         self.pushButton_checkout.setStyleSheet("border-radius: 15px;\n"
 "font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(255, 232, 137);\n"
@@ -409,15 +441,14 @@ class Ui_MainWindow(object):
         self.pushButton_checkout.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_checkout.setObjectName("pushButton_checkout")
         self.tableWidget_Room = QtWidgets.QTableWidget(parent=self.widget)
-        self.tableWidget_Room.setGeometry(QtCore.QRect(10, 100, 1251, 331))
+        self.tableWidget_Room.setGeometry(QtCore.QRect(10, 100, 1251, 361))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.tableWidget_Room.sizePolicy().hasHeightForWidth())
         self.tableWidget_Room.setSizePolicy(sizePolicy)
         self.tableWidget_Room.setMaximumSize(QtCore.QSize(16777215, 411))
-        self.tableWidget_Room.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0.733, x2:0.51194, y2:0.744, stop:0.457711 rgba(245, 247, 250, 255), stop:1 rgba(195, 207, 226, 255));\n"
-"")
+        self.tableWidget_Room.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0.733, x2:0.51194, y2:0.744, stop:0.457711 rgba(245, 247, 250, 255), stop:1 rgba(195, 207, 226, 255));")
         self.tableWidget_Room.setObjectName("tableWidget_Room")
         self.tableWidget_Room.setColumnCount(4)
         self.tableWidget_Room.setRowCount(6)
@@ -446,14 +477,14 @@ class Ui_MainWindow(object):
         self.dateEdit_date.setDateTime(QtCore.QDateTime(QtCore.QDate(1999, 1, 1), QtCore.QTime(0, 0, 0)))
         self.dateEdit_date.setObjectName("dateEdit_date")
         self.label = QtWidgets.QLabel(parent=self.widget)
-        self.label.setGeometry(QtCore.QRect(890, 30, 81, 31))
+        self.label.setGeometry(QtCore.QRect(920, 40, 71, 31))
         self.label.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(0, 0, 0);\n"
 "\n"
 "")
         self.label.setObjectName("label")
         self.pushButton_checkin = QtWidgets.QPushButton(parent=self.widget)
-        self.pushButton_checkin.setGeometry(QtCore.QRect(410, 450, 141, 51))
+        self.pushButton_checkin.setGeometry(QtCore.QRect(410, 470, 141, 51))
         self.pushButton_checkin.setStyleSheet("border-radius: 15px;\n"
 "font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(255, 232, 137);\n"
@@ -506,7 +537,7 @@ class Ui_MainWindow(object):
 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
         self.pushButton_vip.setObjectName("pushButton_vip")
         self.pushButton_regular = QtWidgets.QPushButton(parent=self.groupBox_3)
-        self.pushButton_regular.setGeometry(QtCore.QRect(460, 40, 101, 31))
+        self.pushButton_regular.setGeometry(QtCore.QRect(460, 40, 91, 31))
         self.pushButton_regular.setStyleSheet("border-radius: 15px;\n"
 "border-radius: 15px;\n"
 "font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
@@ -536,7 +567,7 @@ class Ui_MainWindow(object):
         self.tab_7 = QtWidgets.QWidget()
         self.tab_7.setObjectName("tab_7")
         self.groupBox_2 = QtWidgets.QGroupBox(parent=self.tab_7)
-        self.groupBox_2.setGeometry(QtCore.QRect(0, 0, 1381, 201))
+        self.groupBox_2.setGeometry(QtCore.QRect(0, 0, 1381, 211))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -554,11 +585,10 @@ class Ui_MainWindow(object):
 "font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
 "\n"
 "border-color: rgb(182, 182, 182);\n"
-"font: 57 12pt \"SFU Toledo\";\n"
-"")
+"font: 57 12pt \"SFU Toledo\";")
         self.groupBox_2.setObjectName("groupBox_2")
         self.comboBoxType = QtWidgets.QComboBox(parent=self.groupBox_2)
-        self.comboBoxType.setGeometry(QtCore.QRect(160, 160, 450, 30))
+        self.comboBoxType.setGeometry(QtCore.QRect(170, 120, 450, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -581,17 +611,20 @@ class Ui_MainWindow(object):
         self.label_150 = QtWidgets.QLabel(parent=self.groupBox_2)
         self.label_150.setGeometry(QtCore.QRect(640, 70, 151, 51))
         self.label_150.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color:transparent")
+"background: transparent")
         self.label_150.setObjectName("label_150")
         self.label_151 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_151.setGeometry(QtCore.QRect(10, 80, 121, 31))
+        self.label_151.setGeometry(QtCore.QRect(10, 30, 121, 41))
         self.label_151.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color:transparent")
+"background: transparent\n"
+"")
+        self.label_151.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.label_151.setObjectName("label_151")
         self.label_152 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_152.setGeometry(QtCore.QRect(10, 160, 111, 41))
+        self.label_152.setGeometry(QtCore.QRect(10, 100, 111, 61))
         self.label_152.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color:transparent")
+"background: transparent")
+        self.label_152.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.label_152.setObjectName("label_152")
         self.label_153 = QtWidgets.QLabel(parent=self.groupBox_2)
         self.label_153.setGeometry(QtCore.QRect(-30, 450, 221, 61))
@@ -606,28 +639,10 @@ class Ui_MainWindow(object):
         self.label_154.setGeometry(QtCore.QRect(630, 110, 111, 51))
         self.label_154.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.label_154.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color:transparent")
+"background: transparent\n"
+"")
         self.label_154.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.label_154.setObjectName("label_154")
-        self.label_155 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_155.setGeometry(QtCore.QRect(10, 30, 141, 41))
-        font = QtGui.QFont()
-        font.setFamily("#9Slide03 SFU Toledo Bold")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(9)
-        self.label_155.setFont(font)
-        self.label_155.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color:transparent")
-        self.label_155.setObjectName("label_155")
-        self.lineEdit_BookingCode = QtWidgets.QLineEdit(parent=self.groupBox_2)
-        self.lineEdit_BookingCode.setGeometry(QtCore.QRect(160, 40, 450, 30))
-        self.lineEdit_BookingCode.setMinimumSize(QtCore.QSize(450, 30))
-        self.lineEdit_BookingCode.setMaximumSize(QtCore.QSize(450, 30))
-        self.lineEdit_BookingCode.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"color: rgb(0, 0, 0);")
-        self.lineEdit_BookingCode.setObjectName("lineEdit_BookingCode")
         self.CheckIn = QtWidgets.QDateEdit(parent=self.groupBox_2)
         self.CheckIn.setGeometry(QtCore.QRect(800, 40, 450, 31))
         self.CheckIn.setMinimumSize(QtCore.QSize(450, 30))
@@ -642,7 +657,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.CheckOut.setObjectName("CheckOut")
         self.label_156 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_156.setGeometry(QtCore.QRect(10, 120, 111, 31))
+        self.label_156.setGeometry(QtCore.QRect(10, 70, 131, 41))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -651,10 +666,11 @@ class Ui_MainWindow(object):
         font.setWeight(9)
         self.label_156.setFont(font)
         self.label_156.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color:transparent")
+"background: transparent")
+        self.label_156.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.label_156.setObjectName("label_156")
         self.lineEdit_Roomname = QtWidgets.QLineEdit(parent=self.groupBox_2)
-        self.lineEdit_Roomname.setGeometry(QtCore.QRect(160, 80, 450, 30))
+        self.lineEdit_Roomname.setGeometry(QtCore.QRect(170, 40, 450, 30))
         self.lineEdit_Roomname.setMinimumSize(QtCore.QSize(450, 30))
         self.lineEdit_Roomname.setMaximumSize(QtCore.QSize(450, 30))
         self.lineEdit_Roomname.setStyleSheet("background-color: rgb(255, 255, 255);\n"
@@ -668,7 +684,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.lineEditChildren.setObjectName("lineEditChildren")
         self.lineEdit_Roomcode = QtWidgets.QLineEdit(parent=self.groupBox_2)
-        self.lineEdit_Roomcode.setGeometry(QtCore.QRect(160, 120, 450, 30))
+        self.lineEdit_Roomcode.setGeometry(QtCore.QRect(170, 80, 450, 30))
         self.lineEdit_Roomcode.setMinimumSize(QtCore.QSize(450, 30))
         self.lineEdit_Roomcode.setMaximumSize(QtCore.QSize(450, 30))
         self.lineEdit_Roomcode.setStyleSheet("background-color: rgb(255, 255, 255);\n"
@@ -677,13 +693,15 @@ class Ui_MainWindow(object):
         self.label_157 = QtWidgets.QLabel(parent=self.groupBox_2)
         self.label_157.setGeometry(QtCore.QRect(640, 40, 141, 31))
         self.label_157.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color:transparent")
+"background: transparent\n"
+"")
         self.label_157.setObjectName("label_157")
         self.label_158 = QtWidgets.QLabel(parent=self.groupBox_2)
         self.label_158.setGeometry(QtCore.QRect(630, 160, 91, 31))
         self.label_158.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
-        self.label_158.setStyleSheet("background-color:transparent;\n"
-"font: 75 12pt \"#9Slide03 SFU Toledo Bold\";")
+        self.label_158.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
+"background: transparent\n"
+"")
         self.label_158.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.label_158.setObjectName("label_158")
         self.lineEditAdult = QtWidgets.QLineEdit(parent=self.groupBox_2)
@@ -694,7 +712,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.lineEditAdult.setObjectName("lineEditAdult")
         self.pushButton_Save = QtWidgets.QPushButton(parent=self.tab_7)
-        self.pushButton_Save.setGeometry(QtCore.QRect(440, 450, 111, 41))
+        self.pushButton_Save.setGeometry(QtCore.QRect(440, 480, 111, 41))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -715,7 +733,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_Save.setObjectName("pushButton_Save")
         self.pushButton_Close = QtWidgets.QPushButton(parent=self.tab_7)
-        self.pushButton_Close.setGeometry(QtCore.QRect(720, 450, 111, 41))
+        self.pushButton_Close.setGeometry(QtCore.QRect(720, 480, 111, 41))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -729,7 +747,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_Close.setObjectName("pushButton_Close")
         self.groupBox_6 = QtWidgets.QGroupBox(parent=self.tab_7)
-        self.groupBox_6.setGeometry(QtCore.QRect(0, 210, 1381, 221))
+        self.groupBox_6.setGeometry(QtCore.QRect(0, 230, 1381, 231))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -742,31 +760,33 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         font.setWeight(7)
         self.groupBox_6.setFont(font)
-        self.groupBox_6.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0.054, y1:0.670455, x2:0.587, y2:0.699, stop:0.527363 rgba(161, 196, 253, 255), stop:1 rgba(194, 233, 251, 255));\n"
-"font: 57 12pt \"SFU Toledo\";\n"
-"border-color: rgb(182, 182, 182);\n"
+        self.groupBox_6.setStyleSheet("color: rgb(0, 0, 0);\n"
+"background-color: qlineargradient(spread:pad, x1:0.054, y1:0.670455, x2:0.587, y2:0.699, stop:0.527363 rgba(161, 196, 253, 255), stop:1 rgba(194, 233, 251, 255));\n"
+"font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
 "\n"
-"")
+"border-color: rgb(182, 182, 182);\n"
+"font: 57 12pt \"SFU Toledo\";")
         self.groupBox_6.setObjectName("groupBox_6")
         self.label_159 = QtWidgets.QLabel(parent=self.groupBox_6)
         self.label_159.setGeometry(QtCore.QRect(660, 40, 121, 31))
         self.label_159.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color: transparent")
+"background: transparent")
         self.label_159.setObjectName("label_159")
         self.label_160 = QtWidgets.QLabel(parent=self.groupBox_6)
-        self.label_160.setGeometry(QtCore.QRect(660, 80, 71, 31))
+        self.label_160.setGeometry(QtCore.QRect(660, 80, 61, 31))
         self.label_160.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color: transparent")
+"background: transparent")
         self.label_160.setObjectName("label_160")
         self.label_161 = QtWidgets.QLabel(parent=self.groupBox_6)
-        self.label_161.setGeometry(QtCore.QRect(10, 80, 141, 31))
-        self.label_161.setStyleSheet("font: 75 11pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color: transparent")
+        self.label_161.setGeometry(QtCore.QRect(10, 80, 151, 31))
+        self.label_161.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
+"background: transparent")
         self.label_161.setObjectName("label_161")
         self.label_162 = QtWidgets.QLabel(parent=self.groupBox_6)
-        self.label_162.setGeometry(QtCore.QRect(10, 150, 91, 41))
+        self.label_162.setGeometry(QtCore.QRect(10, 150, 91, 51))
         self.label_162.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color: transparent")
+"background: transparent\n"
+"")
         self.label_162.setObjectName("label_162")
         self.label_163 = QtWidgets.QLabel(parent=self.groupBox_6)
         self.label_163.setGeometry(QtCore.QRect(-30, 450, 221, 61))
@@ -778,26 +798,26 @@ class Ui_MainWindow(object):
 "")
         self.lineEdit_Rooms_18.setObjectName("lineEdit_Rooms_18")
         self.label_164 = QtWidgets.QLabel(parent=self.groupBox_6)
-        self.label_164.setGeometry(QtCore.QRect(650, 110, 81, 51))
+        self.label_164.setGeometry(QtCore.QRect(660, 110, 81, 51))
         self.label_164.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.label_164.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color: transparent")
+"background: transparent")
         self.label_164.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.label_164.setObjectName("label_164")
         self.label_165 = QtWidgets.QLabel(parent=self.groupBox_6)
-        self.label_165.setGeometry(QtCore.QRect(10, 40, 141, 31))
+        self.label_165.setGeometry(QtCore.QRect(10, 40, 151, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
-        font.setPointSize(11)
+        font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(9)
         self.label_165.setFont(font)
-        self.label_165.setStyleSheet("font: 75 11pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color: transparent")
+        self.label_165.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
+"background: transparent")
         self.label_165.setObjectName("label_165")
         self.lineEdit_Cuscode = QtWidgets.QLineEdit(parent=self.groupBox_6)
-        self.lineEdit_Cuscode.setGeometry(QtCore.QRect(160, 40, 450, 30))
+        self.lineEdit_Cuscode.setGeometry(QtCore.QRect(170, 40, 450, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -820,7 +840,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.CheckInDateOfBirth.setObjectName("CheckInDateOfBirth")
         self.label_166 = QtWidgets.QLabel(parent=self.groupBox_6)
-        self.label_166.setGeometry(QtCore.QRect(-10, 120, 131, 31))
+        self.label_166.setGeometry(QtCore.QRect(10, 120, 131, 31))
         font = QtGui.QFont()
         font.setFamily("#9Slide03 SFU Toledo Bold")
         font.setPointSize(12)
@@ -829,10 +849,10 @@ class Ui_MainWindow(object):
         font.setWeight(9)
         self.label_166.setFont(font)
         self.label_166.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color: transparent")
+"background: transparent")
         self.label_166.setObjectName("label_166")
         self.lineEdit_Cusname = QtWidgets.QLineEdit(parent=self.groupBox_6)
-        self.lineEdit_Cusname.setGeometry(QtCore.QRect(160, 80, 450, 30))
+        self.lineEdit_Cusname.setGeometry(QtCore.QRect(170, 80, 450, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -851,7 +871,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.lineEdit_Phone.setObjectName("lineEdit_Phone")
         self.lineEdit_Identify = QtWidgets.QLineEdit(parent=self.groupBox_6)
-        self.lineEdit_Identify.setGeometry(QtCore.QRect(160, 120, 450, 30))
+        self.lineEdit_Identify.setGeometry(QtCore.QRect(170, 120, 450, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -866,7 +886,7 @@ class Ui_MainWindow(object):
         self.label_167.setGeometry(QtCore.QRect(660, 150, 131, 51))
         self.label_167.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.label_167.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
-"background-color: transparent")
+"background: transparent")
         self.label_167.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.label_167.setObjectName("label_167")
         self.lineEdit_Requirement = QtWidgets.QLineEdit(parent=self.groupBox_6)
@@ -882,7 +902,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.lineEdit_Requirement.setObjectName("lineEdit_Requirement")
         self.comboBoxTypeGender_9 = QtWidgets.QComboBox(parent=self.groupBox_6)
-        self.comboBoxTypeGender_9.setGeometry(QtCore.QRect(160, 160, 450, 30))
+        self.comboBoxTypeGender_9.setGeometry(QtCore.QRect(170, 160, 450, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -910,7 +930,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.lineEdit_Email.setObjectName("lineEdit_Email")
         self.pushButton_Clear = QtWidgets.QPushButton(parent=self.tab_7)
-        self.pushButton_Clear.setGeometry(QtCore.QRect(580, 450, 111, 41))
+        self.pushButton_Clear.setGeometry(QtCore.QRect(580, 480, 111, 41))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -927,7 +947,7 @@ class Ui_MainWindow(object):
         self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(0, -10, 1281, 321))
         self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/Cover.png"))
+        self.label_4.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/Blue Green Minimalist Happy Summer Hotel Break Sale Facebook Cover (1).png"))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
         self.label_4.raise_()
@@ -942,7 +962,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -986,17 +1006,13 @@ class Ui_MainWindow(object):
         self.label_169.setText(_translate("MainWindow", "Check-in Date :"))
         self.label_170.setText(_translate("MainWindow", "Check-out Date :"))
         self.label_171.setText(_translate("MainWindow", "Room Type :"))
-        self.label_172.setText(_translate("MainWindow", "Customer Code:"))
+        self.label_172.setText(_translate("MainWindow", "Customer Name :"))
         self.label_173.setText(_translate("MainWindow", "Phone :"))
         self.pushButtonUpdate.setText(_translate("MainWindow", "Update"))
         self.pushButtonDelete.setText(_translate("MainWindow", "Delete"))
         self.pushButtonreset.setText(_translate("MainWindow", "Reset"))
-        self.comboBox_3.setItemText(0, _translate("MainWindow", "1"))
-        self.comboBox_3.setItemText(1, _translate("MainWindow", "2"))
-        self.comboBox_3.setItemText(2, _translate("MainWindow", "3"))
-        self.comboBox_3.setItemText(3, _translate("MainWindow", "4"))
-        self.comboBox_3.setItemText(4, _translate("MainWindow", "5"))
-        self.label_175.setText(_translate("MainWindow", "Name :"))
+        self.label_175.setText(_translate("MainWindow", "Customer Code :"))
+        self.pushButtonReport.setText(_translate("MainWindow", "Report"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), _translate("MainWindow", "Booking Management"))
         self.pushButton_exit.setText(_translate("MainWindow", "EXIT"))
         self.pushButton_checkout.setText(_translate("MainWindow", "CHECK OUT"))
@@ -1032,14 +1048,13 @@ class Ui_MainWindow(object):
         self.comboBoxType.setItemText(0, _translate("MainWindow", "VIP"))
         self.comboBoxType.setItemText(1, _translate("MainWindow", "Regular"))
         self.label_150.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Check-out date :</p></body></html>"))
-        self.label_151.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Room name :</p></body></html>"))
-        self.label_152.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Room type :</p></body></html>"))
+        self.label_151.setText(_translate("MainWindow", "<html><head/><body><p>Room name :</p></body></html>"))
+        self.label_152.setText(_translate("MainWindow", "<html><head/><body><p>Room type :</p></body></html>"))
         self.label_153.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Rooms:</span></p></body></html>"))
         self.label_154.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Children :</p></body></html>"))
-        self.label_155.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Booking code :</p></body></html>"))
         self.CheckIn.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
         self.CheckOut.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
-        self.label_156.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Room code :</p></body></html>"))
+        self.label_156.setText(_translate("MainWindow", "<html><head/><body><p>Room code :</p></body></html>"))
         self.label_157.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Check-in date :</p><p align=\"center\"><br/></p></body></html>"))
         self.label_158.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Adult :</p></body></html>"))
         self.pushButton_Save.setText(_translate("MainWindow", "Submit"))
@@ -1048,13 +1063,14 @@ class Ui_MainWindow(object):
         self.groupBox_6.setTitle(_translate("MainWindow", "Customer details"))
         self.label_159.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Date of birth :</p></body></html>"))
         self.label_160.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Email :</p></body></html>"))
-        self.label_161.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Customer name :</p></body></html>"))
-        self.label_162.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Gender :</p></body></html>"))
+        self.label_161.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Customer name :</span></p></body></html>"))
+        self.label_162.setText(_translate("MainWindow", "<html><head/><body><p>Gender :</p></body></html>"))
         self.label_163.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Rooms:</span></p></body></html>"))
-        self.label_164.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Phone</p></body></html>"))
-        self.label_165.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Customer code :</p></body></html>"))
-        self.label_166.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Identity :</p></body></html>"))
-        self.label_167.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Requirement:</p></body></html>"))
+        self.label_164.setText(_translate("MainWindow", "<html><head/><body><p>Phone</p></body></html>"))
+        self.label_165.setText(_translate("MainWindow", "<html><head/><body><p>Customer code :</p></body></html>"))
+        self.CheckInDateOfBirth.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
+        self.label_166.setText(_translate("MainWindow", "<html><head/><body><p>Identity :</p></body></html>"))
+        self.label_167.setText(_translate("MainWindow", "<html><head/><body><p>Requirement:</p></body></html>"))
         self.comboBoxTypeGender_9.setItemText(0, _translate("MainWindow", "Male"))
         self.comboBoxTypeGender_9.setItemText(1, _translate("MainWindow", "Female"))
         self.pushButton_Clear.setWhatsThis(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Remove</span></p><p><br/></p></body></html>"))
