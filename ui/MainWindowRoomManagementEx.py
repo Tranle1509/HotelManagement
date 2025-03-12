@@ -43,9 +43,9 @@ class MainWindowRoomManagementEx(Ui_MainWindow):
 
     def load_data(self):
         data_folder = "dataset"
-        self.load_rooms(os.path.join(data_folder, "D:/KTLT/HotelManagement/dataset/rooms.json"))
-        self.load_customers(os.path.join(data_folder, "D:/KTLT/HotelManagement/dataset/customers.json"))
-        self.load_bookings(os.path.join(data_folder, "D:/KTLT/HotelManagement/dataset/bookings.json"))
+        self.load_rooms(os.path.join(data_folder, "D:/FinalProject/dataset/rooms.json"))
+        self.load_customers(os.path.join(data_folder, "D:/FinalProject/dataset/customers.json"))
+        self.load_bookings(os.path.join(data_folder, "D:/FinalProject/dataset/bookings.json"))
 
     def load_rooms(self, filename):
         try:
@@ -110,7 +110,6 @@ class MainWindowRoomManagementEx(Ui_MainWindow):
                 items[col].setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                 self.tableWidget_Room.setItem(row, col, items[col])
 
-    # Yêu cầu 1: Thêm 2 hàm sort mới
     def sort_booked(self):
         """Lọc các phòng đang được đặt"""
         booked_rooms = [room for room in self.rooms
