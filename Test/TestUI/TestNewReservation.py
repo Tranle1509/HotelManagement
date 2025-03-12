@@ -1,10 +1,10 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow
 
-from ui.NewReservationMainWindowExt import MainWindow_NewReservationExt
+from ui.MainWindowManagementEx import MainWindowManagementEx
 
 app=QApplication([])
 mainwindow=QMainWindow()
-myui=MainWindow_NewReservationExt()
+myui=MainWindowManagementEx()
 myui.setupUi(mainwindow)
 myui.showWindow()
 app.exec()
