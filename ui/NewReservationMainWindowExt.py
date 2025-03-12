@@ -4,6 +4,7 @@ from libs.FileFactory import JsonFileFactory
 from model.Booking import Booking
 from model.Customer import Customer
 from ui.MainWindowBookingManagementExt import MainWindowBookingManagementEx
+from ui.MainWindowRoomManagementEx import MainWindowRoomManagementEx
 from ui.New_reservationMainWindow import Ui_MainWindow
 
 
@@ -13,7 +14,7 @@ class MainWindow_NewReservationExt(Ui_MainWindow, QMainWindow):
         self.jff = JsonFileFactory()  # Đối tượng xử lý file JSON
         self.customer_filename = "../../dataset/customers.json"
         self.booking_filename = "../../dataset/bookings.json"
-        self.hotel_management_window = None  # Biến để lưu cửa sổ Hotel Management
+
         self.setupUi(self)  # Gọi hàm setup UI từ file Qt Designer
 
     def setupUi(self, MainWindow):
@@ -24,7 +25,8 @@ class MainWindow_NewReservationExt(Ui_MainWindow, QMainWindow):
         self.pushButton_Save.clicked.connect(self.save_data)
         self.pushButton_Close.clicked.connect(self.close)
         self.pushButton_Clear.clicked.connect(self.clear_data)
-        self.pushButton_BookingManagement.clicked.connect(self.open_hotel_management)
+        self.pushButton_BookingManagement.clicked.connect(lambda: self.open_management_window("booking"))
+        self.pushButton_RoomManagement.clicked.connect(lambda: self.open_management_window("room"))
     def showWindow(self):
         self.MainWindow.show()
 
@@ -62,7 +64,6 @@ class MainWindow_NewReservationExt(Ui_MainWindow, QMainWindow):
             # Thêm booking mới
             booking = Booking(cus_code, room_code, start_date, end_date)
             bookings.append(booking)
-
             customer=Customer(cus_code,cus_phone,cus_email,cus_name,cus_identify)
             customers.append(customer)
 
@@ -92,10 +93,15 @@ class MainWindow_NewReservationExt(Ui_MainWindow, QMainWindow):
         self.lineEdit_BookingCode.clear()
         self.lineEdit_Roomname.clear()
 
-    def open_hotel_management(self):
-        """ Mở cửa sổ Hotel Management """
-        if self.hotel_management_window is None:
-            self.hotel_management_window = QMainWindow()
-            self.hotel_management_ui = MainWindowBookingManagementEx()
-            self.hotel_management_ui.setupUi(self.hotel_management_window)
-        self.hotel_management_window.show()
+    def open_management_window(self, window_type):
+        """Mở cửa sổ quản lý (Booking hoặc Room) và đóng cửa sổ hiện tại"""
+        if window_type == "booking":
+            self.management_window = QMainWindow()
+            self.management_ui = MainWindowBookingManagementEx()
+        elif window_type == "room":
+            self.management_window = QMainWindow()
+            self.management_ui = MainWindowRoomManagementEx()  # Thay bằng class quản lý phòng
+
+        self.management_ui.setupUi(self.management_window)
+        self.management_window.show()
+        self.MainWindow.close()  # Đóng cửa sổ hiện tại
