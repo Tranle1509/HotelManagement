@@ -1,9 +1,8 @@
 from PyQt6.QtWidgets import QMainWindow, QMessageBox
 
 from libs.DataConnector import DataConnector
-
 from ui.LoginMainWindow import Ui_MainWindow
-
+from ui.MainWindowManagementEx import MainWindowManagementEx
 
 
 class LoginMainWindowEx(Ui_MainWindow):
@@ -24,7 +23,6 @@ class LoginMainWindowEx(Ui_MainWindow):
         self.comboBoxRole.currentIndexChanged.connect(self.filter_role)
         self.pushButtonBack.clicked.connect(self.process_back)
     def process_login(self):
-        from ui.NewReservationMainWindowExt import MainWindow_NewReservationExt
         dc = DataConnector()
         uid = self.lineEditUserName.text()
         pwd = self.lineEditPassword.text()
@@ -32,7 +30,7 @@ class LoginMainWindowEx(Ui_MainWindow):
         if emp is not None:
             self.MainWindow.close()  # Đóng cửa sổ đăng nhập
             self.mainwindow = QMainWindow()
-            self.myui = MainWindow_NewReservationExt()
+            self.myui = MainWindowManagementEx()
             self.myui.setupUi(self.mainwindow)
             self.myui.showWindow()
         else:
@@ -41,20 +39,31 @@ class LoginMainWindowEx(Ui_MainWindow):
             self.msg.exec()
 
     def process_show_role(self):
-        # Xóa danh sách cũ trong ComboBox trước khi cập nhật
+        # Xóa danh sách cũ trước khi cập nhật
         self.comboBoxRole.clear()
 
-        # Lấy danh sách tất cả employees từ DataConnector
+        # Lấy danh sách tất cả nhân viên từ DataConnector
         employees = self.dc.get_all_employees()
 
-        # Lấy danh sách role không trùng nhau bằng set
-        unique_roles = sorted(set(emp.EmployeeRole.strip() for emp in employees))
+        # Kiểm tra dữ liệu có rỗng không
+        if not employees:
+            print("No employees found!")  # Debug thông tin
+            return
+
+        # Lọc danh sách vai trò không trùng nhau, loại bỏ khoảng trắng và giá trị None
+        unique_roles = sorted(set(emp.EmployeeRole.strip() for emp in employees if emp.EmployeeRole))
+
+        # Kiểm tra danh sách role có giá trị không
+        if not unique_roles:
+            print("No roles available!")  # Debug nếu danh sách role rỗng
+            return
 
         # Thêm danh sách role duy nhất vào comboBoxRole
         self.comboBoxRole.addItems(unique_roles)
 
-        # Hiển thị dropdown
+        # Mở dropdown (chỉ khi có dữ liệu)
         self.comboBoxRole.showPopup()
+
     def filter_role(self):
         # Lấy category ID đang được chọn
         selected_role = self.comboBoxRole.currentText().strip()
