@@ -24,7 +24,7 @@ class LoginMainWindowEx(Ui_MainWindow):
         self.comboBoxRole.currentIndexChanged.connect(self.filter_role)
         self.pushButtonBack.clicked.connect(self.process_back)
     def process_login(self):
-        from ui.MainWindowManagement import MainWindowManagementEx
+        from ui.NewReservationMainWindowExt import MainWindow_NewReservationExt
         dc = DataConnector()
         uid = self.lineEditUserName.text()
         pwd = self.lineEditPassword.text()
@@ -32,7 +32,7 @@ class LoginMainWindowEx(Ui_MainWindow):
         if emp is not None:
             self.MainWindow.close()  # Đóng cửa sổ đăng nhập
             self.mainwindow = QMainWindow()
-            self.myui = MainWindowManagementEx()
+            self.myui = MainWindow_NewReservationExt()
             self.myui.setupUi(self.mainwindow)
             self.myui.showWindow()
         else:
