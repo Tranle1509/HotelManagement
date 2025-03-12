@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 
 from PyQt6.QtCore import QDate, Qt
@@ -55,6 +56,10 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.pushButton_vacant.clicked.connect(self.sort_vacant)
         self.pushButton_checkin.clicked.connect(self.process_checkin)
         self.pushButton_checkout.clicked.connect(self.process_checkout)
+        self.tableWidget.itemClicked.connect(self.display_selected_row_data)
+        self.pushButtonUpdate.clicked.connect(self.update_selected_row)
+        self.pushButtonDelete.clicked.connect(self.delete_selected_row)
+        self.pushButtonreset.clicked.connect(self.reset_inputs)
 
     def process_checkout(self):
         selected_items = self.tableWidget_Room.selectedItems()
@@ -339,3 +344,103 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         item = QTableWidgetItem(text)
         item.setFlags(Qt.ItemFlag.ItemIsEnabled)
         self.tableWidget.setItem(row, col, item)
+# Tab Booking
+    def display_selected_row_data(self, item):
+        """Hiển thị thông tin của hàng được chọn lên các ô bên trái"""
+        row = item.row()  # Lấy số hàng được chọn
+
+        # Lấy dữ liệu từ từng cột của hàng
+        customer_name = self.tableWidget.item(row, 0).text()
+        phone = self.tableWidget.item(row, 1).text()
+        email = self.tableWidget.item(row, 2).text()
+        checkin_date = self.tableWidget.item(row, 3).text()
+        checkout_date = self.tableWidget.item(row, 4).text()
+        room_type = self.tableWidget.item(row, 5).text()
+        customer_code = ""
+        customer_code = ""
+        for customer in self.customers:  # Duyệt danh sách đối tượng khách hàng
+            if customer.customer_name == customer_name:  # So sánh thuộc tính
+                customer_code = customer.customer_code  # Lấy mã khách hàng
+                break  # Thoát vòng lặp nếu tìm thấy
+        # Hiển thị dữ liệu lên các ô nhập bên trái
+        self.lineEdit_CusCode2.setText(customer_code)
+        self.lineEdit_Phone_2.setText(phone)
+        self.lineEditCusName2.setText(customer_name)
+        self.lineEdit_CusEmail2.setText(email)
+        self.lineEdit_CheckIn.setText(checkin_date)
+        self.lineEdit_CheckOut.setText(checkout_date)
+        self.lineEdit_Roomtype.setText(room_type)
+
+    def update_selected_row(self):
+        """Cập nhật dữ liệu của hàng đang chọn mà không xóa hàng cũ"""
+        selected_row = self.tableWidget.currentRow()
+
+        if selected_row < 0:
+            QMessageBox.warning(self, "Lỗi", "Vui lòng chọn một dòng để cập nhật!")
+            return
+
+        # Lấy dữ liệu từ các ô nhập
+        customer_code = self.lineEdit_CusCode2.text()
+        customer_name = self.lineEditCusName2.text()
+        phone = self.lineEdit_Phone_2.text()
+        email = self.lineEdit_CusEmail2.text()
+        checkin_date = self.lineEdit_CheckIn.text()
+        checkout_date = self.lineEdit_CheckOut.text()
+        room_type = self.lineEdit_Roomtype.text()
+
+        # Cập nhật dữ liệu vào hàng đang chọn
+        self.tableWidget.setItem(selected_row, 0, QTableWidgetItem(customer_name))
+        self.tableWidget.setItem(selected_row, 1, QTableWidgetItem(phone))
+        self.tableWidget.setItem(selected_row, 2, QTableWidgetItem(email))
+        self.tableWidget.setItem(selected_row, 3, QTableWidgetItem(checkin_date))
+        self.tableWidget.setItem(selected_row, 4, QTableWidgetItem(checkout_date))
+        self.tableWidget.setItem(selected_row, 5, QTableWidgetItem(room_type))
+
+        QMessageBox.information(self, "Thành công", "Dữ liệu đã được cập nhật!")
+
+    def reset_inputs(self):
+        """Xóa tất cả dữ liệu trong các ô nhập"""
+        self.lineEdit_CusCode2.clear()
+        self.lineEditCusName2.clear()
+        self.lineEdit_Phone_2.clear()
+        self.lineEdit_CusEmail2.clear()
+        self.lineEdit_CheckIn.clear()
+        self.lineEdit_CheckOut.clear()
+        self.lineEdit_Roomtype.clear()
+
+    import json
+
+    def delete_selected_row(self):
+        """Xóa khách hàng khỏi bảng và cập nhật JSON"""
+        selected_row = self.tableWidget.currentRow()
+
+        if selected_row < 0:
+            return  # Không có dòng nào được chọn
+
+        # Lấy tên khách hàng để xóa trong dataset
+        customer_name = self.tableWidget.item(selected_row, 0).text()
+
+        # Xóa dòng khỏi giao diện bảng
+        self.tableWidget.removeRow(selected_row)
+
+        # Xóa dữ liệu trong JSON
+        self.update_json_after_delete(customer_name)
+
+    def update_json_after_delete(self, customer_name):
+        """Cập nhật file JSON sau khi xóa một khách hàng"""
+        try:
+            with open("customers.json", "r", encoding="utf-8") as file:
+                customers = json.load(file)
+
+            # Lọc danh sách để loại bỏ khách hàng bị xóa
+            updated_customers = [c for c in customers if c["customer_name"] != customer_name]
+
+            # Ghi lại file JSON đã cập nhật
+            with open("customers.json", "w", encoding="utf-8") as file:
+                json.dump(updated_customers, file, indent=4, ensure_ascii=False)
+
+        except Exception as e:
+            print(f"Lỗi khi cập nhật JSON: {e}")
+
+
+

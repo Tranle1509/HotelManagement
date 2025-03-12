@@ -602,13 +602,13 @@ QWidget:hover {
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Final_Project/HotelManagement/images/booking.jpg</pixmap>
+        <pixmap>../images/booking.jpg</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="lineEdit_CusCode2">
        <property name="geometry">
         <rect>
          <x>190</x>
@@ -623,7 +623,7 @@ background-color: rgb(255, 255, 255,200);
 color: rgb(0, 0, 0);</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_3">
+      <widget class="QLineEdit" name="lineEdit_Phone_2">
        <property name="geometry">
         <rect>
          <x>190</x>
@@ -667,7 +667,7 @@ color: rgb(0, 0, 0);</string>
         <string>Customer Code :</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_4">
+      <widget class="QLineEdit" name="lineEdit_Roomtype">
        <property name="geometry">
         <rect>
          <x>190</x>
@@ -682,7 +682,7 @@ background-color: rgb(255, 255, 255,200);
 color: rgb(0, 0, 0);</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_5">
+      <widget class="QLineEdit" name="lineEditCusName2">
        <property name="geometry">
         <rect>
          <x>190</x>
@@ -700,7 +700,7 @@ color: rgb(0, 0, 0);</string>
         <string/>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_6">
+      <widget class="QLineEdit" name="lineEdit_CusEmail2">
        <property name="geometry">
         <rect>
          <x>190</x>
@@ -718,7 +718,7 @@ color: rgb(0, 0, 0);</string>
         <string/>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_7">
+      <widget class="QLineEdit" name="lineEdit_CheckIn">
        <property name="geometry">
         <rect>
          <x>190</x>
@@ -736,7 +736,7 @@ color: rgb(0, 0, 0);</string>
         <string/>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_8">
+      <widget class="QLineEdit" name="lineEdit_CheckOut">
        <property name="geometry">
         <rect>
          <x>190</x>
@@ -2203,7 +2203,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../images/Blue Green Minimalist Happy Summer Hotel Break Sale Facebook Cover (1).png</pixmap>
+     <pixmap>../images/Cover.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

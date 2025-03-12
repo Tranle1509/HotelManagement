@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\KTLT\HotelManagement\ui\MainWindowManagement.ui'
+# Form implementation generated from reading ui file 'D:\Final_Project\HotelManagement\ui\MainWindowManagement.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -315,22 +315,22 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.label_174.setText("")
-        self.label_174.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../../Final_Project/HotelManagement/images/booking.jpg"))
+        self.label_174.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/booking.jpg"))
         self.label_174.setScaledContents(True)
         self.label_174.setObjectName("label_174")
-        self.lineEdit = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit.setGeometry(QtCore.QRect(190, 40, 281, 31))
-        self.lineEdit.setStyleSheet("border: 2px solid transparent;\n"
+        self.lineEdit_CusCode2 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
+        self.lineEdit_CusCode2.setGeometry(QtCore.QRect(190, 40, 281, 31))
+        self.lineEdit_CusCode2.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
-        self.lineEdit.setObjectName("lineEdit")
-        self.lineEdit_3 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_3.setGeometry(QtCore.QRect(190, 90, 281, 31))
-        self.lineEdit_3.setStyleSheet("border: 2px solid transparent;\n"
+        self.lineEdit_CusCode2.setObjectName("lineEdit_CusCode2")
+        self.lineEdit_Phone_2 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
+        self.lineEdit_Phone_2.setGeometry(QtCore.QRect(190, 90, 281, 31))
+        self.lineEdit_Phone_2.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
-        self.lineEdit_3.setText("")
-        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.lineEdit_Phone_2.setText("")
+        self.lineEdit_Phone_2.setObjectName("lineEdit_Phone_2")
         self.label_175 = QtWidgets.QLabel(parent=self.groupBoxCustomerDetails)
         self.label_175.setGeometry(QtCore.QRect(10, 30, 151, 41))
         font = QtGui.QFont()
@@ -343,40 +343,40 @@ class Ui_MainWindow(object):
         self.label_175.setStyleSheet("background-color: transparent;\n"
 " border:transparent;")
         self.label_175.setObjectName("label_175")
-        self.lineEdit_4 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_4.setGeometry(QtCore.QRect(190, 340, 281, 31))
-        self.lineEdit_4.setStyleSheet("border: 2px solid transparent;\n"
+        self.lineEdit_Roomtype = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
+        self.lineEdit_Roomtype.setGeometry(QtCore.QRect(190, 340, 281, 31))
+        self.lineEdit_Roomtype.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
-        self.lineEdit_4.setObjectName("lineEdit_4")
-        self.lineEdit_5 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_5.setGeometry(QtCore.QRect(190, 140, 281, 31))
-        self.lineEdit_5.setStyleSheet("border: 2px solid transparent;\n"
+        self.lineEdit_Roomtype.setObjectName("lineEdit_Roomtype")
+        self.lineEditCusName2 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
+        self.lineEditCusName2.setGeometry(QtCore.QRect(190, 140, 281, 31))
+        self.lineEditCusName2.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
-        self.lineEdit_5.setText("")
-        self.lineEdit_5.setObjectName("lineEdit_5")
-        self.lineEdit_6 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_6.setGeometry(QtCore.QRect(190, 190, 281, 31))
-        self.lineEdit_6.setStyleSheet("border: 2px solid transparent;\n"
+        self.lineEditCusName2.setText("")
+        self.lineEditCusName2.setObjectName("lineEditCusName2")
+        self.lineEdit_CusEmail2 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
+        self.lineEdit_CusEmail2.setGeometry(QtCore.QRect(190, 190, 281, 31))
+        self.lineEdit_CusEmail2.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
-        self.lineEdit_6.setText("")
-        self.lineEdit_6.setObjectName("lineEdit_6")
-        self.lineEdit_7 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_7.setGeometry(QtCore.QRect(190, 240, 281, 31))
-        self.lineEdit_7.setStyleSheet("border: 2px solid transparent;\n"
+        self.lineEdit_CusEmail2.setText("")
+        self.lineEdit_CusEmail2.setObjectName("lineEdit_CusEmail2")
+        self.lineEdit_CheckIn = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
+        self.lineEdit_CheckIn.setGeometry(QtCore.QRect(190, 240, 281, 31))
+        self.lineEdit_CheckIn.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
-        self.lineEdit_7.setText("")
-        self.lineEdit_7.setObjectName("lineEdit_7")
-        self.lineEdit_8 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
-        self.lineEdit_8.setGeometry(QtCore.QRect(190, 290, 281, 31))
-        self.lineEdit_8.setStyleSheet("border: 2px solid transparent;\n"
+        self.lineEdit_CheckIn.setText("")
+        self.lineEdit_CheckIn.setObjectName("lineEdit_CheckIn")
+        self.lineEdit_CheckOut = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
+        self.lineEdit_CheckOut.setGeometry(QtCore.QRect(190, 290, 281, 31))
+        self.lineEdit_CheckOut.setStyleSheet("border: 2px solid transparent;\n"
 "background-color: rgb(255, 255, 255,200);\n"
 "color: rgb(0, 0, 0);")
-        self.lineEdit_8.setText("")
-        self.lineEdit_8.setObjectName("lineEdit_8")
+        self.lineEdit_CheckOut.setText("")
+        self.lineEdit_CheckOut.setObjectName("lineEdit_CheckOut")
         self.pushButtonReport = QtWidgets.QPushButton(parent=self.groupBoxCustomerDetails)
         self.pushButtonReport.setGeometry(QtCore.QRect(400, 420, 91, 51))
         font = QtGui.QFont()
@@ -424,7 +424,7 @@ class Ui_MainWindow(object):
 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../../TranHieuKieuDuyen_K244111457_K24411E/Midterm_TranHieuKieuDuyen/WarehouseManagement/images/close.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../../TranHieuKieuDuyen_K244111457_K24411E/Midterm_TranHieuKieuDuyen/WarehouseManagement/images/close.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_exit.setIcon(icon)
         self.pushButton_exit.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_exit.setObjectName("pushButton_exit")
@@ -436,7 +436,7 @@ class Ui_MainWindow(object):
 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../../Downloads/187510.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../../Downloads/187510.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_checkout.setIcon(icon1)
         self.pushButton_checkout.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_checkout.setObjectName("pushButton_checkout")
@@ -491,7 +491,7 @@ class Ui_MainWindow(object):
 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));\n"
 "")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../../Downloads/Tick.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../../Downloads/Tick.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_checkin.setIcon(icon2)
         self.pushButton_checkin.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_checkin.setObjectName("pushButton_checkin")
@@ -552,7 +552,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
         self.label_3.setSizePolicy(sizePolicy)
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../Final_Project/HotelManagement/images/Cover.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../Final_Project/HotelManagement/images/Cover.png"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.tableWidget_Room.raise_()
@@ -947,7 +947,7 @@ class Ui_MainWindow(object):
         self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(0, -10, 1281, 321))
         self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/Blue Green Minimalist Happy Summer Hotel Break Sale Facebook Cover (1).png"))
+        self.label_4.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/Cover.png"))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
         self.label_4.raise_()
