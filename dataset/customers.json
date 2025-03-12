@@ -131,5 +131,12 @@
         "customer_phone": "0962698593",
         "customer_email": "customer19@gmail.com",
         "customer_identity": "064427593439"
+    },
+    {
+        "customer_code": "",
+        "customer_name": "",
+        "customer_phone": "",
+        "customer_email": "",
+        "customer_identity": ""
     }
 ]

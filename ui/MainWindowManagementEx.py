@@ -60,7 +60,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.pushButtonUpdate.clicked.connect(self.update_selected_row)
         self.pushButtonDelete.clicked.connect(self.delete_selected_row)
         self.pushButtonreset.clicked.connect(self.reset_inputs)
-
+        self.pushButton_Clear.clicked.connect(self.clear_reservation_data)
     def process_checkout(self):
         selected_items = self.tableWidget_Room.selectedItems()
         if not selected_items:
@@ -344,6 +344,19 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         item = QTableWidgetItem(text)
         item.setFlags(Qt.ItemFlag.ItemIsEnabled)
         self.tableWidget.setItem(row, col, item)
+    def clear_reservation_data(self):
+        """ Xóa nội dung của các ô nhập liệu """
+        self.lineEdit_Cuscode.clear()
+        self.lineEdit_Phone.clear()
+        self.lineEdit_Cusname.clear()
+        self.lineEdit_Email.clear()
+        self.lineEdit_Identify.clear()
+
+        self.lineEdit_Roomcode.clear()
+
+
+
+        self.lineEdit_Requirement.clear()
 # Tab Booking
     def display_selected_row_data(self, item):
         """Hiển thị thông tin của hàng được chọn lên các ô bên trái"""

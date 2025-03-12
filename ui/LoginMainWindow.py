@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\KTLT\HotelManagement\ui\LoginMainWindow.ui'
+# Form implementation generated from reading ui file 'D:\Final_Project\HotelManagement\ui\LoginMainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -29,7 +29,7 @@ class Ui_MainWindow(object):
         self.label_5 = QtWidgets.QLabel(parent=self.groupBox)
         self.label_5.setGeometry(QtCore.QRect(360, 20, 251, 201))
         self.label_5.setText("")
-        self.label_5.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/logo hotel.png"))
+        self.label_5.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/logo hotel.png"))
         self.label_5.setScaledContents(True)
         self.label_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_5.setObjectName("label_5")
@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
         self.label_6 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_6.setGeometry(QtCore.QRect(10, 10, 1041, 671))
         self.label_6.setText("")
-        self.label_6.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/login.png"))
+        self.label_6.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/login.png"))
         self.label_6.setScaledContents(True)
         self.label_6.setObjectName("label_6")
         self.label_6.raise_()
