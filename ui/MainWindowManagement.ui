@@ -39,7 +39,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>180</y>
+      <y>170</y>
       <width>1281</width>
       <height>561</height>
      </rect>
@@ -60,7 +60,7 @@
         <x>530</x>
         <y>10</y>
         <width>741</width>
-        <height>481</height>
+        <height>501</height>
        </rect>
       </property>
       <property name="font">
@@ -232,7 +232,7 @@ color: rgb(0, 0, 0);</string>
         <x>10</x>
         <y>10</y>
         <width>511</width>
-        <height>481</height>
+        <height>501</height>
        </rect>
       </property>
       <property name="font">
@@ -959,7 +959,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
         <hour>0</hour>
         <minute>0</minute>
         <second>0</second>
-        <year>1999</year>
+        <year>2025</year>
         <month>1</month>
         <day>1</day>
        </datetime>
@@ -967,13 +967,20 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
       <property name="displayFormat">
        <string>yyyy/M/d</string>
       </property>
+      <property name="date">
+       <date>
+        <year>2025</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
      </widget>
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>920</x>
+        <x>890</x>
         <y>40</y>
-        <width>71</width>
+        <width>91</width>
         <height>31</height>
        </rect>
       </property>
@@ -1391,6 +1398,16 @@ background: transparent
         <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
        </property>
+       <property name="minimumDateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2025</year>
+         <month>1</month>
+         <day>1</day>
+        </datetime>
+       </property>
        <property name="maximumDate">
         <date>
          <year>9999</year>
@@ -1400,6 +1417,13 @@ color: rgb(0, 0, 0);</string>
        </property>
        <property name="displayFormat">
         <string>yyyy/M/d</string>
+       </property>
+       <property name="date">
+        <date>
+         <year>2025</year>
+         <month>1</month>
+         <day>1</day>
+        </date>
        </property>
       </widget>
       <widget class="QDateEdit" name="CheckOut">
@@ -1421,8 +1445,25 @@ color: rgb(0, 0, 0);</string>
         <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
        </property>
+       <property name="minimumDateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2025</year>
+         <month>1</month>
+         <day>1</day>
+        </datetime>
+       </property>
        <property name="displayFormat">
         <string>yyyy/M/d</string>
+       </property>
+       <property name="date">
+        <date>
+         <year>2025</year>
+         <month>1</month>
+         <day>1</day>
+        </date>
        </property>
       </widget>
       <widget class="QLabel" name="label_156">
@@ -1705,7 +1746,7 @@ font: 57 12pt &quot;SFU Toledo&quot;;</string>
       <widget class="QLabel" name="label_159">
        <property name="geometry">
         <rect>
-         <x>660</x>
+         <x>640</x>
          <y>40</y>
          <width>121</width>
          <height>31</height>
@@ -1722,7 +1763,7 @@ background: transparent</string>
       <widget class="QLabel" name="label_160">
        <property name="geometry">
         <rect>
-         <x>660</x>
+         <x>640</x>
          <y>80</y>
          <width>61</width>
          <height>31</height>
@@ -1802,7 +1843,7 @@ color: rgb(0, 0, 0);
       <widget class="QLabel" name="label_164">
        <property name="geometry">
         <rect>
-         <x>660</x>
+         <x>640</x>
          <y>110</y>
          <width>81</width>
          <height>51</height>
@@ -1905,8 +1946,25 @@ color: rgb(0, 0, 0);</string>
         <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
        </property>
+       <property name="minimumDateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2025</year>
+         <month>1</month>
+         <day>1</day>
+        </datetime>
+       </property>
        <property name="displayFormat">
         <string>yyyy/M/d</string>
+       </property>
+       <property name="date">
+        <date>
+         <year>2025</year>
+         <month>1</month>
+         <day>1</day>
+        </date>
        </property>
       </widget>
       <widget class="QLabel" name="label_166">
@@ -2028,7 +2086,7 @@ color: rgb(0, 0, 0);</string>
       <widget class="QLabel" name="label_167">
        <property name="geometry">
         <rect>
-         <x>660</x>
+         <x>640</x>
          <y>150</y>
          <width>131</width>
          <height>51</height>
