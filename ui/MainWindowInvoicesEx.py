@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 from PyQt6.QtWidgets import QMainWindow, QTableWidgetItem, QMessageBox
-from fpdf import FPDF
+
 
 from libs.FileFactory import JsonFileFactory
 from model.Booking import Booking

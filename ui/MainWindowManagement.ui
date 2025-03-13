@@ -269,7 +269,7 @@ hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>180</y>
+         <y>190</y>
          <width>121</width>
          <height>31</height>
         </rect>
@@ -295,7 +295,7 @@ hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>230</y>
+         <y>240</y>
          <width>151</width>
          <height>31</height>
         </rect>
@@ -320,7 +320,7 @@ hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>280</y>
+         <y>290</y>
          <width>151</width>
          <height>31</height>
         </rect>
@@ -345,7 +345,7 @@ hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>330</y>
+         <y>340</y>
          <width>151</width>
          <height>31</height>
         </rect>
@@ -370,7 +370,7 @@ hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>130</y>
+         <y>140</y>
          <width>191</width>
          <height>31</height>
         </rect>
@@ -395,7 +395,7 @@ hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>80</y>
+         <y>90</y>
          <width>91</width>
          <height>31</height>
         </rect>
@@ -602,7 +602,7 @@ QWidget:hover {
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../images/booking.jpg</pixmap>
+        <pixmap>../../Final_Project/HotelManagement/images/booking.jpg</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -671,7 +671,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>190</x>
-         <y>330</y>
+         <y>340</y>
          <width>281</width>
          <height>31</height>
         </rect>
@@ -686,7 +686,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>190</x>
-         <y>130</y>
+         <y>140</y>
          <width>281</width>
          <height>31</height>
         </rect>
@@ -704,7 +704,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>190</x>
-         <y>180</y>
+         <y>190</y>
          <width>281</width>
          <height>31</height>
         </rect>
@@ -722,7 +722,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>190</x>
-         <y>230</y>
+         <y>240</y>
          <width>281</width>
          <height>31</height>
         </rect>
@@ -740,7 +740,7 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>190</x>
-         <y>280</y>
+         <y>290</y>
          <width>281</width>
          <height>31</height>
         </rect>
@@ -890,6 +890,9 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
         <width>16777215</width>
         <height>411</height>
        </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.733, x2:0.51194, y2:0.744, stop:0.457711 rgba(245, 247, 250, 255), stop:1 rgba(195, 207, 226, 255));</string>
       </property>
       <row>
        <property name="text">
@@ -1179,7 +1182,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
         <x>0</x>
         <y>0</y>
         <width>1381</width>
-        <height>201</height>
+        <height>211</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -1199,11 +1202,11 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(0, 0, 0);
+background-color: qlineargradient(spread:pad, x1:0.054, y1:0.670455, x2:0.587, y2:0.699, stop:0.527363 rgba(161, 196, 253, 255), stop:1 rgba(194, 233, 251, 255));
 font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
 
 border-color: rgb(182, 182, 182);
-font: 57 12pt &quot;SFU Toledo&quot;;
-background-color: rgb(255, 255, 255);</string>
+font: 57 12pt &quot;SFU Toledo&quot;;</string>
       </property>
       <property name="title">
        <string>Booking information</string>
@@ -1211,8 +1214,8 @@ background-color: rgb(255, 255, 255);</string>
       <widget class="QComboBox" name="comboBoxType">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>160</y>
+         <x>170</x>
+         <y>120</y>
          <width>450</width>
          <height>30</height>
         </rect>
@@ -1269,7 +1272,8 @@ color: rgb(0, 0, 0);</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Check-out date :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -1279,32 +1283,41 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>80</y>
+         <y>30</y>
          <width>121</width>
-         <height>31</height>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent
+</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Room name :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Room name :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
       </widget>
       <widget class="QLabel" name="label_152">
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>160</y>
+         <y>100</y>
          <width>111</width>
-         <height>41</height>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Room type :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Room type :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
       </widget>
       <widget class="QLabel" name="label_153">
@@ -1348,64 +1361,15 @@ color: rgb(0, 0, 0);
         <enum>Qt::LeftToRight</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent
+</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Children :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_155">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>30</y>
-         <width>141</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>#9Slide03 SFU Toledo Bold</family>
-         <pointsize>12</pointsize>
-         <weight>9</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Booking code :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_BookingCode">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>40</y>
-         <width>450</width>
-         <height>30</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>450</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>450</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
        </property>
       </widget>
       <widget class="QDateEdit" name="CheckIn">
@@ -1465,9 +1429,9 @@ color: rgb(0, 0, 0);</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>120</y>
-         <width>111</width>
-         <height>31</height>
+         <y>70</y>
+         <width>131</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="font">
@@ -1480,17 +1444,21 @@ color: rgb(0, 0, 0);</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Room code :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Room code :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_Roomname">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>80</y>
+         <x>170</x>
+         <y>40</y>
          <width>450</width>
          <height>30</height>
         </rect>
@@ -1541,8 +1509,8 @@ color: rgb(0, 0, 0);</string>
       <widget class="QLineEdit" name="lineEdit_Roomcode">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>120</y>
+         <x>170</x>
+         <y>80</y>
          <width>450</width>
          <height>30</height>
         </rect>
@@ -1574,7 +1542,9 @@ color: rgb(0, 0, 0);</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent
+</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Check-in date :&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -1593,7 +1563,9 @@ color: rgb(0, 0, 0);</string>
         <enum>Qt::LeftToRight</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent
+</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Adult :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -1633,7 +1605,7 @@ color: rgb(0, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>440</x>
-        <y>450</y>
+        <y>480</y>
         <width>111</width>
         <height>41</height>
        </rect>
@@ -1669,7 +1641,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
       <property name="geometry">
        <rect>
         <x>720</x>
-        <y>450</y>
+        <y>480</y>
         <width>111</width>
         <height>41</height>
        </rect>
@@ -1699,9 +1671,9 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>210</y>
+        <y>230</y>
         <width>1381</width>
-        <height>221</height>
+        <height>231</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -1721,10 +1693,11 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(0, 0, 0);
-font: 57 12pt &quot;SFU Toledo&quot;;
-border-color: rgb(182, 182, 182);
+background-color: qlineargradient(spread:pad, x1:0.054, y1:0.670455, x2:0.587, y2:0.699, stop:0.527363 rgba(161, 196, 253, 255), stop:1 rgba(194, 233, 251, 255));
+font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
 
-background-color: rgb(255, 255, 255);</string>
+border-color: rgb(182, 182, 182);
+font: 57 12pt &quot;SFU Toledo&quot;;</string>
       </property>
       <property name="title">
        <string>Customer details</string>
@@ -1739,7 +1712,8 @@ background-color: rgb(255, 255, 255);</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Date of birth :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -1750,12 +1724,13 @@ background-color: rgb(255, 255, 255);</string>
         <rect>
          <x>660</x>
          <y>80</y>
-         <width>71</width>
+         <width>61</width>
          <height>31</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Email :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -1766,15 +1741,16 @@ background-color: rgb(255, 255, 255);</string>
         <rect>
          <x>10</x>
          <y>80</y>
-         <width>141</width>
+         <width>151</width>
          <height>31</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 11pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Customer name :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Customer name :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_162">
@@ -1783,14 +1759,16 @@ background-color: rgb(255, 255, 255);</string>
          <x>10</x>
          <y>150</y>
          <width>91</width>
-         <height>41</height>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent
+</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Gender :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gender :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_163">
@@ -1824,7 +1802,7 @@ color: rgb(0, 0, 0);
       <widget class="QLabel" name="label_164">
        <property name="geometry">
         <rect>
-         <x>650</x>
+         <x>660</x>
          <y>110</y>
          <width>81</width>
          <height>51</height>
@@ -1834,10 +1812,11 @@ color: rgb(0, 0, 0);
         <enum>Qt::LeftToRight</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Phone&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Phone&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1848,30 +1827,31 @@ color: rgb(0, 0, 0);
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>141</width>
+         <width>151</width>
          <height>31</height>
         </rect>
        </property>
        <property name="font">
         <font>
          <family>#9Slide03 SFU Toledo Bold</family>
-         <pointsize>11</pointsize>
+         <pointsize>12</pointsize>
          <weight>9</weight>
          <italic>false</italic>
          <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 11pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Customer code :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Customer code :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_Cuscode">
        <property name="geometry">
         <rect>
-         <x>160</x>
+         <x>170</x>
          <y>40</y>
          <width>450</width>
          <height>30</height>
@@ -1925,11 +1905,14 @@ color: rgb(0, 0, 0);</string>
         <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
        </property>
+       <property name="displayFormat">
+        <string>yyyy/M/d</string>
+       </property>
       </widget>
       <widget class="QLabel" name="label_166">
        <property name="geometry">
         <rect>
-         <x>-10</x>
+         <x>10</x>
          <y>120</y>
          <width>131</width>
          <height>31</height>
@@ -1945,16 +1928,17 @@ color: rgb(0, 0, 0);</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Identity :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Identity :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_Cusname">
        <property name="geometry">
         <rect>
-         <x>160</x>
+         <x>170</x>
          <y>80</y>
          <width>450</width>
          <height>30</height>
@@ -2012,7 +1996,7 @@ color: rgb(0, 0, 0);</string>
       <widget class="QLineEdit" name="lineEdit_Identify">
        <property name="geometry">
         <rect>
-         <x>160</x>
+         <x>170</x>
          <y>120</y>
          <width>450</width>
          <height>30</height>
@@ -2054,10 +2038,11 @@ color: rgb(0, 0, 0);</string>
         <enum>Qt::LeftToRight</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Requirement:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Requirement:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2098,7 +2083,7 @@ color: rgb(0, 0, 0);</string>
       <widget class="QComboBox" name="comboBoxTypeGender_9">
        <property name="geometry">
         <rect>
-         <x>160</x>
+         <x>170</x>
          <y>160</y>
          <width>450</width>
          <height>30</height>
@@ -2177,7 +2162,7 @@ color: rgb(0, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>580</x>
-        <y>450</y>
+        <y>480</y>
         <width>111</width>
         <height>41</height>
        </rect>
