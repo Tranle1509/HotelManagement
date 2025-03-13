@@ -8,10 +8,10 @@ from model.Booking import Booking
 bookings=[]
 room_codes = [f"{i}0{j}" for i in range(1, 4) for j in range(1, 6)]
 
-for i in range(1, 21):
+for i in range(1, 1001):
     customer_code = f"cus{i}"
     room_code = random.choice(room_codes)  # Chọn một mã phòng ngẫu nhiên
-    start_date = datetime(2025, 3, random.randint(1, 20))
+    start_date = datetime(2025, random.randint(1,12) ,random.randint(1, 20))
     end_date = start_date + timedelta(days=random.randint(1, 10))
     booking = Booking(customer_code, room_code, start_date.strftime("%Y/%m/%d"), end_date.strftime("%Y/%m/%d"))
     bookings.append(booking)

@@ -4,7 +4,7 @@ from libs.FileFactory import JsonFileFactory
 from model.Customer import Customer
 
 customers=[]
-for i in range(1,20):
+for i in range(1,1001):
     customer_code=f"cus{i}"
     customer_name=f"Customer{i}"
     customer_phone='0' +'9' + ''.join(random.choices('0123456789', k=8))

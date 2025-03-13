@@ -1,7 +1,9 @@
+import json
+import os
 from datetime import datetime
 
 from PyQt6.QtCore import QDate, Qt
-from PyQt6.QtGui import QBrush, QColor
+from PyQt6.QtGui import QColor, QBrush
 from PyQt6.QtWidgets import QMainWindow, QHeaderView, QMessageBox, QTableWidgetItem
 
 from libs.DataConnector import DataConnector
@@ -43,6 +45,9 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.load_data()
         self.configure_table_appearance()
 
+    def showWindow(self):
+        self.MainWindow.show()
+
     def setupSignalAndSlot(self):
         self.pushButton_Save.clicked.connect(self.save_data)
         self.pushButton_Close.clicked.connect(self.close)
@@ -55,9 +60,65 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.pushButton_vacant.clicked.connect(self.sort_vacant)
         self.pushButton_checkin.clicked.connect(self.process_checkin)
         self.pushButton_checkout.clicked.connect(self.process_checkout)
+        self.tableWidget.itemClicked.connect(self.display_selected_row_data)
+        self.pushButtonUpdate.clicked.connect(self.update_selected_row)
+        self.pushButtonDelete.clicked.connect(self.delete_selected_row)
+        self.pushButtonreset.clicked.connect(self.reset_inputs)
+        self.pushButton_Clear.clicked.connect(self.clear_reservation_data)
+#        self.pushButtonReport.clicked.connect(self.open_booking_report)
 
-    def showWindow(self):
-        self.MainWindow.show()
+    def process_checkout(self):
+        selected_items = self.tableWidget_Room.selectedItems()
+        if not selected_items:
+            self.show_error_message("Please select a room to check out.")
+            return
+
+        row = selected_items[0].row()
+        room_code_item = self.tableWidget_Room.item(row, 0)
+        status_item = self.tableWidget_Room.item(row, 1)
+        customer_item = self.tableWidget_Room.item(row, 2)
+        roomtype_item = self.tableWidget_Room.item(row, 3)
+
+        if not room_code_item or not status_item or not customer_item:
+            self.show_error_message("Error retrieving room information.")
+            return
+
+        if status_item.text() != "Booked":
+            self.show_error_message("This room is available.")
+            return
+
+        room_code = room_code_item.text()
+        confirm = QMessageBox.question(
+            self.MainWindow,
+            "Confirm Check-out",
+            f"Confirm check-out for room {room_code}?",
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
+        )
+
+        if confirm == QMessageBox.StandardButton.Yes:
+            # Cập nhật trạng thái phòng
+            status_item.setText("Ready")
+            customer_item.setText("N/A")
+
+            # Đổi màu nền thành xanh lá
+            green_color = QColor(207, 244, 210)
+            status_item.setBackground(QBrush(green_color))
+            customer_item.setBackground(QBrush(green_color))
+            room_code_item.setBackground(QBrush(green_color))
+            roomtype_item.setBackground(QBrush(green_color))
+
+            # Xóa booking khỏi danh sách (nếu cần)
+            customer_code = customer_item.text()
+            self.bookings = [booking for booking in self.bookings
+                             if not (booking.room_code == room_code and booking.customer_code == customer_code)]
+
+            # Hiển thị giao diện hóa đơn
+            self.show_invoice_window(room_code, customer_code)  # Gọi hàm hiển thị hóa đơn
+    def show_invoice_window(self, room_code, customer_code):
+        """Hiển thị giao diện hóa đơn (cần thay thế bằng giao diện thực tế của bạn)."""
+        # Ví dụ:
+        self.invoice_window = MainWindowInvoicesEx(room_code, customer_code)
+        self.invoice_window.show()
 
     def sort_booked(self):
         """Lọc các phòng đang được đặt"""
@@ -91,7 +152,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
     def process_checkin(self):
         selected_items = self.tableWidget_Room.selectedItems()
         if not selected_items:
-            self.show_error_message("Vui lòng chọn một phòng để check-in.")
+            self.show_error_message("Please select a room to check in")
             return
 
         row = selected_items[0].row()
@@ -101,18 +162,19 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         roomtype_item = self.tableWidget_Room.item(row, 3)
 
         if not room_code_item or not status_item or not customer_item:
-            self.show_error_message("Lỗi khi lấy thông tin phòng.")
+            self.show_error_message("Error retrieving room information.")
             return
 
         if status_item.text() == "Booked":
-            self.show_error_message("Phòng này đã được đặt trước đó.")
+            self.show_error_message("This room has already been booked.")
             return
 
         room_code = room_code_item.text()
         confirm = QMessageBox.question(
             self.MainWindow,
-            "Xác nhận Check-in",
-            f"Xác nhận check-in phòng {room_code}?",
+            "Check-in Confirmation",
+            f"Do you confirm the check-in for room {room_code}?",
+
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
         )
 
@@ -122,7 +184,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
             customer_item.setText(new_customer_id)
 
             # Đổi màu nền thành đỏ
-            red_color = QColor(255, 0, 0)
+            red_color = QColor(255, 145, 144)
             status_item.setBackground(QBrush(red_color))
             customer_item.setBackground(QBrush(red_color))
             room_code_item.setBackground(QBrush(red_color))
@@ -132,8 +194,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
             new_booking = Booking(new_customer_id, room_code, datetime.now(), datetime.now())
             self.bookings.append(new_booking)
 
-            QMessageBox.information(self.MainWindow, "Thành công", "Check-in thành công!")
-
+            QMessageBox.information(self.MainWindow, "Successfull", "Check-in Successfully!")
     def display_rooms(self, selected_date, rooms_to_display=None):
         self.tableWidget_Room.clearContents()
         rooms_to_display = rooms_to_display or self.rooms
@@ -148,87 +209,39 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
                 QTableWidgetItem(room.room_type)
             ]
 
-            status_color = QColor(255, 0, 0) if items[1].text() == "Booked" else QColor(0, 255, 0)
+            status_color = QColor(255, 145, 144) if items[1].text() == "Booked" else QColor(207, 244, 210)
             for col in range(4):
                 items[col].setBackground(QBrush(status_color))
                 items[col].setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                 self.tableWidget_Room.setItem(row, col, items[col])
-
-    def process_checkout(self):
-        selected_items = self.tableWidget_Room.selectedItems()
-        if not selected_items:
-            self.show_error_message("Vui lòng chọn một phòng để check-out.")
-            return
-
-        row = selected_items[0].row()
-        room_code_item = self.tableWidget_Room.item(row, 0)
-        status_item = self.tableWidget_Room.item(row, 1)
-        customer_item = self.tableWidget_Room.item(row, 2)
-        roomtype_item = self.tableWidget_Room.item(row, 3)
-
-        if not room_code_item or not status_item or not customer_item:
-            self.show_error_message("Lỗi khi lấy thông tin phòng.")
-            return
-
-        if status_item.text() != "Booked":
-            self.show_error_message("Phòng này chưa được đặt.")
-            return
-
-        room_code = room_code_item.text()
-        confirm = QMessageBox.question(
-            self.MainWindow,
-            "Xác nhận Check-out",
-            f"Xác nhận check-out phòng {room_code}?",
-            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
-        )
-
-        if confirm == QMessageBox.StandardButton.Yes:
-            # Cập nhật trạng thái phòng
-            status_item.setText("Ready")
-            customer_item.setText("N/A")
-
-            # Đổi màu nền thành xanh lá
-            green_color = QColor(0, 255, 0)
-            status_item.setBackground(QBrush(green_color))
-            customer_item.setBackground(QBrush(green_color))
-            room_code_item.setBackground(QBrush(green_color))
-            roomtype_item.setBackground(QBrush(green_color))
-
-            # Xóa booking khỏi danh sách (nếu cần)
-            customer_code = customer_item.text()
-            self.bookings = [booking for booking in self.bookings
-                             if not (booking.room_code == room_code and booking.customer_code == customer_code)]
-
-            # Hiển thị giao diện hóa đơn
-            self.show_invoice_window(room_code, customer_code)  # Gọi hàm hiển thị hóa đơn
-
-    def show_invoice_window(self, room_code, customer_code):
-        self.invoice_window = MainWindowInvoicesEx(room_code, customer_code)
-        self.invoice_window.show()
-
     def generate_new_customer_id(self):
         return f"cus{len(self.customers) + 1:04d}"
 
     def get_customer_code_for_room(self, room_code, selected_date):
+        """Lấy customer_code của khách hàng trong khoảng thời gian đặt phòng"""
         selected_datetime = datetime(selected_date.year(), selected_date.month(), selected_date.day())
+
+        # Lấy danh sách customer_code từ danh sách đối tượng Customer
+        valid_customer_codes = {c.customer_code for c in self.customers}
 
         for booking in self.bookings:
             if booking.room_code == room_code:
                 try:
-                    # 🔹 Chuyển đổi ngày từ chuỗi sang datetime nếu chưa phải kiểu datetime
+                    # Chuyển đổi ngày từ chuỗi sang datetime nếu cần
                     start_date = datetime.strptime(booking.start_date, "%Y/%m/%d") if isinstance(booking.start_date,
                                                                                                  str) else booking.start_date
                     end_date = datetime.strptime(booking.end_date, "%Y/%m/%d") if isinstance(booking.end_date,
                                                                                              str) else booking.end_date
 
-                    # So sánh thời gian hợp lệ
-                    if start_date <= selected_datetime <= end_date:
+                    # Kiểm tra ngày hợp lệ và customer_code tồn tại
+                    if start_date <= selected_datetime <= end_date and booking.customer_code in valid_customer_codes:
                         return booking.customer_code
+
                 except ValueError as e:
                     print(f"Lỗi định dạng ngày tháng trong booking: {booking.start_date}, {booking.end_date} - {e}")
                     continue
 
-        return None
+        return None  # Không tìm thấy customer_code hợp lệ
 
     def is_room_booked(self, room_code, selected_date):
         selected_datetime = datetime(
@@ -337,3 +350,151 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         item = QTableWidgetItem(text)
         item.setFlags(Qt.ItemFlag.ItemIsEnabled)
         self.tableWidget.setItem(row, col, item)
+    def clear_reservation_data(self):
+        """ Xóa nội dung của các ô nhập liệu """
+        self.lineEdit_Cuscode.clear()
+        self.lineEdit_Phone.clear()
+        self.lineEdit_Cusname.clear()
+        self.lineEdit_Email.clear()
+        self.lineEdit_Identify.clear()
+
+        self.lineEdit_Roomcode.clear()
+
+
+
+        self.lineEdit_Requirement.clear()
+# Tab Booking
+    def display_selected_row_data(self, item):
+        """Hiển thị thông tin của hàng được chọn lên các ô bên trái"""
+        row = item.row()  # Lấy số hàng được chọn
+
+        # Lấy dữ liệu từ từng cột của hàng
+        customer_name = self.tableWidget.item(row, 0).text()
+        phone = self.tableWidget.item(row, 1).text()
+        email = self.tableWidget.item(row, 2).text()
+        checkin_date = self.tableWidget.item(row, 3).text()
+        checkout_date = self.tableWidget.item(row, 4).text()
+        room_type = self.tableWidget.item(row, 5).text()
+        customer_code = ""
+        customer_code = ""
+        for customer in self.customers:  # Duyệt danh sách đối tượng khách hàng
+            if customer.customer_name == customer_name:  # So sánh thuộc tính
+                customer_code = customer.customer_code  # Lấy mã khách hàng
+                break  # Thoát vòng lặp nếu tìm thấy
+        # Hiển thị dữ liệu lên các ô nhập bên trái
+        self.lineEdit_CusCode2.setText(customer_code)
+        self.lineEdit_Phone_2.setText(phone)
+        self.lineEditCusName2.setText(customer_name)
+        self.lineEdit_CusEmail2.setText(email)
+        self.lineEdit_CheckIn.setText(checkin_date)
+        self.lineEdit_CheckOut.setText(checkout_date)
+        self.lineEdit_Roomtype.setText(room_type)
+
+    def update_selected_row(self):
+        """Cập nhật dữ liệu của hàng đang chọn mà không xóa hàng cũ"""
+        selected_row = self.tableWidget.currentRow()
+
+        if selected_row < 0:
+            QMessageBox.warning(self, "Lỗi", "Vui lòng chọn một dòng để cập nhật!")
+            return
+
+        # Lấy dữ liệu từ các ô nhập
+        customer_code = self.lineEdit_CusCode2.text()
+        customer_name = self.lineEditCusName2.text()
+        phone = self.lineEdit_Phone_2.text()
+        email = self.lineEdit_CusEmail2.text()
+        checkin_date = self.lineEdit_CheckIn.text()
+        checkout_date = self.lineEdit_CheckOut.text()
+        room_type = self.lineEdit_Roomtype.text()
+
+        # Cập nhật dữ liệu vào hàng đang chọn
+        self.tableWidget.setItem(selected_row, 0, QTableWidgetItem(customer_name))
+        self.tableWidget.setItem(selected_row, 1, QTableWidgetItem(phone))
+        self.tableWidget.setItem(selected_row, 2, QTableWidgetItem(email))
+        self.tableWidget.setItem(selected_row, 3, QTableWidgetItem(checkin_date))
+        self.tableWidget.setItem(selected_row, 4, QTableWidgetItem(checkout_date))
+        self.tableWidget.setItem(selected_row, 5, QTableWidgetItem(room_type))
+
+        QMessageBox.information(self, "Thành công", "Dữ liệu đã được cập nhật!")
+
+    def reset_inputs(self):
+        """Xóa tất cả dữ liệu trong các ô nhập"""
+        self.lineEdit_CusCode2.clear()
+        self.lineEditCusName2.clear()
+        self.lineEdit_Phone_2.clear()
+        self.lineEdit_CusEmail2.clear()
+        self.lineEdit_CheckIn.clear()
+        self.lineEdit_CheckOut.clear()
+        self.lineEdit_Roomtype.clear()
+
+    def delete_selected_row(self):
+        """Xóa khách hàng khỏi bảng và cập nhật JSON"""
+        selected_row = self.tableWidget.currentRow()
+
+        if selected_row < 0:
+            return  # Không có dòng nào được chọn
+
+        # Lấy customer_name của khách hàng cần xóa từ cột trong bảng
+        customer_name = self.tableWidget.item(selected_row, 0).text()  # Giả sử cột 0 chứa customer_name
+
+        # Xóa dòng khỏi giao diện bảng
+        self.tableWidget.removeRow(selected_row)
+
+        # Tìm customer_code từ customer_name, sau đó cập nhật JSON
+        self.update_json_after_delete(customer_name)
+        self.clear_customer_details()
+
+    def clear_customer_details(self):
+        """Xóa thông tin khách hàng trên giao diện"""
+        self.lineEdit_CusCode2.clear()
+        self.lineEdit_Phone_2.clear()
+        self.lineEdit_CheckIn.clear()
+        self.lineEdit_CheckOut.clear()
+        self.lineEdit_Cusname.clear()
+        self.lineEdit_Roomtype.clear()
+        (self.lineEdit_CusEmail2.clear())
+    def update_json_after_delete(self, customer_name):
+        """Tìm customer_code từ customer_name, sau đó xóa khách hàng & đặt phòng liên quan"""
+        try:
+            customer_code = None  # Giá trị mặc định nếu không tìm thấy
+            updated_customers = []
+
+            # Xử lý customers.json
+            if os.path.exists(self.customer_filename):
+                with open(self.customer_filename, "r", encoding="utf-8") as file:
+                    customers = json.load(file)
+
+                for customer in customers:
+                    if customer["customer_name"] == customer_name:
+                        customer_code = customer["customer_code"]  # Lấy customer_code
+                    else:
+                        updated_customers.append(customer)  # Giữ lại khách hàng khác
+
+                # Ghi lại file customers.json đã cập nhật
+                with open(self.customer_filename, "w", encoding="utf-8") as file:
+                    json.dump(updated_customers, file, indent=4, ensure_ascii=False)
+
+            # Nếu tìm được customer_code, xóa đặt phòng liên quan trong bookings.json
+            if customer_code and os.path.exists(self.booking_filename):
+                with open(self.booking_filename, "r", encoding="utf-8") as file:
+                    bookings = json.load(file)
+
+                # Lọc danh sách để loại bỏ các booking của khách hàng bị xóa
+                updated_bookings = [b for b in bookings if b["customer_code"] != customer_code]
+
+                # Ghi lại file bookings.json đã cập nhật
+                with open(self.booking_filename, "w", encoding="utf-8") as file:
+                    json.dump(updated_bookings, file, indent=4, ensure_ascii=False)
+
+        except Exception as e:
+            print(f"Lỗi khi cập nhật JSON: {e}")
+
+    '''def open_booking_report(self):
+
+                self.report_window = QMainWindow()
+                self.report_window = MainWindowEx()
+                self.report_window.setupUi(self.report_window)
+                self.report_window.show()'''
+
+
+
