@@ -5,6 +5,7 @@ from PyQt6.QtCore import QDate, Qt
 from PyQt6.QtGui import QBrush, QColor
 from PyQt6.QtWidgets import QMainWindow, QHeaderView, QMessageBox, QTableWidgetItem
 
+from RoomBookingReport.MainWindowEx import MainWindowEx
 from libs.DataConnector import DataConnector
 from libs.FileFactory import JsonFileFactory
 from model.Booking import Booking
@@ -61,6 +62,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.pushButtonDelete.clicked.connect(self.delete_selected_row)
         self.pushButtonreset.clicked.connect(self.reset_inputs)
         self.pushButton_Clear.clicked.connect(self.clear_reservation_data)
+        self.pushButtonReport.clicked.connect(self.open_booking_report)
     def process_checkout(self):
         selected_items = self.tableWidget_Room.selectedItems()
         if not selected_items:
@@ -421,7 +423,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.lineEdit_CheckOut.clear()
         self.lineEdit_Roomtype.clear()
 
-    import json
+
 
     def delete_selected_row(self):
         """Xóa khách hàng khỏi bảng và cập nhật JSON"""
@@ -454,6 +456,10 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
 
         except Exception as e:
             print(f"Lỗi khi cập nhật JSON: {e}")
+    def open_booking_report(self):
+        self.report_window = MainWindowEx()
+        self.report_window.show()
+
 
 
 
