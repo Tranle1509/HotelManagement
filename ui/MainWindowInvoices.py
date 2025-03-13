@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\Final_Project\HotelManagement\ui\MainWindowInvoices.ui'
+# Form implementation generated from reading ui file 'D:\FinalProject\ui\MainWindowInvoices.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -33,10 +33,10 @@ class Ui_MainWindow(object):
         self.label_5.setStyleSheet("color: rgb(255, 255, 255);\n"
 "font: 10pt \"#9Slide03 Montserrat\";")
         self.label_5.setObjectName("label_5")
-        self.lineEdit_bookingcode = QtWidgets.QLineEdit(parent=self.groupBox)
-        self.lineEdit_bookingcode.setGeometry(QtCore.QRect(120, 10, 191, 20))
-        self.lineEdit_bookingcode.setStyleSheet("background-color: rgb(255, 255, 255);")
-        self.lineEdit_bookingcode.setObjectName("lineEdit_bookingcode")
+        self.lineEdit_customercode = QtWidgets.QLineEdit(parent=self.groupBox)
+        self.lineEdit_customercode.setGeometry(QtCore.QRect(120, 10, 191, 20))
+        self.lineEdit_customercode.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.lineEdit_customercode.setObjectName("lineEdit_customercode")
         self.lineEdit_issuedate = QtWidgets.QLineEdit(parent=self.groupBox)
         self.lineEdit_issuedate.setGeometry(QtCore.QRect(120, 40, 191, 20))
         self.lineEdit_issuedate.setStyleSheet("background-color: rgb(255, 255, 255);")
@@ -158,9 +158,16 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
         self.label.setGeometry(QtCore.QRect(6, 3, 791, 671))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/HomePage.jpg"))
+        self.label.setPixmap(QtGui.QPixmap("D:\\FinalProject\\ui\\../images/HomePage.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
+        self.label_12 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_12.setGeometry(QtCore.QRect(6, 3, 801, 681))
+        self.label_12.setText("")
+        self.label_12.setPixmap(QtGui.QPixmap("D:\\FinalProject\\ui\\../images/login.png"))
+        self.label_12.setScaledContents(True)
+        self.label_12.setObjectName("label_12")
+        self.label_12.raise_()
         self.label.raise_()
         self.groupBox.raise_()
         self.tableWidget_invoices.raise_()

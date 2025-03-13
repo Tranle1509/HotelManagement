@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\KTLT\HotelManagement\ui\AboutUsMainWindow.ui'
+# Form implementation generated from reading ui file 'D:\FinalProject\ui\AboutUsMainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
         self.label.setGeometry(QtCore.QRect(0, 0, 1081, 701))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/aboutus.png"))
+        self.label.setPixmap(QtGui.QPixmap("D:\\FinalProject\\ui\\../images/aboutus.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.pushButtonBack = QtWidgets.QPushButton(parent=self.centralwidget)
