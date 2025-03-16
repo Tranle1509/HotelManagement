@@ -28,7 +28,7 @@ class MainWindowInvoicesEx(QMainWindow, Ui_MainWindow):
         self.jff = JsonFileFactory()
         self.load_data()
         self.load_invoice_data()
-        self.pushButton_export.clicked.connect(self.export_invoice)
+        self.pushButton_calculate.clicked.connect(self.calculate_total)
     def load_json(self, file_path):
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
@@ -128,59 +128,6 @@ class MainWindowInvoicesEx(QMainWindow, Ui_MainWindow):
         self.lineEdit_tax.setText(f"{tax:,.0f} VND")
         self.lineEdit_totalprice.setText(f"{total_price:,.0f} VND")
 
-    def export_invoice(self):
-        """Xuất hóa đơn ra file PDF"""
-        pdf = FPDF()
-        pdf.set_auto_page_break(auto=True, margin=15)
-        pdf.add_page()
-        pdf.set_font("Arial", "B", 16)
-
-        # Tiêu đề
-        pdf.cell(200, 10, "Hotel Invoices", ln=True, align="C")
-        pdf.ln(10)
-
-        # Thông tin khách hàng
-        pdf.set_font("Arial", "", 12)
-        pdf.cell(50, 10, f"Customer: {self.lineEdit_customer.text()}", ln=True)
-        pdf.cell(50, 10, f"Customer code: {self.lineEdit_customercode.text()}", ln=True)
-        pdf.cell(50, 10, f"Issued date: {self.lineEdit_issuedate.text()}", ln=True)
-        pdf.cell(50, 10, f"Numbers of days: {self.lineEdit_numberofdays.text()} days", ln=True)
-        pdf.ln(5)
-
-        # Bảng chi tiết hóa đơn
-        pdf.set_fill_color(200, 200, 200)
-        pdf.cell(30, 10, "No", 1, 0, "C", True)
-        pdf.cell(50, 10, "Room Type", 1, 0, "C", True)
-        pdf.cell(30, 10, "Numbers of days", 1, 0, "C", True)
-        pdf.cell(40, 10, "Unit Price", 1, 0, "C", True)
-        pdf.cell(40, 10, "Total", 1, 1, "C", True)
-
-        pdf.set_font("Arial", "", 12)
-        for row in range(self.tableWidget_invoices.rowCount()):
-            pdf.cell(30, 10, str(row + 1), 1, 0, "C")
-            pdf.cell(50, 10, self.tableWidget_invoices.item(row, 1).text(), 1, 0, "C")
-            pdf.cell(30, 10, self.tableWidget_invoices.item(row, 2).text(), 1, 0, "C")
-            pdf.cell(40, 10, self.tableWidget_invoices.item(row, 3).text(), 1, 0, "C")
-            pdf.cell(40, 10, self.tableWidget_invoices.item(row, 4).text(), 1, 1, "C")
-
-        # Tổng tiền
-        pdf.ln(5)
-        pdf.cell(100, 10, "CIT price:", 0, 0)
-        pdf.cell(40, 10, self.lineEdit_citprice.text(), 0, 1, "R")
-
-        pdf.cell(100, 10, "Tax (10%):", 0, 0)
-        pdf.cell(40, 10, self.lineEdit_tax.text(), 0, 1, "R")
-
-        pdf.cell(100, 10, "Total:", 0, 0, "B")
-        pdf.cell(40, 10, self.lineEdit_totalprice.text(), 0, 1, "RB")
-
-        # Lưu file PDF
-        file_path = "D:/demo/dataset/invoice.pdf"
-        try:
-            pdf.output(file_path)
-            QMessageBox.information(self, "Export Invoice", f"Invoices saved at: {file_path}")
-        except Exception as e:
-            QMessageBox.critical(self, "Lỗi", f"Cannot save invoices: {e}")
     def load_data(self):
         """Tải dữ liệu từ JSON và cập nhật bảng."""
         self.customers = self.jff.read_data(self.customer_filename, Customer) or []

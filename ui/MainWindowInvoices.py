@@ -122,12 +122,12 @@ class Ui_MainWindow(object):
         self.label_11.setStyleSheet("color: rgb(255, 255, 255);\n"
 "font: 10pt \"#9Slide03 Montserrat\";")
         self.label_11.setObjectName("label_11")
-        self.pushButton_export = QtWidgets.QPushButton(parent=self.groupBox_2)
-        self.pushButton_export.setGeometry(QtCore.QRect(220, 100, 121, 31))
-        self.pushButton_export.setStyleSheet("font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
+        self.pushButton_calculate = QtWidgets.QPushButton(parent=self.groupBox_2)
+        self.pushButton_calculate.setGeometry(QtCore.QRect(220, 100, 121, 31))
+        self.pushButton_calculate.setStyleSheet("font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
 "color: rgb(255, 232, 137);\n"
 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
-        self.pushButton_export.setObjectName("pushButton_export")
+        self.pushButton_calculate.setObjectName("pushButton_calculate")
         self.pushButton_close = QtWidgets.QPushButton(parent=self.groupBox_2)
         self.pushButton_close.setGeometry(QtCore.QRect(420, 100, 121, 31))
         self.pushButton_close.setStyleSheet("font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
@@ -216,7 +216,7 @@ class Ui_MainWindow(object):
         self.label_9.setText(_translate("MainWindow", "CIT price:"))
         self.label_10.setText(_translate("MainWindow", "Tax:"))
         self.label_11.setText(_translate("MainWindow", "Total Price:"))
-        self.pushButton_export.setText(_translate("MainWindow", "Export "))
+        self.pushButton_calculate.setText(_translate("MainWindow", "Calculate"))
         self.pushButton_close.setText(_translate("MainWindow", "Close"))
         self.label_2.setText(_translate("MainWindow", "D\'anteria Exclusive"))
         self.label_3.setText(_translate("MainWindow", "Dhaalu Atoll, Kandima Island, 20066, Kudahuvadhoo, Maldives"))
