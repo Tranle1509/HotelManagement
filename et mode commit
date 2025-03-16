@@ -1,0 +1,223 @@
+[1mdiff --git a/dataset/bookings.json b/dataset/bookings.json[m
+[1mindex d418d40..1b7e991 100644[m
+[1m--- a/dataset/bookings.json[m
+[1m+++ b/dataset/bookings.json[m
+[36m@@ -1,5960 +1,5978 @@[m
+ [[m
+     {[m
+         "customer_code": "cus1",[m
+[31m-        "room_code": "304",[m
+[31m-        "start_date": "2025/03/14",[m
+[31m-        "end_date": "2025/03/17"[m
+[32m+[m[32m        "room_code": "305",[m
+[32m+[m[32m        "start_date": "2025/03/09",[m
+[32m+[m[32m        "end_date": "2025/03/14"[m
+     },[m
+     {[m
+         "customer_code": "cus2",[m
+[31m-        "room_code": "304",[m
+[31m-        "start_date": "2025/03/11",[m
+[31m-        "end_date": "2025/03/12"[m
+[32m+[m[32m        "room_code": "102",[m
+[32m+[m[32m        "start_date": "2025/03/05",[m
+[32m+[m[32m        "end_date": "2025/03/13"[m
+     },[m
+     {[m
+[31m-        "customer_code": "cus4",[m
+[31m-        "room_code": "105",[m
+[31m-        "start_date": "2025/03/17",[m
+[31m-        "end_date": "2025/03/27"[m
+[32m+[m[32m        "customer_code": "cus6",[m
+[32m+[m[32m        "room_code": "303",[m
+[32m+[m[32m        "start_date": "2025/12/12",[m
+[32m+[m[32m        "end_date": "2025/12/15"[m
+     },[m
+     {[m
+[31m-        "customer_code": "cus9",[m
+[31m-        "room_code": "204",[m
+[31m-        "start_date": "2025/03/16",[m
+[31m-        "end_date": "2025/03/19"[m
+[32m+[m[32m        "customer_code": "cus7",[m
+[32m+[m[32m        "room_code": "201",[m
+[32m+[m[32m        "start_date": "2025/07/08",[m
+[32m+[m[32m        "end_date": "2025/07/13"[m
+     },[m
+     {[m
+[31m-        "customer_code": "cus10",[m
+[31m-        "room_code": "302",[m
+[31m-        "start_date": "2025/03/01",[m
+[31m-        "end_date": "2025/03/04"[m
+[32m+[m[32m        "customer_code": "cus8",[m
+[32m+[m[32m        "room_code": "101",[m
+[32m+[m[32m        "start_date": "2025/03/20",[m
+[32m+[m[32m        "end_date": "2025/03/21"[m
+     },[m
+     {[m
+[31m-        "customer_code": "cus11",[m
+[31m-        "room_code": "305",[m
+[31m-        "start_date": "2025/03/12",[m
+[31m-        "end_date": "2025/03/17"[m
+[32m+[m[32m        "customer_code": "cus9",[m
+[32m+[m[32m        "room_code": "101",[m
+[32m+[m[32m        "start_date": "2025/08/02",[m
+[32m+[m[32m        "end_date": "2025/08/06"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m        "customer_code": "cus10",[m
+[32m+[m[32m        "room_code": "201",[m
+[32m+[m[32m        "start_date": "2025/10/20",[m
+[32m+[m[32m        "end_date": "2025/10/29"[m
+     },[m
+     {[m
+         "customer_code": "cus12",[m
+[31m-        "room_code": "203",[m
+[31m-        "start_date": "2025/03/17",[m
+[31m-        "end_date": "2025/03/22"[m
+[32m+[m[32m        "room_code": "204",[m
+[32m+[m[32m        "start_date": "2025/02/05",[m
+[32m+[m[32m        "end_date": "2025/02/10"[m
+     },[m
+     {[m
+         "customer_code": "cus13",[m
+[31m-        "room_code": "203",[m
+[31m-        "start_date": "2025/03/06",[m
+[31m-        "end_date": "2025/03/14"[m
+[32m+[m[32m        "room_code": "101",[m
+[32m+[m[32m        "start_date": "2025/04/16",[m
+[32m+[m[32m        "end_date": "2025/04/24"[m
+     },[m
+     {[m
+         "customer_code": "cus14",[m
+[31m-        "room_code": "203",[m
+[31m-        "start_date": "2025/03/12",[m
+[31m-        "end_date": "2025/03/13"[m
+[32m+[m[32m        "room_code": "105",[m
+[32m+[m[32m        "start_date": "2025/05/13",[m
+[32m+[m[32m        "end_date": "2025/05/18"[m
+     },[m
+     {[m
+         "customer_code": "cus15",[m
+[31m-        "room_code": "103",[m
+[31m-        "start_date": "2025/03/01",[m
+[31m-        "end_date": "2025/03/06"[m
+[32m+[m[32m        "room_code": "303",[m
+[32m+[m[32m        "start_date": "2025/06/17",[m
+[32m+[m[32m        "end_date": "2025/06/24"[m
+     },[m
+     {[m
+         "customer_code": "cus16",[m
+[31m-        "room_code": "205",[m
+[31m-        "start_date": "2025/03/11",[m
+[31m-        "end_date": "2025/03/18"[m
+[32m+[m[32m        "room_code": "103",[m
+[32m+[m[32m        "start_date": "2025/11/04",[m
+[32m+[m[32m        "end_date": "2025/11/10"[m
+     },[m
+     {[m
+         "customer_code": "cus17",[m
+[31m-        "room_code": "104",[m
+[32m+[m[32m        "room_code": "202",[m
+         "start_date": "2025/03/19",[m
+[31m-        "end_date": "2025/03/26"[m
+[32m+[m[32m        "end_date": "2025/03/24"[m
+     },[m
+     {[m
+         "customer_code": "cus18",[m
+[31m-        "room_code": "304",[m
+[31m-        "start_date": "2025/03/08",[m
+[31m-        "end_date": "2025/03/11"[m
+[32m+[m[32m        "room_code": "103",[m
+[32m+[m[32m        "start_date": "2025/03/11",[m
+[32m+[m[32m        "end_date": "2025/03/14"[m
+     },[m
+     {[m
+         "customer_code": "cus19",[m
+[31m-        "room_code": "204",[m
+[31m-        "start_date": "2025/03/05",[m
+[31m-        "end_date": "2025/03/13"[m
+[32m+[m[32m        "room_code": "104",[m
+[32m+[m[32m        "start_date": "2025/12/02",[m
+[32m+[m[32m        "end_date": "2025/12/09"[m
+     },[m
+     {[m
+         "customer_code": "cus20",[m
+[31m-        "room_code": "205",[m
+[31m-        "start_date": "2025/03/19",[m
+[31m-        "end_date": "2025/03/20"[m
+[32m+[m[32m        "room_code": "301",[m
+[32m+[m[32m        "start_date": "2025/08/12",[m
+[32m+[m[32m        "end_date": "2025/08/22"[m
+     },[m
+     {[m
+         "customer_code": "cus21",[m
+[31m-        "room_code": "104",[m
+[31m-        "start_date": "2025/03/12",[m
+[31m-        "end_date": "2025/03/13"[m
+[32m+[m[32m        "room_code": "204",[m
+[32m+[m[32m        "start_date": "2025/06/13",[m
+[32m+[m[32m        "end_date": "2025/06/18"[m
+     },[m
+     {[m
+         "customer_code": "cus22",[m
+[31m-        "room_code": "102",[m
+[31m-        "start_date": "2025/03/17",[m
+[31m-        "end_date": "2025/03/19"[m
+[32m+[m[32m        "room_code": "201",[m
+[32m+[m[32m        "start_date": "2025/07/18",[m
+[32m+[m[32m        "end_date": "2025/07/20"[m
+     },[m
+     {[m
+         "customer_code": "cus23",[m
+[31m-        "room_code": "302",[m
+[31m-        "start_date": "2025/03/17",[m
+[31m-        "end_date": "2025/03/20"[m
+[32m+[m[32m        "room_code": "201",[m
+[32m+[m[32m        "start_date": "2025/12/15",[m
+[32m+[m[32m        "end_date": "2025/12/21"[m
+     },[m
+     {[m
+         "customer_code": "cus24",[m
+         "room_code": "102",[m
+[31m-        "start_date": "2025/03/10",[m
+[31m-        "end_date": "2025/03/14"[m
+[32m+[m[32m        "start_date": "2025/10/12",[m
+[32m+[m[32m        "end_date": "2025/10/13"[m
+     },[m
+     {[m
+         "customer_code": "cus25",[m
+[31m-        "room_code": "303",[m
+[31m-        "start_date": "2025/03/16",[m
+[31m-        "end_date": "2025/03/26"[m
+[32m+[m[32m        "room_code": "105",[m
+[32m+[m[32m        "start_date": "2025/08/17",[m
+[32m+[m[32m        "end_date": "2025/08/19"[m
+     },[m
+     {[m
+         "customer_code": "cus26",[m
+[31m-        "room_code": "104",[m
+[31m-        "start_date": "2025/03/05",[m
+[31m-        "end_date": "2025/03/11"[m
+[32m+[m[32m        "room_code": "105",[m
+[32m+[m[32m        "start_date": "2025/06/10",[m
+[32m+[m[32m        "end_date": "2025/06/19"[m
+     },[m
+     {[m
+         "customer_code": "cus27",[m
+[31m-        "room_code": "201",[m
+[31m-        "start_date": "2025/03/05",[m
+[31m-        "end_date": "2025/03/14"[m
+[32m+[m[32m        "room_code": "301",[m
+[32m+[m[32m        "start_date": "2025/08/06",[m
+[32m+[m[32m        "end_date": "2025/08/13"[m
+     },[m
+     {[m
+         "customer_code": "cus28",[m
+[31m-        "room_code": "203",[m
+[31m-        "start_date": "2025/03/16",[m
+[31m-        "end_date": "2025/03/21"[m
+[32m+[m[32m        "room_code": "305",[m
+[32m+[m[32m        "start_date": "2025/11/20",[m
+[32m+[m[32m        "end_date": "2025/11/22"[m
+     },[m
+     {[m
+      

@@ -1,96 +1,5 @@
 [
     {
-        "customer_code": "cus1",
-        "customer_name": "Customer1",
-        "customer_phone": "0976129746",
-        "customer_email": "customer1@gmail.com",
-        "customer_identity": "099971664827"
-    },
-    {
-        "customer_code": "cus2",
-        "customer_name": "Customer2",
-        "customer_phone": "0944977570",
-        "customer_email": "customer2@gmail.com",
-        "customer_identity": "082587635985"
-    },
-    {
-        "customer_code": "cus4",
-        "customer_name": "Customer4",
-        "customer_phone": "0991248640",
-        "customer_email": "customer4@gmail.com",
-        "customer_identity": "095733760985"
-    },
-    {
-        "customer_code": "cus9",
-        "customer_name": "Customer9",
-        "customer_phone": "0902008099",
-        "customer_email": "customer9@gmail.com",
-        "customer_identity": "096001153038"
-    },
-    {
-        "customer_code": "cus10",
-        "customer_name": "Customer10",
-        "customer_phone": "0915110613",
-        "customer_email": "customer10@gmail.com",
-        "customer_identity": "062099588706"
-    },
-    {
-        "customer_code": "cus11",
-        "customer_name": "Customer11",
-        "customer_phone": "0997130292",
-        "customer_email": "customer11@gmail.com",
-        "customer_identity": "010229894021"
-    },
-    {
-        "customer_code": "cus12",
-        "customer_name": "Customer12",
-        "customer_phone": "0907182711",
-        "customer_email": "customer12@gmail.com",
-        "customer_identity": "017649627304"
-    },
-    {
-        "customer_code": "cus13",
-        "customer_name": "Customer13",
-        "customer_phone": "0913937483",
-        "customer_email": "customer13@gmail.com",
-        "customer_identity": "083918366384"
-    },
-    {
-        "customer_code": "cus14",
-        "customer_name": "Customer14",
-        "customer_phone": "0911555043",
-        "customer_email": "customer14@gmail.com",
-        "customer_identity": "050871460805"
-    },
-    {
-        "customer_code": "cus15",
-        "customer_name": "Customer15",
-        "customer_phone": "0919084703",
-        "customer_email": "customer15@gmail.com",
-        "customer_identity": "014254351490"
-    },
-    {
-        "customer_code": "cus16",
-        "customer_name": "Customer16",
-        "customer_phone": "0948058986",
-        "customer_email": "customer16@gmail.com",
-        "customer_identity": "022782487398"
-    },
-    {
-        "customer_code": "cus17",
-        "customer_name": "Customer17",
-        "customer_phone": "0921970402",
-        "customer_email": "customer17@gmail.com",
-        "customer_identity": "075079921762"
-    },
-    {
-        "customer_code": "cus18",
-        "customer_name": "Customer18",
-        "customer_phone": "0963668036",
-        "customer_email": "customer18@gmail.com",
-        "customer_identity": "000190967466"
-    },
-    {
         "customer_code": "cus19",
         "customer_name": "Customer19",
         "customer_phone": "0931993874",
@@ -131,13 +40,6 @@
         "customer_phone": "0942496164",
         "customer_email": "customer24@gmail.com",
         "customer_identity": "034492215829"
-    },
-    {
-        "customer_code": "cus25",
-        "customer_name": "Customer25",
-        "customer_phone": "0904644614",
-        "customer_email": "customer25@gmail.com",
-        "customer_identity": "095016608740"
     },
     {
         "customer_code": "cus26",
@@ -257,20 +159,6 @@
         "customer_phone": "0989260505",
         "customer_email": "customer43@gmail.com",
         "customer_identity": "037715218007"
-    },
-    {
-        "customer_code": "cus44",
-        "customer_name": "Customer44",
-        "customer_phone": "0943408074",
-        "customer_email": "customer44@gmail.com",
-        "customer_identity": "008605767515"
-    },
-    {
-        "customer_code": "cus45",
-        "customer_name": "Customer45",
-        "customer_phone": "0964597098",
-        "customer_email": "customer45@gmail.com",
-        "customer_identity": "021773061387"
     },
     {
         "customer_code": "cus46",
@@ -439,13 +327,6 @@
         "customer_phone": "0901656955",
         "customer_email": "customer69@gmail.com",
         "customer_identity": "036047149179"
-    },
-    {
-        "customer_code": "cus70",
-        "customer_name": "Customer70",
-        "customer_phone": "0990818798",
-        "customer_email": "customer70@gmail.com",
-        "customer_identity": "056369647073"
     },
     {
         "customer_code": "cus71",
@@ -3512,13 +3393,6 @@
         "customer_phone": "0934600000",
         "customer_email": "customer508@gmail.com",
         "customer_identity": "033698145450"
-    },
-    {
-        "customer_code": "cus509",
-        "customer_name": "Customer509",
-        "customer_phone": "0978671286",
-        "customer_email": "customer509@gmail.com",
-        "customer_identity": "081128714967"
     },
     {
         "customer_code": "cus510",

@@ -39,7 +39,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>170</y>
+      <y>190</y>
       <width>1281</width>
       <height>561</height>
      </rect>
@@ -48,7 +48,7 @@
      <string notr="true">font: 57 14pt &quot;SFU Toledo&quot;;</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab_8">
      <attribute name="title">
@@ -150,9 +150,9 @@ color: rgb(0, 0, 0);</string>
           </property>
           <property name="background">
            <color>
-            <red>119</red>
-            <green>139</green>
-            <blue>206</blue>
+            <red>255</red>
+            <green>182</green>
+            <blue>119</blue>
            </color>
           </property>
          </column>
@@ -162,9 +162,9 @@ color: rgb(0, 0, 0);</string>
           </property>
           <property name="background">
            <color>
-            <red>119</red>
-            <green>139</green>
-            <blue>206</blue>
+            <red>245</red>
+            <green>161</green>
+            <blue>103</blue>
            </color>
           </property>
          </column>
@@ -174,9 +174,9 @@ color: rgb(0, 0, 0);</string>
           </property>
           <property name="background">
            <color>
-            <red>119</red>
+            <red>227</red>
             <green>139</green>
-            <blue>206</blue>
+            <blue>184</blue>
            </color>
           </property>
          </column>
@@ -186,9 +186,9 @@ color: rgb(0, 0, 0);</string>
           </property>
           <property name="background">
            <color>
-            <red>119</red>
-            <green>139</green>
-            <blue>206</blue>
+            <red>221</red>
+            <green>138</green>
+            <blue>194</blue>
            </color>
           </property>
          </column>
@@ -198,15 +198,22 @@ color: rgb(0, 0, 0);</string>
           </property>
           <property name="background">
            <color>
-            <red>119</red>
-            <green>139</green>
-            <blue>206</blue>
+            <red>191</red>
+            <green>114</green>
+            <blue>216</blue>
            </color>
           </property>
          </column>
          <column>
           <property name="text">
-           <string>Room type</string>
+           <string>Room code</string>
+          </property>
+          <property name="background">
+           <color>
+            <red>164</red>
+            <green>94</green>
+            <blue>229</blue>
+           </color>
           </property>
          </column>
         </widget>
@@ -232,7 +239,7 @@ color: rgb(0, 0, 0);</string>
         <x>10</x>
         <y>10</y>
         <width>511</width>
-        <height>501</height>
+        <height>481</height>
        </rect>
       </property>
       <property name="font">
@@ -363,7 +370,7 @@ hover {
         <string notr="true">background-color: transparent; border:transparent;</string>
        </property>
        <property name="text">
-        <string>Room Type :</string>
+        <string>Room Code :</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_172">
@@ -516,7 +523,7 @@ QPushButton:pressed {
         <string>Delete</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButtonreset">
+      <widget class="QPushButton" name="pushButtonsearch">
        <property name="geometry">
         <rect>
          <x>260</x>
@@ -563,7 +570,7 @@ QPushButton:pressed {
 </string>
        </property>
        <property name="text">
-        <string>Reset</string>
+        <string>Search</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_174">
@@ -667,7 +674,7 @@ color: rgb(0, 0, 0);</string>
         <string>Customer Code :</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_Roomtype">
+      <widget class="QLineEdit" name="lineEdit_RoomCodeB">
        <property name="geometry">
         <rect>
          <x>190</x>
@@ -805,379 +812,6 @@ QPushButton:pressed {
        </property>
       </widget>
      </widget>
-    </widget>
-    <widget class="QWidget" name="widget">
-     <attribute name="title">
-      <string>Room Management</string>
-     </attribute>
-     <widget class="QPushButton" name="pushButton_exit">
-      <property name="geometry">
-       <rect>
-        <x>740</x>
-        <y>470</y>
-        <width>131</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 15px;
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));
-</string>
-      </property>
-      <property name="text">
-       <string>EXIT</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../../TranHieuKieuDuyen_K244111457_K24411E/Midterm_TranHieuKieuDuyen/WarehouseManagement/images/close.webp</normaloff>../../TranHieuKieuDuyen_K244111457_K24411E/Midterm_TranHieuKieuDuyen/WarehouseManagement/images/close.webp</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_checkout">
-      <property name="geometry">
-       <rect>
-        <x>570</x>
-        <y>470</y>
-        <width>151</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 15px;
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));
-</string>
-      </property>
-      <property name="text">
-       <string>CHECK OUT</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../../Downloads/187510.png</normaloff>../../Downloads/187510.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QTableWidget" name="tableWidget_Room">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>100</y>
-        <width>1251</width>
-        <height>361</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>411</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.733, x2:0.51194, y2:0.744, stop:0.457711 rgba(245, 247, 250, 255), stop:1 rgba(195, 207, 226, 255));</string>
-      </property>
-      <row>
-       <property name="text">
-        <string/>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>1</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>2</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>3</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>4</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>5</string>
-       </property>
-      </row>
-      <column>
-       <property name="text">
-        <string>Room</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Status</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Customer</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Type</string>
-       </property>
-      </column>
-     </widget>
-     <widget class="QDateEdit" name="dateEdit_date">
-      <property name="geometry">
-       <rect>
-        <x>990</x>
-        <y>40</y>
-        <width>271</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="dateTime">
-       <datetime>
-        <hour>0</hour>
-        <minute>0</minute>
-        <second>0</second>
-        <year>2025</year>
-        <month>1</month>
-        <day>1</day>
-       </datetime>
-      </property>
-      <property name="displayFormat">
-       <string>yyyy/M/d</string>
-      </property>
-      <property name="date">
-       <date>
-        <year>2025</year>
-        <month>1</month>
-        <day>1</day>
-       </date>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>890</x>
-        <y>40</y>
-        <width>91</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 75 20pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(0, 0, 0);
-
-</string>
-      </property>
-      <property name="text">
-       <string>Date:</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_checkin">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>470</y>
-        <width>141</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 15px;
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));
-</string>
-      </property>
-      <property name="text">
-       <string>CHECK IN</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../../Downloads/Tick.webp</normaloff>../../Downloads/Tick.webp</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>581</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>SFU Toledo</family>
-        <pointsize>14</pointsize>
-        <weight>7</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="title">
-       <string>Sort</string>
-      </property>
-      <widget class="QPushButton" name="pushButton_booked">
-       <property name="geometry">
-        <rect>
-         <x>120</x>
-         <y>40</y>
-         <width>91</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius: 15px;
-border-radius: 15px;
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));</string>
-       </property>
-       <property name="text">
-        <string>Booked</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_vacant">
-       <property name="geometry">
-        <rect>
-         <x>230</x>
-         <y>40</y>
-         <width>101</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius: 15px;
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));</string>
-       </property>
-       <property name="text">
-        <string>Vancant</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_all">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>91</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius: 15px;
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));
-</string>
-       </property>
-       <property name="text">
-        <string>All</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_vip">
-       <property name="geometry">
-        <rect>
-         <x>350</x>
-         <y>40</y>
-         <width>91</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius: 15px;
-border-radius: 15px;
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));</string>
-       </property>
-       <property name="text">
-        <string>VIP</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_regular">
-       <property name="geometry">
-        <rect>
-         <x>460</x>
-         <y>40</y>
-         <width>91</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius: 15px;
-border-radius: 15px;
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));</string>
-       </property>
-       <property name="text">
-        <string>Regular</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>-70</x>
-        <y>-320</y>
-        <width>1361</width>
-        <height>331</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../Final_Project/HotelManagement/images/Cover.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <zorder>tableWidget_Room</zorder>
-     <zorder>pushButton_exit</zorder>
-     <zorder>pushButton_checkout</zorder>
-     <zorder>dateEdit_date</zorder>
-     <zorder>label</zorder>
-     <zorder>pushButton_checkin</zorder>
-     <zorder>groupBox_3</zorder>
-     <zorder>label_3</zorder>
     </widget>
     <widget class="QWidget" name="tab_7">
      <attribute name="title">
@@ -1594,9 +1228,9 @@ background: transparent
       <widget class="QLabel" name="label_158">
        <property name="geometry">
         <rect>
-         <x>630</x>
+         <x>640</x>
          <y>160</y>
-         <width>91</width>
+         <width>71</width>
          <height>31</height>
         </rect>
        </property>
@@ -1645,7 +1279,7 @@ color: rgb(0, 0, 0);</string>
      <widget class="QPushButton" name="pushButton_Save">
       <property name="geometry">
        <rect>
-        <x>440</x>
+        <x>510</x>
         <y>480</y>
         <width>111</width>
         <height>41</height>
@@ -1659,53 +1293,43 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="font">
        <font>
-        <family>#9Slide03 SFU Toledo Bold</family>
-        <pointsize>15</pointsize>
-        <weight>9</weight>
+        <family>SFU Toledo</family>
+        <pointsize>-1</pointsize>
+        <weight>7</weight>
         <italic>false</italic>
         <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,
+                                      stop:0.0681818 rgba(80, 11, 40, 255),
+                                      stop:1 rgba(211, 26, 48, 243)); /* Gradient màu nền */
+    color: white;
     border-radius: 10px;
+    padding: 8px;
+    font-size: 14px;
+
+    /* Viền sáng ở trên &amp; tối ở dưới để tạo hiệu ứng 3D */
+    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */
+    border-top: 3px solid rgb(255, 255, 255); /* Viền trên sáng hơn */
+    border-left: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(150, 0, 20); /* Viền dưới tối hơn */
+    border-right: 3px solid rgb(150, 0, 20);
+}
+
+QPushButton:pressed {
+    border-top: 3px solid rgb(150, 0, 20); /* Khi nhấn, đổi viền trên tối hơn */
+    border-left: 3px solid rgb(150, 0, 20);
+    border-bottom: 3px solid rgb(255, 255, 255); /* Viền dưới sáng hơn */
+    border-right: 3px solid rgb(255, 255, 255);
+    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */
+}
 </string>
       </property>
       <property name="text">
        <string>Submit</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_Close">
-      <property name="geometry">
-       <rect>
-        <x>720</x>
-        <y>480</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="whatsThis">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Remove&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));
-    border-radius: 10px;
-</string>
-      </property>
-      <property name="text">
-       <string>Close</string>
       </property>
      </widget>
      <widget class="QGroupBox" name="groupBox_6">
@@ -2219,7 +1843,7 @@ color: rgb(0, 0, 0);</string>
      <widget class="QPushButton" name="pushButton_Clear">
       <property name="geometry">
        <rect>
-        <x>580</x>
+        <x>650</x>
         <y>480</y>
         <width>111</width>
         <height>41</height>
@@ -2236,16 +1860,420 @@ color: rgb(0, 0, 0);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">
-font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-color: rgb(255, 232, 137);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,
+                                      stop:0.0681818 rgba(80, 11, 40, 255),
+                                      stop:1 rgba(211, 26, 48, 243)); /* Gradient màu nền */
+    color: white;
     border-radius: 10px;
+    padding: 8px;
+    font-size: 14px;
+
+    /* Viền sáng ở trên &amp; tối ở dưới để tạo hiệu ứng 3D */
+    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */
+    border-top: 3px solid rgb(255, 255, 255); /* Viền trên sáng hơn */
+    border-left: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(150, 0, 20); /* Viền dưới tối hơn */
+    border-right: 3px solid rgb(150, 0, 20);
+}
+
+QPushButton:pressed {
+    border-top: 3px solid rgb(150, 0, 20); /* Khi nhấn, đổi viền trên tối hơn */
+    border-left: 3px solid rgb(150, 0, 20);
+    border-bottom: 3px solid rgb(255, 255, 255); /* Viền dưới sáng hơn */
+    border-right: 3px solid rgb(255, 255, 255);
+    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */
+}
 </string>
       </property>
       <property name="text">
        <string>Clear</string>
       </property>
      </widget>
+    </widget>
+    <widget class="QWidget" name="widget">
+     <attribute name="title">
+      <string>Room Management</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_checkout">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>470</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,
+                                      stop:0.0681818 rgba(80, 11, 40, 255),
+                                      stop:1 rgba(211, 26, 48, 243)); /* Gradient màu nền */
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 14px;
+
+    /* Viền sáng ở trên &amp; tối ở dưới để tạo hiệu ứng 3D */
+    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */
+    border-top: 3px solid rgb(255, 255, 255); /* Viền trên sáng hơn */
+    border-left: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(150, 0, 20); /* Viền dưới tối hơn */
+    border-right: 3px solid rgb(150, 0, 20);
+}
+
+QPushButton:pressed {
+    border-top: 3px solid rgb(150, 0, 20); /* Khi nhấn, đổi viền trên tối hơn */
+    border-left: 3px solid rgb(150, 0, 20);
+    border-bottom: 3px solid rgb(255, 255, 255); /* Viền dưới sáng hơn */
+    border-right: 3px solid rgb(255, 255, 255);
+    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>CHECK OUT</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../Downloads/187510.png</normaloff>../../Downloads/187510.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_Room">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>1251</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>411</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.733, x2:0.51194, y2:0.744, stop:0.457711 rgba(245, 247, 250, 255), stop:1 rgba(195, 207, 226, 255));</string>
+      </property>
+      <row>
+       <property name="text">
+        <string/>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Room</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Status</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Customer</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Type</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QDateEdit" name="dateEdit_date">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>40</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2025</year>
+        <month>1</month>
+        <day>1</day>
+       </datetime>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy/M/d</string>
+      </property>
+      <property name="date">
+       <date>
+        <year>2025</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>40</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 20pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+color: rgb(0, 0, 0);
+
+</string>
+      </property>
+      <property name="text">
+       <string>Date:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_checkin">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>470</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,
+                                      stop:0.0681818 rgba(80, 11, 40, 255),
+                                      stop:1 rgba(211, 26, 48, 243)); /* Gradient màu nền */
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 14px;
+
+    /* Viền sáng ở trên &amp; tối ở dưới để tạo hiệu ứng 3D */
+    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */
+    border-top: 3px solid rgb(255, 255, 255); /* Viền trên sáng hơn */
+    border-left: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(150, 0, 20); /* Viền dưới tối hơn */
+    border-right: 3px solid rgb(150, 0, 20);
+}
+
+QPushButton:pressed {
+    border-top: 3px solid rgb(150, 0, 20); /* Khi nhấn, đổi viền trên tối hơn */
+    border-left: 3px solid rgb(150, 0, 20);
+    border-bottom: 3px solid rgb(255, 255, 255); /* Viền dưới sáng hơn */
+    border-right: 3px solid rgb(255, 255, 255);
+    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>CHECK IN</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../Downloads/Tick.webp</normaloff>../../Downloads/Tick.webp</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>581</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>SFU Toledo</family>
+        <pointsize>14</pointsize>
+        <weight>7</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Sort</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_booked">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 15px;
+border-radius: 15px;
+font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+color: rgb(255, 232, 137);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));</string>
+       </property>
+       <property name="text">
+        <string>Booked</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_vacant">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>40</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 15px;
+font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+color: rgb(255, 232, 137);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));</string>
+       </property>
+       <property name="text">
+        <string>Vancant</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_all">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 15px;
+font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+color: rgb(255, 232, 137);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));
+</string>
+       </property>
+       <property name="text">
+        <string>All</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_vip">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 15px;
+border-radius: 15px;
+font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+color: rgb(255, 232, 137);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));</string>
+       </property>
+       <property name="text">
+        <string>VIP</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_regular">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 15px;
+border-radius: 15px;
+font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+color: rgb(255, 232, 137);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));</string>
+       </property>
+       <property name="text">
+        <string>Regular</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>-70</x>
+        <y>-320</y>
+        <width>1361</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Final_Project/HotelManagement/images/Cover.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>tableWidget_Room</zorder>
+     <zorder>pushButton_checkout</zorder>
+     <zorder>dateEdit_date</zorder>
+     <zorder>label</zorder>
+     <zorder>pushButton_checkin</zorder>
+     <zorder>groupBox_3</zorder>
+     <zorder>label_3</zorder>
     </widget>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -2267,8 +2295,39 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_Logout">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>0</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Remove&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 15pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background:rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+
+</string>
+    </property>
+    <property name="text">
+     <string>Log out</string>
+    </property>
+   </widget>
    <zorder>label_4</zorder>
    <zorder>tabWidget</zorder>
+   <zorder>pushButton_Logout</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

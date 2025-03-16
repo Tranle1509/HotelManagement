@@ -65,7 +65,7 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
       <string>Customer code:</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_bookingcode">
+    <widget class="QLineEdit" name="lineEdit_customercode">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -334,7 +334,7 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
       <string>Total Price:</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_export">
+    <widget class="QPushButton" name="pushButton_calculate">
      <property name="geometry">
       <rect>
        <x>220</x>
@@ -349,7 +349,7 @@ color: rgb(255, 232, 137);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));</string>
      </property>
      <property name="text">
-      <string>Export </string>
+      <string>Calculate</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_close">
@@ -453,6 +453,26 @@ font: 75 10pt &quot;#9Slide03 SFU Toledo Bold&quot;;
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>3</y>
+      <width>801</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/login.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_12</zorder>
    <zorder>label</zorder>
    <zorder>groupBox</zorder>
    <zorder>tableWidget_invoices</zorder>

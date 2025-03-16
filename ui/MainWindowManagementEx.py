@@ -4,13 +4,14 @@ from datetime import datetime
 
 from PyQt6.QtCore import QDate, Qt
 from PyQt6.QtGui import QColor, QBrush
-from PyQt6.QtWidgets import QMainWindow, QHeaderView, QMessageBox, QTableWidgetItem
+from PyQt6.QtWidgets import QMainWindow, QHeaderView, QMessageBox, QTableWidgetItem, QInputDialog, QPushButton
 
 from libs.DataConnector import DataConnector
 from libs.FileFactory import JsonFileFactory
 from model.Booking import Booking
 from model.Customer import Customer
 from model.Room import Room
+from ui.HomePageMainWindowEx import HomePageMainWindowEx
 from ui.MainWindowInvoicesEx import MainWindowInvoicesEx
 from ui.MainWindowManagement import Ui_MainWindow
 
@@ -33,6 +34,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.display_rooms(QDate.currentDate())  # 🔹 Gọi hiển thị phòng sau khi UI sẵn sàng
         self.setupSignalAndSlot()
 
+
     def configure_table_appearance(self):
         """Yêu cầu 3: Cấu hình kích thước bảng"""
         self.tableWidget_Room.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
@@ -50,7 +52,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
 
     def setupSignalAndSlot(self):
         self.pushButton_Save.clicked.connect(self.save_data)
-        self.pushButton_Close.clicked.connect(self.close)
+        self.pushButton_Logout.clicked.connect(self.logout)
         self.pushButton_Clear.clicked.connect(self.clear_data)
         self.dateEdit_date.dateChanged.connect(self.update_room_status)
         self.pushButton_vip.clicked.connect(self.sort_vip)
@@ -63,9 +65,8 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.tableWidget.itemClicked.connect(self.display_selected_row_data)
         self.pushButtonUpdate.clicked.connect(self.update_selected_row)
         self.pushButtonDelete.clicked.connect(self.delete_selected_row)
-        self.pushButtonreset.clicked.connect(self.reset_inputs)
+        self.pushButtonsearch.clicked.connect(self.search_booking)
         self.pushButton_Clear.clicked.connect(self.clear_reservation_data)
-#        self.pushButtonReport.clicked.connect(self.open_booking_report)
 
     def process_checkout(self):
         selected_items = self.tableWidget_Room.selectedItems()
@@ -174,12 +175,19 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
             self.MainWindow,
             "Check-in Confirmation",
             f"Do you confirm the check-in for room {room_code}?",
-
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
         )
 
         if confirm == QMessageBox.StandardButton.Yes:
-            new_customer_id = self.generate_new_customer_id()
+            # ✅ Hiển thị hộp thoại để nhập Customer ID
+            new_customer_id, ok = QInputDialog.getText(self, "Enter Customer ID", "Customer ID:")
+
+            if not ok or not new_customer_id.strip():  # Nếu bấm "Hủy" hoặc để trống
+                self.show_error_message("Please enter a valid Customer ID.")
+                return
+
+            new_customer_id = new_customer_id.strip()
+
             status_item.setText("Booked")
             customer_item.setText(new_customer_id)
 
@@ -194,7 +202,8 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
             new_booking = Booking(new_customer_id, room_code, datetime.now(), datetime.now())
             self.bookings.append(new_booking)
 
-            QMessageBox.information(self.MainWindow, "Successfull", "Check-in Successfully!")
+            QMessageBox.information(self.MainWindow, "Success", "Check-in Successfully!")
+
     def display_rooms(self, selected_date, rooms_to_display=None):
         self.tableWidget_Room.clearContents()
         rooms_to_display = rooms_to_display or self.rooms
@@ -316,14 +325,18 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.lineEdit_Identify.clear()
 
     def display_data(self):
-        """Hiển thị dữ liệu khách hàng và đặt phòng trên bảng."""
+        """Hiển thị dữ liệu khách hàng và đặt phòng trên bảng với kích thước cố định."""
         self.tableWidget.clearContents()
+
         total_rows = max(len(self.customers), len(self.bookings))
         self.tableWidget.setRowCount(total_rows)
         self.tableWidget.setColumnCount(6)
-        self.tableWidget.setHorizontalHeaderLabels(["Name", "Phone", "Email", "Check-in", "Check-out", "Room type"])
+        self.tableWidget.setHorizontalHeaderLabels(["Name", "Phone", "Email", "Check-in", "Check-out", "Room code"])
 
         for row in range(total_rows):
+            # 🔹 Hiển thị số thứ tự (STT) ở cột đầu tiên
+            self.tableWidget.setVerticalHeaderItem(row, QTableWidgetItem(str(row + 1)))
+
             customer = self.customers[row] if row < len(self.customers) else None
             if customer:
                 self.set_table_item(row, 0, customer.customer_name)
@@ -338,13 +351,32 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
                 self.set_table_item(row, 3, booking.start_date)
                 self.set_table_item(row, 4, booking.end_date)
 
-                # 🔹 Tìm room_type từ danh sách phòng
                 room = next((r for r in self.rooms if r.room_code == booking.room_code), None)
-                self.set_table_item(row, 5, room.room_type if room else "N/A")  # Hiển thị room_type nếu có
+                self.set_table_item(row, 5, room.room_code if room else "N/A")
             else:
                 for col in range(3, 6):
                     self.set_table_item(row, col, "N/A")
 
+        # 🔹 Cố định kích thước cột (đơn vị: pixel)
+        self.tableWidget.setColumnWidth(0, 100)  # Name
+        self.tableWidget.setColumnWidth(1, 100)  # Phone
+        self.tableWidget.setColumnWidth(2, 180)  # Email
+        self.tableWidget.setColumnWidth(3, 100)  # Check-in
+        self.tableWidget.setColumnWidth(4, 100)  # Check-out
+        self.tableWidget.setColumnWidth(5, 100)  # Room code
+
+        # 🔹 Cố định kích thước hàng (cao hơn để dễ nhìn)
+        self.tableWidget.verticalHeader().setDefaultSectionSize(40)
+
+        # 🔹 Căn giữa nội dung của bảng
+        for row in range(self.tableWidget.rowCount()):
+            for col in range(self.tableWidget.columnCount()):
+                item = self.tableWidget.item(row, col)
+                if item:
+                    item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        # 🔹 Tắt tự động điều chỉnh kích thước để giữ cố định
+        self.tableWidget.horizontalHeader().setStretchLastSection(False)
     def set_table_item(self, row, col, text):
         """Thiết lập ô chỉ đọc với nội dung cụ thể."""
         item = QTableWidgetItem(text)
@@ -363,6 +395,12 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
 
 
         self.lineEdit_Requirement.clear()
+
+
+
+    def open_heatmap_report(self):
+        # Thay bằng code tạo heatmap của bạn
+        print("Mở heatmap report...")
 # Tab Booking
     def display_selected_row_data(self, item):
         """Hiển thị thông tin của hàng được chọn lên các ô bên trái"""
@@ -374,8 +412,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         email = self.tableWidget.item(row, 2).text()
         checkin_date = self.tableWidget.item(row, 3).text()
         checkout_date = self.tableWidget.item(row, 4).text()
-        room_type = self.tableWidget.item(row, 5).text()
-        customer_code = ""
+        room_code = self.tableWidget.item(row, 5).text()
         customer_code = ""
         for customer in self.customers:  # Duyệt danh sách đối tượng khách hàng
             if customer.customer_name == customer_name:  # So sánh thuộc tính
@@ -388,7 +425,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.lineEdit_CusEmail2.setText(email)
         self.lineEdit_CheckIn.setText(checkin_date)
         self.lineEdit_CheckOut.setText(checkout_date)
-        self.lineEdit_Roomtype.setText(room_type)
+        self.lineEdit_RoomCodeB.setText(room_code)
 
     def update_selected_row(self):
         """Cập nhật dữ liệu của hàng đang chọn mà không xóa hàng cũ"""
@@ -405,7 +442,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         email = self.lineEdit_CusEmail2.text()
         checkin_date = self.lineEdit_CheckIn.text()
         checkout_date = self.lineEdit_CheckOut.text()
-        room_type = self.lineEdit_Roomtype.text()
+        room_code = self.lineEdit_RoomCodeB.text()
 
         # Cập nhật dữ liệu vào hàng đang chọn
         self.tableWidget.setItem(selected_row, 0, QTableWidgetItem(customer_name))
@@ -413,8 +450,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.tableWidget.setItem(selected_row, 2, QTableWidgetItem(email))
         self.tableWidget.setItem(selected_row, 3, QTableWidgetItem(checkin_date))
         self.tableWidget.setItem(selected_row, 4, QTableWidgetItem(checkout_date))
-        self.tableWidget.setItem(selected_row, 5, QTableWidgetItem(room_type))
-
+        self.tableWidget.setItem(selected_row, 5, QTableWidgetItem(room_code))
         QMessageBox.information(self, "Thành công", "Dữ liệu đã được cập nhật!")
 
     def reset_inputs(self):
@@ -425,7 +461,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.lineEdit_CusEmail2.clear()
         self.lineEdit_CheckIn.clear()
         self.lineEdit_CheckOut.clear()
-        self.lineEdit_Roomtype.clear()
+        self.lineEdit_RoomCodeB.clear()
 
     def delete_selected_row(self):
         """Xóa khách hàng khỏi bảng và cập nhật JSON"""
@@ -444,15 +480,18 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.update_json_after_delete(customer_name)
         self.clear_customer_details()
 
+
     def clear_customer_details(self):
         """Xóa thông tin khách hàng trên giao diện"""
         self.lineEdit_CusCode2.clear()
+        self.lineEditCusName2.clear()
+
         self.lineEdit_Phone_2.clear()
         self.lineEdit_CheckIn.clear()
         self.lineEdit_CheckOut.clear()
         self.lineEdit_Cusname.clear()
-        self.lineEdit_Roomtype.clear()
-        (self.lineEdit_CusEmail2.clear())
+        self.lineEdit_RoomCodeB.clear()
+        self.lineEdit_CusEmail2.clear()
     def update_json_after_delete(self, customer_name):
         """Tìm customer_code từ customer_name, sau đó xóa khách hàng & đặt phòng liên quan"""
         try:
@@ -489,12 +528,47 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         except Exception as e:
             print(f"Lỗi khi cập nhật JSON: {e}")
 
-    '''def open_booking_report(self):
-
-                self.report_window = QMainWindow()
-                self.report_window = MainWindowEx()
-                self.report_window.setupUi(self.report_window)
-                self.report_window.show()'''
 
 
+    def search_booking(self):
+        """Tìm kiếm thông tin khách hàng theo Customer Code -> Lấy Customer Name -> Hiển thị dòng phù hợp."""
+        cuscode = self.lineEdit_CusCode2.text().strip().lower()  # Lấy mã khách hàng từ ô nhập
 
+        if not cuscode:  # Nếu không nhập gì thì hiển thị tất cả dòng
+            for row in range(self.tableWidget.rowCount()):
+                self.tableWidget.showRow(row)
+            return
+
+        # Tìm Customer Name dựa trên Customer Code trong dataset (giả sử self.customers chứa dữ liệu)
+        customer_name = None
+        for customer in self.customers:
+            if customer.customer_code.lower() == cuscode:
+                customer_name = customer.customer_name
+                break
+
+        if not customer_name:  # Nếu không tìm thấy mã khách hàng, ẩn hết các dòng
+            for row in range(self.tableWidget.rowCount()):
+                self.tableWidget.hideRow(row)
+            return
+
+        # Duyệt bảng để hiển thị dòng có Customer Name khớp
+        for row in range(self.tableWidget.rowCount()):
+            cusname_item = self.tableWidget.item(row, 0)  # Cột 0 chứa Customer Name
+
+            if cusname_item and cusname_item.text().lower() == customer_name.lower():
+                self.tableWidget.showRow(row)  # Hiển thị dòng tìm thấy
+            else:
+                self.tableWidget.hideRow(row)  # Ẩn dòng không khớp
+
+
+    def logout(self):
+        reply = QMessageBox.question(self.MainWindow, "Logout", "Bạn có chắc chắn muốn đăng xuất?",
+                                     QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
+        if reply == QMessageBox.StandardButton.Yes:
+            self.MainWindow.close()  # Đóng cửa sổ hiện tại
+
+            # Mở lại màn hình chính (HomePageMainWindowEx)
+            self.mainwindow = QMainWindow()
+            self.myui = HomePageMainWindowEx()
+            self.myui.setupUi(self.mainwindow)
+            self.myui.showWindow()
