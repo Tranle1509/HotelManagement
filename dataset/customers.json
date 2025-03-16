@@ -7,13 +7,6 @@
         "customer_identity": "049968978597"
     },
     {
-        "customer_code": "cus20",
-        "customer_name": "Customer20",
-        "customer_phone": "0938149135",
-        "customer_email": "customer20@gmail.com",
-        "customer_identity": "012730238094"
-    },
-    {
         "customer_code": "cus21",
         "customer_name": "Customer21",
         "customer_phone": "0975056004",
@@ -26,20 +19,6 @@
         "customer_phone": "0910345528",
         "customer_email": "customer22@gmail.com",
         "customer_identity": "016033687687"
-    },
-    {
-        "customer_code": "cus23",
-        "customer_name": "Customer23",
-        "customer_phone": "0946254135",
-        "customer_email": "customer23@gmail.com",
-        "customer_identity": "001592571181"
-    },
-    {
-        "customer_code": "cus24",
-        "customer_name": "Customer24",
-        "customer_phone": "0942496164",
-        "customer_email": "customer24@gmail.com",
-        "customer_identity": "034492215829"
     },
     {
         "customer_code": "cus26",
@@ -6823,5 +6802,12 @@
         "customer_phone": "0960357238",
         "customer_email": "customer1000@gmail.com",
         "customer_identity": "071568541081"
+    },
+    {
+        "customer_code": "kkk",
+        "customer_name": "khoakkkk",
+        "customer_phone": "09999",
+        "customer_email": "kkkk@gmail.com",
+        "customer_identity": ""
     }
 ]

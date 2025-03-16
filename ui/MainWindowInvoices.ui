@@ -41,6 +41,11 @@
       <height>81</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255,50);
  border-radius: 15px;</string>
@@ -178,6 +183,11 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
       <height>271</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255,100);
  border-radius: 15px;</string>
@@ -236,6 +246,11 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
       <width>761</width>
       <height>141</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255,50);
@@ -382,7 +397,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
-font: 75 30pt &quot;#9Slide04 Faustina Bold&quot;;
+
+font: 75 30pt &quot;#9Slide03 SFU Toledo Bold&quot;;
 </string>
     </property>
     <property name="text">
@@ -487,7 +503,7 @@ font: 75 10pt &quot;#9Slide03 SFU Toledo Bold&quot;;
      <x>0</x>
      <y>0</y>
      <width>812</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

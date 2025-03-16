@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\Final_Project\HotelManagement\ui\MainWindowInvoices.ui'
+# Form implementation generated from reading ui file 'D:\KTLT\HotelManagement\ui\MainWindowInvoices.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -137,7 +137,8 @@ class Ui_MainWindow(object):
         self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(10, 20, 781, 51))
         self.label_2.setStyleSheet("color: rgb(255, 255, 255);\n"
-"font: 75 30pt \"#9Slide04 Faustina Bold\";\n"
+"\n"
+"font: 75 30pt \"#9Slide03 SFU Toledo Bold\";\n"
 "")
         self.label_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_2.setObjectName("label_2")
@@ -158,13 +159,13 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
         self.label.setGeometry(QtCore.QRect(6, 3, 791, 671))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/HomePage.jpg"))
+        self.label.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/HomePage.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label_12 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_12.setGeometry(QtCore.QRect(6, 3, 801, 681))
         self.label_12.setText("")
-        self.label_12.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/login.png"))
+        self.label_12.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/login.png"))
         self.label_12.setScaledContents(True)
         self.label_12.setObjectName("label_12")
         self.label_12.raise_()
@@ -177,7 +178,7 @@ class Ui_MainWindow(object):
         self.label_4.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 812, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 812, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)

@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\Final_Project\HotelManagement\ui\MainWindowManagement.ui'
+# Form implementation generated from reading ui file 'D:\KTLT\HotelManagement\ui\MainWindowManagement.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -316,7 +316,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.label_174.setText("")
-        self.label_174.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/booking.jpg"))
+        self.label_174.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/booking.jpg"))
         self.label_174.setScaledContents(True)
         self.label_174.setObjectName("label_174")
         self.lineEdit_CusCode2 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
@@ -415,6 +415,193 @@ class Ui_MainWindow(object):
 "")
         self.pushButtonReport.setObjectName("pushButtonReport")
         self.tabWidget.addTab(self.tab_8, "")
+        self.widget = QtWidgets.QWidget()
+        self.widget.setObjectName("widget")
+        self.pushButton_checkout = QtWidgets.QPushButton(parent=self.widget)
+        self.pushButton_checkout.setGeometry(QtCore.QRect(670, 470, 111, 41))
+        self.pushButton_checkout.setStyleSheet("\n"
+"QPushButton {\n"
+"    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,\n"
+"                                      stop:0.0681818 rgba(80, 11, 40, 255),\n"
+"                                      stop:1 rgba(211, 26, 48, 243)); /* Gradient màu nền */\n"
+"    color: white;\n"
+"    border-radius: 10px;\n"
+"    padding: 8px;\n"
+"    font-size: 14px;\n"
+"\n"
+"    /* Viền sáng ở trên & tối ở dưới để tạo hiệu ứng 3D */\n"
+"    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */\n"
+"    border-top: 3px solid rgb(255, 255, 255); /* Viền trên sáng hơn */\n"
+"    border-left: 3px solid rgb(255, 255, 255);\n"
+"    border-bottom: 3px solid rgb(150, 0, 20); /* Viền dưới tối hơn */\n"
+"    border-right: 3px solid rgb(150, 0, 20);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-top: 3px solid rgb(150, 0, 20); /* Khi nhấn, đổi viền trên tối hơn */\n"
+"    border-left: 3px solid rgb(150, 0, 20);\n"
+"    border-bottom: 3px solid rgb(255, 255, 255); /* Viền dưới sáng hơn */\n"
+"    border-right: 3px solid rgb(255, 255, 255);\n"
+"    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */\n"
+"}\n"
+"")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../../Downloads/187510.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButton_checkout.setIcon(icon)
+        self.pushButton_checkout.setIconSize(QtCore.QSize(30, 30))
+        self.pushButton_checkout.setObjectName("pushButton_checkout")
+        self.tableWidget_Room = QtWidgets.QTableWidget(parent=self.widget)
+        self.tableWidget_Room.setGeometry(QtCore.QRect(10, 100, 1251, 361))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.tableWidget_Room.sizePolicy().hasHeightForWidth())
+        self.tableWidget_Room.setSizePolicy(sizePolicy)
+        self.tableWidget_Room.setMaximumSize(QtCore.QSize(16777215, 411))
+        self.tableWidget_Room.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0.733, x2:0.51194, y2:0.744, stop:0.457711 rgba(245, 247, 250, 255), stop:1 rgba(195, 207, 226, 255));")
+        self.tableWidget_Room.setObjectName("tableWidget_Room")
+        self.tableWidget_Room.setColumnCount(4)
+        self.tableWidget_Room.setRowCount(6)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setVerticalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setVerticalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setVerticalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setVerticalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setVerticalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setVerticalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_Room.setHorizontalHeaderItem(3, item)
+        self.dateEdit_date = QtWidgets.QDateEdit(parent=self.widget)
+        self.dateEdit_date.setGeometry(QtCore.QRect(990, 40, 271, 31))
+        self.dateEdit_date.setDateTime(QtCore.QDateTime(QtCore.QDate(2025, 1, 1), QtCore.QTime(0, 0, 0)))
+        self.dateEdit_date.setDate(QtCore.QDate(2025, 1, 1))
+        self.dateEdit_date.setObjectName("dateEdit_date")
+        self.label = QtWidgets.QLabel(parent=self.widget)
+        self.label.setGeometry(QtCore.QRect(890, 40, 91, 31))
+        self.label.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
+"color: rgb(0, 0, 0);\n"
+"\n"
+"")
+        self.label.setObjectName("label")
+        self.pushButton_checkin = QtWidgets.QPushButton(parent=self.widget)
+        self.pushButton_checkin.setGeometry(QtCore.QRect(510, 470, 111, 41))
+        font = QtGui.QFont()
+        font.setFamily("SFU Toledo")
+        font.setPointSize(-1)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.pushButton_checkin.setFont(font)
+        self.pushButton_checkin.setStyleSheet("\n"
+"QPushButton {\n"
+"    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,\n"
+"                                      stop:0.0681818 rgba(80, 11, 40, 255),\n"
+"                                      stop:1 rgba(211, 26, 48, 243)); /* Gradient màu nền */\n"
+"    color: white;\n"
+"    border-radius: 10px;\n"
+"    padding: 8px;\n"
+"    font-size: 14px;\n"
+"\n"
+"    /* Viền sáng ở trên & tối ở dưới để tạo hiệu ứng 3D */\n"
+"    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */\n"
+"    border-top: 3px solid rgb(255, 255, 255); /* Viền trên sáng hơn */\n"
+"    border-left: 3px solid rgb(255, 255, 255);\n"
+"    border-bottom: 3px solid rgb(150, 0, 20); /* Viền dưới tối hơn */\n"
+"    border-right: 3px solid rgb(150, 0, 20);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-top: 3px solid rgb(150, 0, 20); /* Khi nhấn, đổi viền trên tối hơn */\n"
+"    border-left: 3px solid rgb(150, 0, 20);\n"
+"    border-bottom: 3px solid rgb(255, 255, 255); /* Viền dưới sáng hơn */\n"
+"    border-right: 3px solid rgb(255, 255, 255);\n"
+"    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */\n"
+"}\n"
+"")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../../Downloads/Tick.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButton_checkin.setIcon(icon1)
+        self.pushButton_checkin.setIconSize(QtCore.QSize(30, 30))
+        self.pushButton_checkin.setObjectName("pushButton_checkin")
+        self.groupBox_3 = QtWidgets.QGroupBox(parent=self.widget)
+        self.groupBox_3.setGeometry(QtCore.QRect(10, 10, 581, 81))
+        font = QtGui.QFont()
+        font.setFamily("SFU Toledo")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.groupBox_3.setFont(font)
+        self.groupBox_3.setObjectName("groupBox_3")
+        self.pushButton_booked = QtWidgets.QPushButton(parent=self.groupBox_3)
+        self.pushButton_booked.setGeometry(QtCore.QRect(120, 40, 91, 31))
+        self.pushButton_booked.setStyleSheet("border-radius: 15px;\n"
+"border-radius: 15px;\n"
+"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
+"color: rgb(255, 232, 137);\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
+        self.pushButton_booked.setObjectName("pushButton_booked")
+        self.pushButton_vacant = QtWidgets.QPushButton(parent=self.groupBox_3)
+        self.pushButton_vacant.setGeometry(QtCore.QRect(230, 40, 101, 31))
+        self.pushButton_vacant.setStyleSheet("border-radius: 15px;\n"
+"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
+"color: rgb(255, 232, 137);\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
+        self.pushButton_vacant.setObjectName("pushButton_vacant")
+        self.pushButton_all = QtWidgets.QPushButton(parent=self.groupBox_3)
+        self.pushButton_all.setGeometry(QtCore.QRect(10, 40, 91, 31))
+        self.pushButton_all.setStyleSheet("border-radius: 15px;\n"
+"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
+"color: rgb(255, 232, 137);\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));\n"
+"")
+        self.pushButton_all.setObjectName("pushButton_all")
+        self.pushButton_vip = QtWidgets.QPushButton(parent=self.groupBox_3)
+        self.pushButton_vip.setGeometry(QtCore.QRect(350, 40, 91, 31))
+        self.pushButton_vip.setStyleSheet("border-radius: 15px;\n"
+"border-radius: 15px;\n"
+"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
+"color: rgb(255, 232, 137);\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
+        self.pushButton_vip.setObjectName("pushButton_vip")
+        self.pushButton_regular = QtWidgets.QPushButton(parent=self.groupBox_3)
+        self.pushButton_regular.setGeometry(QtCore.QRect(460, 40, 91, 31))
+        self.pushButton_regular.setStyleSheet("border-radius: 15px;\n"
+"border-radius: 15px;\n"
+"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
+"color: rgb(255, 232, 137);\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
+        self.pushButton_regular.setObjectName("pushButton_regular")
+        self.label_3 = QtWidgets.QLabel(parent=self.widget)
+        self.label_3.setGeometry(QtCore.QRect(-70, -320, 1361, 331))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
+        self.label_3.setSizePolicy(sizePolicy)
+        self.label_3.setText("")
+        self.label_3.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../Final_Project/HotelManagement/images/Cover.png"))
+        self.label_3.setScaledContents(True)
+        self.label_3.setObjectName("label_3")
+        self.tableWidget_Room.raise_()
+        self.pushButton_checkout.raise_()
+        self.dateEdit_date.raise_()
+        self.label.raise_()
+        self.pushButton_checkin.raise_()
+        self.groupBox_3.raise_()
+        self.label_3.raise_()
+        self.tabWidget.addTab(self.widget, "")
         self.tab_7 = QtWidgets.QWidget()
         self.tab_7.setObjectName("tab_7")
         self.groupBox_2 = QtWidgets.QGroupBox(parent=self.tab_7)
@@ -588,7 +775,7 @@ class Ui_MainWindow(object):
 "    color: white;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px;\n"
-"    font-size: 14px;\n"
+"    font-size: 15px;\n"
 "\n"
 "    /* Viền sáng ở trên & tối ở dưới để tạo hiệu ứng 3D */\n"
 "    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */\n"
@@ -827,190 +1014,10 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_Clear.setObjectName("pushButton_Clear")
         self.tabWidget.addTab(self.tab_7, "")
-        self.widget = QtWidgets.QWidget()
-        self.widget.setObjectName("widget")
-        self.pushButton_checkout = QtWidgets.QPushButton(parent=self.widget)
-        self.pushButton_checkout.setGeometry(QtCore.QRect(670, 470, 111, 41))
-        self.pushButton_checkout.setStyleSheet("\n"
-"QPushButton {\n"
-"    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,\n"
-"                                      stop:0.0681818 rgba(80, 11, 40, 255),\n"
-"                                      stop:1 rgba(211, 26, 48, 243)); /* Gradient màu nền */\n"
-"    color: white;\n"
-"    border-radius: 10px;\n"
-"    padding: 8px;\n"
-"    font-size: 14px;\n"
-"\n"
-"    /* Viền sáng ở trên & tối ở dưới để tạo hiệu ứng 3D */\n"
-"    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */\n"
-"    border-top: 3px solid rgb(255, 255, 255); /* Viền trên sáng hơn */\n"
-"    border-left: 3px solid rgb(255, 255, 255);\n"
-"    border-bottom: 3px solid rgb(150, 0, 20); /* Viền dưới tối hơn */\n"
-"    border-right: 3px solid rgb(150, 0, 20);\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    border-top: 3px solid rgb(150, 0, 20); /* Khi nhấn, đổi viền trên tối hơn */\n"
-"    border-left: 3px solid rgb(150, 0, 20);\n"
-"    border-bottom: 3px solid rgb(255, 255, 255); /* Viền dưới sáng hơn */\n"
-"    border-right: 3px solid rgb(255, 255, 255);\n"
-"    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */\n"
-"}\n"
-"")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../../Downloads/187510.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButton_checkout.setIcon(icon)
-        self.pushButton_checkout.setIconSize(QtCore.QSize(30, 30))
-        self.pushButton_checkout.setObjectName("pushButton_checkout")
-        self.tableWidget_Room = QtWidgets.QTableWidget(parent=self.widget)
-        self.tableWidget_Room.setGeometry(QtCore.QRect(10, 100, 1251, 361))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.tableWidget_Room.sizePolicy().hasHeightForWidth())
-        self.tableWidget_Room.setSizePolicy(sizePolicy)
-        self.tableWidget_Room.setMaximumSize(QtCore.QSize(16777215, 411))
-        self.tableWidget_Room.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0.733, x2:0.51194, y2:0.744, stop:0.457711 rgba(245, 247, 250, 255), stop:1 rgba(195, 207, 226, 255));")
-        self.tableWidget_Room.setObjectName("tableWidget_Room")
-        self.tableWidget_Room.setColumnCount(4)
-        self.tableWidget_Room.setRowCount(6)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setVerticalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setVerticalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setVerticalHeaderItem(2, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setVerticalHeaderItem(3, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setVerticalHeaderItem(4, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setVerticalHeaderItem(5, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setHorizontalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setHorizontalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setHorizontalHeaderItem(2, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_Room.setHorizontalHeaderItem(3, item)
-        self.dateEdit_date = QtWidgets.QDateEdit(parent=self.widget)
-        self.dateEdit_date.setGeometry(QtCore.QRect(990, 40, 271, 31))
-        self.dateEdit_date.setDateTime(QtCore.QDateTime(QtCore.QDate(2025, 1, 1), QtCore.QTime(0, 0, 0)))
-        self.dateEdit_date.setDate(QtCore.QDate(2025, 1, 1))
-        self.dateEdit_date.setObjectName("dateEdit_date")
-        self.label = QtWidgets.QLabel(parent=self.widget)
-        self.label.setGeometry(QtCore.QRect(890, 40, 91, 31))
-        self.label.setStyleSheet("font: 75 20pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(0, 0, 0);\n"
-"\n"
-"")
-        self.label.setObjectName("label")
-        self.pushButton_checkin = QtWidgets.QPushButton(parent=self.widget)
-        self.pushButton_checkin.setGeometry(QtCore.QRect(510, 470, 111, 41))
-        self.pushButton_checkin.setStyleSheet("\n"
-"QPushButton {\n"
-"    background-color: qlineargradient(spread:pad, x1:0.221636, y1:0.171091, x2:0.994318, y2:0.960227,\n"
-"                                      stop:0.0681818 rgba(80, 11, 40, 255),\n"
-"                                      stop:1 rgba(211, 26, 48, 243)); /* Gradient màu nền */\n"
-"    color: white;\n"
-"    border-radius: 10px;\n"
-"    padding: 8px;\n"
-"    font-size: 14px;\n"
-"\n"
-"    /* Viền sáng ở trên & tối ở dưới để tạo hiệu ứng 3D */\n"
-"    border: 2px solid rgb(255, 255, 255); /* Viền trắng tổng thể */\n"
-"    border-top: 3px solid rgb(255, 255, 255); /* Viền trên sáng hơn */\n"
-"    border-left: 3px solid rgb(255, 255, 255);\n"
-"    border-bottom: 3px solid rgb(150, 0, 20); /* Viền dưới tối hơn */\n"
-"    border-right: 3px solid rgb(150, 0, 20);\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    border-top: 3px solid rgb(150, 0, 20); /* Khi nhấn, đổi viền trên tối hơn */\n"
-"    border-left: 3px solid rgb(150, 0, 20);\n"
-"    border-bottom: 3px solid rgb(255, 255, 255); /* Viền dưới sáng hơn */\n"
-"    border-right: 3px solid rgb(255, 255, 255);\n"
-"    background-color: rgb(150, 0, 20); /* Màu nền tối hơn khi nhấn */\n"
-"}\n"
-"")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../../Downloads/Tick.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButton_checkin.setIcon(icon1)
-        self.pushButton_checkin.setIconSize(QtCore.QSize(30, 30))
-        self.pushButton_checkin.setObjectName("pushButton_checkin")
-        self.groupBox_3 = QtWidgets.QGroupBox(parent=self.widget)
-        self.groupBox_3.setGeometry(QtCore.QRect(10, 10, 581, 81))
-        font = QtGui.QFont()
-        font.setFamily("SFU Toledo")
-        font.setPointSize(14)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(7)
-        self.groupBox_3.setFont(font)
-        self.groupBox_3.setObjectName("groupBox_3")
-        self.pushButton_booked = QtWidgets.QPushButton(parent=self.groupBox_3)
-        self.pushButton_booked.setGeometry(QtCore.QRect(120, 40, 91, 31))
-        self.pushButton_booked.setStyleSheet("border-radius: 15px;\n"
-"border-radius: 15px;\n"
-"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(255, 232, 137);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
-        self.pushButton_booked.setObjectName("pushButton_booked")
-        self.pushButton_vacant = QtWidgets.QPushButton(parent=self.groupBox_3)
-        self.pushButton_vacant.setGeometry(QtCore.QRect(230, 40, 101, 31))
-        self.pushButton_vacant.setStyleSheet("border-radius: 15px;\n"
-"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(255, 232, 137);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
-        self.pushButton_vacant.setObjectName("pushButton_vacant")
-        self.pushButton_all = QtWidgets.QPushButton(parent=self.groupBox_3)
-        self.pushButton_all.setGeometry(QtCore.QRect(10, 40, 91, 31))
-        self.pushButton_all.setStyleSheet("border-radius: 15px;\n"
-"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(255, 232, 137);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));\n"
-"")
-        self.pushButton_all.setObjectName("pushButton_all")
-        self.pushButton_vip = QtWidgets.QPushButton(parent=self.groupBox_3)
-        self.pushButton_vip.setGeometry(QtCore.QRect(350, 40, 91, 31))
-        self.pushButton_vip.setStyleSheet("border-radius: 15px;\n"
-"border-radius: 15px;\n"
-"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(255, 232, 137);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
-        self.pushButton_vip.setObjectName("pushButton_vip")
-        self.pushButton_regular = QtWidgets.QPushButton(parent=self.groupBox_3)
-        self.pushButton_regular.setGeometry(QtCore.QRect(460, 40, 91, 31))
-        self.pushButton_regular.setStyleSheet("border-radius: 15px;\n"
-"border-radius: 15px;\n"
-"font: 75 15pt \"#9Slide03 SFU Toledo Bold\";\n"
-"color: rgb(255, 232, 137);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.527363 rgba(80, 11, 40, 255), stop:1 rgba(187, 23, 43, 255));")
-        self.pushButton_regular.setObjectName("pushButton_regular")
-        self.label_3 = QtWidgets.QLabel(parent=self.widget)
-        self.label_3.setGeometry(QtCore.QRect(-70, -320, 1361, 331))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
-        self.label_3.setSizePolicy(sizePolicy)
-        self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../Final_Project/HotelManagement/images/Cover.png"))
-        self.label_3.setScaledContents(True)
-        self.label_3.setObjectName("label_3")
-        self.tableWidget_Room.raise_()
-        self.pushButton_checkout.raise_()
-        self.dateEdit_date.raise_()
-        self.label.raise_()
-        self.pushButton_checkin.raise_()
-        self.groupBox_3.raise_()
-        self.label_3.raise_()
-        self.tabWidget.addTab(self.widget, "")
         self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(0, -10, 1281, 321))
         self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/Cover.png"))
+        self.label_4.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/Cover.png"))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
         self.pushButton_Logout = QtWidgets.QPushButton(parent=self.centralwidget)
@@ -1092,36 +1099,6 @@ class Ui_MainWindow(object):
         self.label_175.setText(_translate("MainWindow", "Customer Code :"))
         self.pushButtonReport.setText(_translate("MainWindow", "Report"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), _translate("MainWindow", "Booking Management"))
-        self.groupBox_2.setTitle(_translate("MainWindow", "Booking information"))
-        self.comboBoxType.setItemText(0, _translate("MainWindow", "VIP"))
-        self.comboBoxType.setItemText(1, _translate("MainWindow", "Regular"))
-        self.label_150.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Check-out date :</p></body></html>"))
-        self.label_151.setText(_translate("MainWindow", "<html><head/><body><p>Room name :</p></body></html>"))
-        self.label_152.setText(_translate("MainWindow", "<html><head/><body><p>Room type :</p></body></html>"))
-        self.label_153.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Rooms:</span></p></body></html>"))
-        self.label_154.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Children :</p></body></html>"))
-        self.CheckIn.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
-        self.CheckOut.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
-        self.label_156.setText(_translate("MainWindow", "<html><head/><body><p>Room code :</p></body></html>"))
-        self.label_157.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Check-in date :</p><p align=\"center\"><br/></p></body></html>"))
-        self.label_158.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Adult :</p></body></html>"))
-        self.pushButton_Save.setText(_translate("MainWindow", "Submit"))
-        self.groupBox_6.setTitle(_translate("MainWindow", "Customer details"))
-        self.label_159.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Date of birth :</p></body></html>"))
-        self.label_160.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Email :</p></body></html>"))
-        self.label_161.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Customer name :</span></p></body></html>"))
-        self.label_162.setText(_translate("MainWindow", "<html><head/><body><p>Gender :</p></body></html>"))
-        self.label_163.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Rooms:</span></p></body></html>"))
-        self.label_164.setText(_translate("MainWindow", "<html><head/><body><p>Phone</p></body></html>"))
-        self.label_165.setText(_translate("MainWindow", "<html><head/><body><p>Customer code :</p></body></html>"))
-        self.CheckInDateOfBirth.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
-        self.label_166.setText(_translate("MainWindow", "<html><head/><body><p>Identity :</p></body></html>"))
-        self.label_167.setText(_translate("MainWindow", "<html><head/><body><p>Requirement:</p></body></html>"))
-        self.comboBoxTypeGender_9.setItemText(0, _translate("MainWindow", "Male"))
-        self.comboBoxTypeGender_9.setItemText(1, _translate("MainWindow", "Female"))
-        self.pushButton_Clear.setWhatsThis(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Remove</span></p><p><br/></p></body></html>"))
-        self.pushButton_Clear.setText(_translate("MainWindow", "Clear"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("MainWindow", "New Reservation"))
         self.pushButton_checkout.setText(_translate("MainWindow", "CHECK OUT"))
         item = self.tableWidget_Room.verticalHeaderItem(1)
         item.setText(_translate("MainWindow", "1"))
@@ -1151,5 +1128,35 @@ class Ui_MainWindow(object):
         self.pushButton_vip.setText(_translate("MainWindow", "VIP"))
         self.pushButton_regular.setText(_translate("MainWindow", "Regular"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.widget), _translate("MainWindow", "Room Management"))
+        self.groupBox_2.setTitle(_translate("MainWindow", "Booking information"))
+        self.comboBoxType.setItemText(0, _translate("MainWindow", "VIP"))
+        self.comboBoxType.setItemText(1, _translate("MainWindow", "Regular"))
+        self.label_150.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Check-out date :</p></body></html>"))
+        self.label_151.setText(_translate("MainWindow", "<html><head/><body><p>Room name :</p></body></html>"))
+        self.label_152.setText(_translate("MainWindow", "<html><head/><body><p>Room type :</p></body></html>"))
+        self.label_153.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Rooms:</span></p></body></html>"))
+        self.label_154.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Children :</p></body></html>"))
+        self.CheckIn.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
+        self.CheckOut.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
+        self.label_156.setText(_translate("MainWindow", "<html><head/><body><p>Room code :</p></body></html>"))
+        self.label_157.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Check-in date :</p><p align=\"center\"><br/></p></body></html>"))
+        self.label_158.setText(_translate("MainWindow", "<html><head/><body><p>Adult :</p></body></html>"))
+        self.pushButton_Save.setText(_translate("MainWindow", "Submit"))
+        self.groupBox_6.setTitle(_translate("MainWindow", "Customer details"))
+        self.label_159.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Date of birth :</p></body></html>"))
+        self.label_160.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Email :</p></body></html>"))
+        self.label_161.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Customer name :</span></p></body></html>"))
+        self.label_162.setText(_translate("MainWindow", "<html><head/><body><p>Gender :</p></body></html>"))
+        self.label_163.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Rooms:</span></p></body></html>"))
+        self.label_164.setText(_translate("MainWindow", "<html><head/><body><p>Phone</p></body></html>"))
+        self.label_165.setText(_translate("MainWindow", "<html><head/><body><p>Customer code :</p></body></html>"))
+        self.CheckInDateOfBirth.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
+        self.label_166.setText(_translate("MainWindow", "<html><head/><body><p>Identity :</p></body></html>"))
+        self.label_167.setText(_translate("MainWindow", "<html><head/><body><p>Requirement:</p></body></html>"))
+        self.comboBoxTypeGender_9.setItemText(0, _translate("MainWindow", "Male"))
+        self.comboBoxTypeGender_9.setItemText(1, _translate("MainWindow", "Female"))
+        self.pushButton_Clear.setWhatsThis(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Remove</span></p><p><br/></p></body></html>"))
+        self.pushButton_Clear.setText(_translate("MainWindow", "Clear"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("MainWindow", "New Reservation"))
         self.pushButton_Logout.setWhatsThis(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Remove</span></p><p><br/></p></body></html>"))
         self.pushButton_Logout.setText(_translate("MainWindow", "Log out"))

@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 from PyQt6.QtWidgets import QMainWindow, QTableWidgetItem, QMessageBox
-from fpdf import FPDF
+
 
 from libs.FileFactory import JsonFileFactory
 from model.Booking import Booking
@@ -86,7 +86,7 @@ class MainWindowInvoicesEx(QMainWindow, Ui_MainWindow):
 
         # Kiểm tra xem bảng có dữ liệu không
         if self.tableWidget_invoices.rowCount() == 0:
-            QMessageBox.warning(self, "Lỗi", "Không có dữ liệu để tính toán!")
+            QMessageBox.warning(self, "Error", "No data for analyzing!")
             return
 
         for row in range(self.tableWidget_invoices.rowCount()):
@@ -97,7 +97,7 @@ class MainWindowInvoicesEx(QMainWindow, Ui_MainWindow):
 
                 # Kiểm tra ô trống
                 if not price_item or not days_item:
-                    QMessageBox.warning(self, "Lỗi", f"Thiếu dữ liệu ở hàng {row + 1}!")
+                    QMessageBox.warning(self, "Error", f"Lack of data at row {row + 1}!")
                     return
 
                 # Xử lý chuỗi số (loại bỏ dấu phẩy và ký tự không cần thiết)
@@ -116,7 +116,7 @@ class MainWindowInvoicesEx(QMainWindow, Ui_MainWindow):
                 self.tableWidget_invoices.setItem(row, 4, QTableWidgetItem(f"{total:,} VND"))
 
             except ValueError as e:
-                QMessageBox.critical(self, "Lỗi", f"Dữ liệu không hợp lệ ở hàng {row + 1}: {str(e)}")
+                QMessageBox.critical(self, "Error", f"Invalid data at row {row + 1}: {str(e)}")
                 return
 
         # Tính thuế và tổng
