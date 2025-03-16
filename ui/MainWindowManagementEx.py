@@ -4,7 +4,7 @@ from datetime import datetime
 
 from PyQt6.QtCore import QDate, Qt
 from PyQt6.QtGui import QColor, QBrush
-from PyQt6.QtWidgets import QMainWindow, QHeaderView, QMessageBox, QTableWidgetItem, QInputDialog, QPushButton
+from PyQt6.QtWidgets import QMainWindow, QHeaderView, QMessageBox, QTableWidgetItem, QInputDialog
 
 from libs.DataConnector import DataConnector
 from libs.FileFactory import JsonFileFactory
