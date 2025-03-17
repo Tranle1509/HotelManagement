@@ -6,5 +6,4 @@ class Booking:
         self.end_date = end_date
 
     def __str__(self):
-        return f"{self.customer_code}\t{self.room_code}\t" \
-               f"{self.start_date}\t{self.end_date}"
+        return f"{self.customer_code}\t{self.room_code}\t{self.start_date}\t{self.end_date}"
