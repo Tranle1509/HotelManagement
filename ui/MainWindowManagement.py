@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\Final_Project\HotelManagement\ui\MainWindowManagement.ui'
+# Form implementation generated from reading ui file 'D:\KTLT\HotelManagement\ui\MainWindowManagement.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -316,7 +316,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.label_174.setText("")
-        self.label_174.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/booking.jpg"))
+        self.label_174.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/booking.jpg"))
         self.label_174.setScaledContents(True)
         self.label_174.setObjectName("label_174")
         self.lineEdit_CusCode2 = QtWidgets.QLineEdit(parent=self.groupBoxCustomerDetails)
@@ -446,7 +446,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../../Downloads/187510.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../../Downloads/187510.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_checkout.setIcon(icon)
         self.pushButton_checkout.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_checkout.setObjectName("pushButton_checkout")
@@ -530,7 +530,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../../Downloads/Tick.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../../Downloads/Tick.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_checkin.setIcon(icon1)
         self.pushButton_checkin.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_checkin.setObjectName("pushButton_checkin")
@@ -591,7 +591,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
         self.label_3.setSizePolicy(sizePolicy)
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../Final_Project/HotelManagement/images/Cover.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../Final_Project/HotelManagement/images/Cover.png"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.tableWidget_Room.raise_()
@@ -1017,7 +1017,7 @@ class Ui_MainWindow(object):
         self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(0, -10, 1281, 321))
         self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("D:\\Final_Project\\HotelManagement\\ui\\../images/Cover.png"))
+        self.label_4.setPixmap(QtGui.QPixmap("D:\\KTLT\\HotelManagement\\ui\\../images/Cover.png"))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
         self.pushButton_Logout = QtWidgets.QPushButton(parent=self.centralwidget)

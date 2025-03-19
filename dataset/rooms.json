@@ -1,127 +1,407 @@
 [
     {
         "room_code": "101",
-        "room_name": "Room1",
+        "room_name": "Room101",
         "room_type": "VIP"
     },
     {
         "room_code": "102",
-        "room_name": "Room2",
-        "room_type": "Regular"
+        "room_name": "Room102",
+        "room_type": "VIP"
     },
     {
         "room_code": "103",
-        "room_name": "Room3",
+        "room_name": "Room103",
         "room_type": "VIP"
     },
     {
         "room_code": "104",
-        "room_name": "Room4",
+        "room_name": "Room104",
         "room_type": "VIP"
     },
     {
         "room_code": "105",
-        "room_name": "Room5",
+        "room_name": "Room105",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "106",
+        "room_name": "Room106",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "107",
+        "room_name": "Room107",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "108",
+        "room_name": "Room108",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "109",
+        "room_name": "Room109",
         "room_type": "VIP"
     },
     {
         "room_code": "201",
-        "room_name": "Room6",
+        "room_name": "Room201",
         "room_type": "Regular"
     },
     {
         "room_code": "202",
-        "room_name": "Room7",
+        "room_name": "Room202",
         "room_type": "Regular"
     },
     {
         "room_code": "203",
-        "room_name": "Room8",
+        "room_name": "Room203",
         "room_type": "Regular"
     },
     {
         "room_code": "204",
-        "room_name": "Room9",
+        "room_name": "Room204",
         "room_type": "Regular"
     },
     {
         "room_code": "205",
-        "room_name": "Room10",
+        "room_name": "Room205",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "206",
+        "room_name": "Room206",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "207",
+        "room_name": "Room207",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "208",
+        "room_name": "Room208",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "209",
+        "room_name": "Room209",
         "room_type": "Regular"
     },
     {
         "room_code": "301",
-        "room_name": "Room11",
-        "room_type": "Regular"
+        "room_name": "Room301",
+        "room_type": "VIP"
     },
     {
         "room_code": "302",
-        "room_name": "Room12",
-        "room_type": "Regular"
+        "room_name": "Room302",
+        "room_type": "VIP"
     },
     {
         "room_code": "303",
-        "room_name": "Room13",
-        "room_type": "Regular"
+        "room_name": "Room303",
+        "room_type": "VIP"
     },
     {
         "room_code": "304",
-        "room_name": "Room14",
-        "room_type": "Regular"
+        "room_name": "Room304",
+        "room_type": "VIP"
     },
     {
         "room_code": "305",
-        "room_name": "Room15",
-        "room_type": "Regular"
+        "room_name": "Room305",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "306",
+        "room_name": "Room306",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "307",
+        "room_name": "Room307",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "308",
+        "room_name": "Room308",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "309",
+        "room_name": "Room309",
+        "room_type": "VIP"
     },
     {
         "room_code": "401",
-        "room_name": "Room16",
+        "room_name": "Room401",
         "room_type": "Regular"
     },
     {
         "room_code": "402",
-        "room_name": "Room17",
+        "room_name": "Room402",
         "room_type": "Regular"
     },
     {
         "room_code": "403",
-        "room_name": "Room18",
+        "room_name": "Room403",
         "room_type": "Regular"
     },
     {
         "room_code": "404",
-        "room_name": "Room19",
+        "room_name": "Room404",
         "room_type": "Regular"
     },
     {
         "room_code": "405",
-        "room_name": "Room20",
+        "room_name": "Room405",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "406",
+        "room_name": "Room406",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "407",
+        "room_name": "Room407",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "408",
+        "room_name": "Room408",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "409",
+        "room_name": "Room409",
         "room_type": "Regular"
     },
     {
         "room_code": "501",
-        "room_name": "Room21",
+        "room_name": "Room501",
         "room_type": "VIP"
     },
     {
         "room_code": "502",
-        "room_name": "Room22",
+        "room_name": "Room502",
         "room_type": "VIP"
     },
     {
         "room_code": "503",
-        "room_name": "Room23",
+        "room_name": "Room503",
         "room_type": "VIP"
     },
     {
         "room_code": "504",
-        "room_name": "Room24",
+        "room_name": "Room504",
         "room_type": "VIP"
     },
     {
         "room_code": "505",
-        "room_name": "Room25",
+        "room_name": "Room505",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "506",
+        "room_name": "Room506",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "507",
+        "room_name": "Room507",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "508",
+        "room_name": "Room508",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "509",
+        "room_name": "Room509",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "601",
+        "room_name": "Room601",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "602",
+        "room_name": "Room602",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "603",
+        "room_name": "Room603",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "604",
+        "room_name": "Room604",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "605",
+        "room_name": "Room605",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "606",
+        "room_name": "Room606",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "607",
+        "room_name": "Room607",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "608",
+        "room_name": "Room608",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "609",
+        "room_name": "Room609",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "701",
+        "room_name": "Room701",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "702",
+        "room_name": "Room702",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "703",
+        "room_name": "Room703",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "704",
+        "room_name": "Room704",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "705",
+        "room_name": "Room705",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "706",
+        "room_name": "Room706",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "707",
+        "room_name": "Room707",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "708",
+        "room_name": "Room708",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "709",
+        "room_name": "Room709",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "801",
+        "room_name": "Room801",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "802",
+        "room_name": "Room802",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "803",
+        "room_name": "Room803",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "804",
+        "room_name": "Room804",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "805",
+        "room_name": "Room805",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "806",
+        "room_name": "Room806",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "807",
+        "room_name": "Room807",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "808",
+        "room_name": "Room808",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "809",
+        "room_name": "Room809",
+        "room_type": "Regular"
+    },
+    {
+        "room_code": "901",
+        "room_name": "Room901",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "902",
+        "room_name": "Room902",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "903",
+        "room_name": "Room903",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "904",
+        "room_name": "Room904",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "905",
+        "room_name": "Room905",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "906",
+        "room_name": "Room906",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "907",
+        "room_name": "Room907",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "908",
+        "room_name": "Room908",
+        "room_type": "VIP"
+    },
+    {
+        "room_code": "909",
+        "room_name": "Room909",
         "room_type": "VIP"
     }
 ]

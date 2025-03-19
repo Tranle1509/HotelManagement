@@ -6809,5 +6809,12 @@
         "customer_phone": "09999",
         "customer_email": "kkkk@gmail.com",
         "customer_identity": ""
+    },
+    {
+        "customer_code": "cus8888",
+        "customer_name": "khoachodien",
+        "customer_phone": "",
+        "customer_email": "kkk@gmail.com",
+        "customer_identity": "987654321"
     }
 ]

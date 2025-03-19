@@ -6,7 +6,7 @@ from libs.FileFactory import JsonFileFactory
 from model.Booking import Booking
 
 bookings = []
-room_codes = [f"{i}0{j}" for i in range(1, 6) for j in range(1, 6)]  # Danh sách mã phòng
+room_codes = [f"{i}0{j}" for i in range(1, 10) for j in range(1, 10)]  # Danh sách mã phòng
 existing_bookings = set()  # Set để kiểm tra đặt phòng trùng lặp
 
 for i in range(1, 1001):
