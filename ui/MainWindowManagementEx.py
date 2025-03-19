@@ -565,6 +565,12 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
             start_date = self.CheckIn.text().strip()
             end_date = self.CheckOut.text().strip()
 
+            # Kiểm tra các trường bắt buộc
+            if not customer_code or not customer_name or not room_code:
+                QMessageBox.warning(self.MainWindow, "Warning",
+                                    "Customer Code, Customer Name, and Room Code cannot be empty!")
+                return
+
             customers = self.jff.read_data(self.customer_filename, Customer)
             bookings = self.jff.read_data(self.booking_filename, Booking)
 
