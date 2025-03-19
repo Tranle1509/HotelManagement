@@ -22,21 +22,35 @@ class LoginMainWindowEx(Ui_MainWindow):
         self.comboBoxRole.mousePressEvent = lambda event: self.process_show_role()
         self.comboBoxRole.currentIndexChanged.connect(self.filter_role)
         self.pushButtonBack.clicked.connect(self.process_back)
+
     def process_login(self):
         dc = DataConnector()
-        uid = self.lineEditUserName.text()
-        pwd = self.lineEditPassword.text()
-        emp = dc.login(uid, pwd)
-        if emp is not None:
+        uid = self.lineEditUserName.text().strip()
+        pwd = self.lineEditPassword.text().strip()
+        role = self.comboBoxRole.currentText().strip()
+
+        employees = dc.get_all_employees()
+
+        # Kiểm tra xem username và password có đúng không
+        emp = next((e for e in employees if e.UserName == uid and e.Password == pwd), None)
+
+        if emp is None:
+            self.msg = QMessageBox(self.MainWindow)
+            self.msg.setText("Login Failed! Invalid username or password.")
+            self.msg.exec()
+        elif emp.EmployeeRole != role:
+            self.msg = QMessageBox(self.MainWindow)
+            self.msg.setText("Login Failed! Incorrect role selected.")
+            self.msg.exec()
+        else:
+            self.msg = QMessageBox(self.MainWindow)
+            self.msg.setText("Login Successful!")
+            self.msg.exec()
             self.MainWindow.close()  # Đóng cửa sổ đăng nhập
             self.mainwindow = QMainWindow()
             self.myui = MainWindowManagementEx()
             self.myui.setupUi(self.mainwindow)
             self.myui.showWindow()
-        else:
-            self.msg = QMessageBox(self.MainWindow)
-            self.msg.setText("Đăng nhập thất bại")
-            self.msg.exec()
 
     def process_show_role(self):
         # Xóa danh sách cũ trước khi cập nhật

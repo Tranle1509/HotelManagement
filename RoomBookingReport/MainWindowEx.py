@@ -154,5 +154,4 @@ class MainWindowEx(QMainWindow, Ui_MainWindow):
                 text.setAnchor((QPointF(0.5, 0.75)))
 
     def show(self):
-        print("📊 Đang mở Barchart...")
         super().show()

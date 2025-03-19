@@ -11,10 +11,10 @@ class DataConnector:
         filename = "../../dataset/employees.json"
         employees = jff.read_data(filename, Employee)
         return employees
-    def login(self,username,password):
+    def login(self,username,password, role):
         employees=self.get_all_employees()
         for e in employees:
-            if e.UserName==username and e.Password==password:
+            if e.UserName==username and e.Password==password and e.EmployeeRole==role:
                 return e
         return None
 
