@@ -43,7 +43,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -64,7 +64,7 @@
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
-font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
+font: 87 11pt &quot;Playfair Display Black&quot;;</string>
      </property>
      <property name="text">
       <string>Customer code:</string>
@@ -73,11 +73,16 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
     <widget class="QLineEdit" name="lineEdit_customercode">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>130</x>
        <y>10</y>
-       <width>191</width>
+       <width>181</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -86,11 +91,16 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
     <widget class="QLineEdit" name="lineEdit_issuedate">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>130</x>
        <y>40</y>
-       <width>191</width>
+       <width>181</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -107,7 +117,7 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
-font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
+font: 87 11pt &quot;Playfair Display Black&quot;;</string>
      </property>
      <property name="text">
       <string>Issue Date:</string>
@@ -116,11 +126,16 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
     <widget class="QLineEdit" name="lineEdit_customer">
      <property name="geometry">
       <rect>
-       <x>530</x>
+       <x>550</x>
        <y>10</y>
-       <width>191</width>
+       <width>171</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -137,7 +152,7 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
-font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
+font: 87 11pt &quot;Playfair Display Black&quot;;</string>
      </property>
      <property name="text">
       <string>Customer:</string>
@@ -146,11 +161,16 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
     <widget class="QLineEdit" name="lineEdit_numberofdays">
      <property name="geometry">
       <rect>
-       <x>530</x>
+       <x>550</x>
        <y>40</y>
-       <width>191</width>
+       <width>171</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -161,13 +181,13 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
       <rect>
        <x>420</x>
        <y>40</y>
-       <width>111</width>
+       <width>121</width>
        <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
-font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
+font: 87 11pt &quot;Playfair Display Black&quot;;</string>
      </property>
      <property name="text">
       <string>Number of days:</string>
@@ -180,12 +200,12 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
       <x>20</x>
       <y>220</y>
       <width>761</width>
-      <height>271</height>
+      <height>261</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -268,6 +288,11 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
        <height>20</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
@@ -283,7 +308,7 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
-font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
+font: 87 11pt &quot;Playfair Display Black&quot;;</string>
      </property>
      <property name="text">
       <string>CIT price:</string>
@@ -297,6 +322,11 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
        <width>621</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -313,7 +343,7 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
-font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
+font: 87 11pt &quot;Playfair Display Black&quot;;</string>
      </property>
      <property name="text">
       <string>Tax:</string>
@@ -327,6 +357,11 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
        <width>621</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -342,8 +377,7 @@ font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);
-font: 10pt &quot;#9Slide03 Montserrat&quot;;</string>
+      <string notr="true">color: rgb(255, 255, 255);font: 87 11pt &quot;Playfair Display Black&quot;;</string>
      </property>
      <property name="text">
       <string>Total Price:</string>
@@ -503,7 +537,7 @@ font: 75 10pt &quot;#9Slide03 SFU Toledo Bold&quot;;
      <x>0</x>
      <y>0</y>
      <width>812</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
