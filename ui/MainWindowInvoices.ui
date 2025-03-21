@@ -302,7 +302,7 @@ font: 87 11pt &quot;Playfair Display Black&quot;;</string>
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>101</width>
+       <width>111</width>
        <height>21</height>
       </rect>
      </property>
@@ -311,7 +311,7 @@ font: 87 11pt &quot;Playfair Display Black&quot;;</string>
 font: 87 11pt &quot;Playfair Display Black&quot;;</string>
      </property>
      <property name="text">
-      <string>CIT price:</string>
+      <string>Pre - tax price:</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_tax">
@@ -478,7 +478,7 @@ font: 75 10pt &quot;#9Slide03 SFU Toledo Bold&quot;;
 </string>
     </property>
     <property name="text">
-     <string>Contact: (+960) 676-0077</string>
+     <string>Contact: (+960) 987 654 321</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

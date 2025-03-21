@@ -66,6 +66,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.pushButtonsearch.clicked.connect(self.search_booking)
         self.pushButton_Clear.clicked.connect(self.clear_reservation_data)
         self.pushButtonReport.clicked.connect(self.show_report)
+
     def load_data(self):
         """Tải dữ liệu từ JSON và cập nhật bảng."""
         self.customers = self.jff.read_data(self.customer_filename, Customer) or []
@@ -153,30 +154,80 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.lineEdit_RoomCodeB.setText(room_code)
 
     def update_selected_row(self):
-        """Cập nhật dữ liệu của hàng đang chọn mà không xóa hàng cũ"""
-        selected_row = self.tableWidget.currentRow()
+        """Cập nhật dữ liệu của hàng đang chọn mà không xóa hàng cũ, đồng thời lưu vào dataset."""
 
+        selected_row = self.tableWidget.currentRow()
         if selected_row < 0:
-            QMessageBox.warning(self, "Error", "Please chose a row to update!")
+            QMessageBox.warning(self, "Error", "Please choose a row to update!")
             return
 
         # Lấy dữ liệu từ các ô nhập
-        customer_code = self.lineEdit_CusCode2.text()
-        customer_name = self.lineEditCusName2.text()
-        phone = self.lineEdit_Phone_2.text()
-        email = self.lineEdit_CusEmail2.text()
-        checkin_date = self.lineEdit_CheckIn.text()
-        checkout_date = self.lineEdit_CheckOut.text()
-        room_code = self.lineEdit_RoomCodeB.text()
+        customer_code = self.lineEdit_CusCode2.text().strip()  # Giữ nguyên customer_code
+        customer_name = self.lineEditCusName2.text().strip()
+        phone = self.lineEdit_Phone_2.text().strip()
+        email = self.lineEdit_CusEmail2.text().strip()
+        checkin_date = self.lineEdit_CheckIn.text().strip()
+        checkout_date = self.lineEdit_CheckOut.text().strip()
+        room_code = self.lineEdit_RoomCodeB.text().strip()
 
-        # Cập nhật dữ liệu vào hàng đang chọn
+        # Cập nhật dữ liệu trên giao diện bảng (tableWidget)
         self.tableWidget.setItem(selected_row, 0, QTableWidgetItem(customer_name))
         self.tableWidget.setItem(selected_row, 1, QTableWidgetItem(phone))
         self.tableWidget.setItem(selected_row, 2, QTableWidgetItem(email))
         self.tableWidget.setItem(selected_row, 3, QTableWidgetItem(checkin_date))
         self.tableWidget.setItem(selected_row, 4, QTableWidgetItem(checkout_date))
         self.tableWidget.setItem(selected_row, 5, QTableWidgetItem(room_code))
+
+        # Cập nhật dataset (customer.json & booking.json)
+        self.update_json_after_update(customer_code, customer_name, phone, email, checkin_date, checkout_date,
+                                      room_code)
+
         QMessageBox.information(self, "Successful", "Data is updated!")
+        self.load_data()  # Reload dữ liệu để đảm bảo bảng cập nhật
+
+    def update_json_after_update(self, customer_code, customer_name, phone, email, checkin_date, checkout_date,
+                                 room_code):
+        """Cập nhật thông tin khách hàng và đặt phòng trong JSON mà không xóa dữ liệu"""
+        try:
+            updated_customers = []
+            updated_bookings = []
+
+            # --- CẬP NHẬT CUSTOMER.JSON ---
+            if os.path.exists(self.customer_filename):
+                with open(self.customer_filename, "r", encoding="utf-8") as file:
+                    customers = json.load(file)
+
+                for customer in customers:
+                    if customer["customer_code"] == customer_code:
+                        # Cập nhật thông tin khách hàng
+                        customer["customer_name"] = customer_name
+                        customer["customer_phone"] = phone
+                        customer["customer_email"] = email
+                    updated_customers.append(customer)  # Giữ lại khách hàng khác
+
+                # Ghi lại file customer.json đã cập nhật
+                with open(self.customer_filename, "w", encoding="utf-8") as file:
+                    json.dump(updated_customers, file, indent=4, ensure_ascii=False)
+
+            # --- CẬP NHẬT BOOKING.JSON ---
+            if os.path.exists(self.booking_filename):
+                with open(self.booking_filename, "r", encoding="utf-8") as file:
+                    bookings = json.load(file)
+
+                for booking in bookings:
+                    if booking["customer_code"] == customer_code:
+                        # Cập nhật thông tin đặt phòng
+                        booking["start_date"] = checkin_date
+                        booking["end_date"] = checkout_date
+                        booking["room_code"] = room_code
+                    updated_bookings.append(booking)  # Giữ lại các booking khác
+
+                # Ghi lại file booking.json đã cập nhật
+                with open(self.booking_filename, "w", encoding="utf-8") as file:
+                    json.dump(updated_bookings, file, indent=4, ensure_ascii=False)
+
+        except Exception as e:
+            print(f"Error when updating JSON file: {e}")
 
     def delete_selected_row(self):
         """Xóa khách hàng khỏi bảng và cập nhật JSON"""
@@ -186,14 +237,16 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
             return  # Không có dòng nào được chọn
 
         # Lấy customer_name của khách hàng cần xóa từ cột trong bảng
-        customer_name = self.tableWidget.item(selected_row, 0).text()  # Giả sử cột 0 chứa customer_name
+        customer_code = self.lineEdit_CusCode2.text()  # Giả sử cột 0 chứa customer_name
 
         # Xóa dòng khỏi giao diện bảng
         self.tableWidget.removeRow(selected_row)
 
         # Tìm customer_code từ customer_name, sau đó cập nhật JSON
-        self.update_json_after_delete(customer_name)
+        self.update_json_after_delete(customer_code)
         self.clear_customer_details()
+        # Cập nhật lại bảng phòng (Room Management) để xóa thông tin khách hàng khỏi phòng
+        self.display_rooms(self.dateEdit_date.date())
 
     def clear_customer_details(self):
         """Xóa thông tin khách hàng trên giao diện"""
@@ -207,41 +260,42 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.lineEdit_RoomCodeB.clear()
         self.lineEdit_CusEmail2.clear()
 
-    def update_json_after_delete(self, customer_name):
-        """Tìm customer_code từ customer_name, sau đó xóa khách hàng & đặt phòng liên quan"""
+    def update_json_after_delete(self, customer_code):
+        """Xóa khách hàng & đặt phòng liên quan dựa trên customer_code"""
         try:
-            customer_code = None  # Giá trị mặc định nếu không tìm thấy
             updated_customers = []
+            updated_bookings = []
 
-            # Xử lý customers.json
+            # 🔹 Xử lý customers.json
             if os.path.exists(self.customer_filename):
                 with open(self.customer_filename, "r", encoding="utf-8") as file:
                     customers = json.load(file)
 
-                for customer in customers:
-                    if customer["customer_name"] == customer_name:
-                        customer_code = customer["customer_code"]  # Lấy customer_code
-                    else:
-                        updated_customers.append(customer)  # Giữ lại khách hàng khác
+                # Lọc danh sách, giữ lại khách hàng không trùng customer_code
+                updated_customers = [customer for customer in customers if customer["customer_code"] != customer_code]
 
                 # Ghi lại file customers.json đã cập nhật
                 with open(self.customer_filename, "w", encoding="utf-8") as file:
                     json.dump(updated_customers, file, indent=4, ensure_ascii=False)
 
-            # Nếu tìm được customer_code, xóa đặt phòng liên quan trong bookings.json
-            if customer_code and os.path.exists(self.booking_filename):
+            # 🔹 Xử lý bookings.json
+            if os.path.exists(self.booking_filename):
                 with open(self.booking_filename, "r", encoding="utf-8") as file:
                     bookings = json.load(file)
 
-                # Lọc danh sách để loại bỏ các booking của khách hàng bị xóa
+                # Lọc danh sách booking, giữ lại các booking không trùng customer_code
                 updated_bookings = [b for b in bookings if b["customer_code"] != customer_code]
 
                 # Ghi lại file bookings.json đã cập nhật
                 with open(self.booking_filename, "w", encoding="utf-8") as file:
                     json.dump(updated_bookings, file, indent=4, ensure_ascii=False)
 
+            # 🔹 Cập nhật lại giao diện sau khi xóa
+            self.load_data()  # Load lại dữ liệu mới
+            self.display_rooms(self.dateEdit_date.date())  # Hiển thị lại danh sách phòng
+
         except Exception as e:
-            print(f"Error when updating JSon file: {e}")
+            print(f"Error when updating JSON file: {e}")
 
     def search_booking(self):
         """Tìm kiếm thông tin khách hàng theo Customer Code -> Lấy Customer Name -> Hiển thị dòng phù hợp."""
@@ -314,6 +368,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
                 items[col].setBackground(QBrush(status_color))
                 items[col].setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                 self.tableWidget_Room.setItem(row, col, items[col])
+
     def is_room_booked(self, room_code, selected_date):
         selected_datetime = datetime(
             selected_date.year(),
@@ -369,6 +424,7 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         vacant_rooms = [room for room in self.rooms
                         if not self.is_room_booked(room.room_code, self.dateEdit_date.date())]
         self.display_rooms(self.dateEdit_date.date(), vacant_rooms)
+
     def update_room_status(self):
         selected_date = self.dateEdit_date.date()
         self.display_rooms(selected_date, self.selected_rooms)
@@ -389,7 +445,6 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         booked_rooms = [room for room in self.rooms
                         if self.is_room_booked(room.room_code, self.dateEdit_date.date())]
         self.display_rooms(self.dateEdit_date.date(), booked_rooms)
-
 
     def process_checkin(self):
         selected_items = self.tableWidget_Room.selectedItems()
@@ -439,11 +494,21 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
             room_code_item.setBackground(QBrush(red_color))
             roomtype_item.setBackground(QBrush(red_color))
 
-
-
             QMessageBox.information(self.MainWindow, "Success", "Check-in Successfully!")
 
+    def get_selected_room_code(self):
+        """Lấy room_code từ dòng được chọn trong bảng."""
+        selected_row = self.tableWidget_Room.currentRow()
+        if selected_row == -1:
+            QMessageBox.warning(self, "Error", "Please select a room!")
+            return None
 
+        room_item = self.tableWidget_Room.item(selected_row, 0)  # Lấy room_code ở cột đầu tiên
+        if not room_item:
+            QMessageBox.warning(self, "Error", "No room code found in this row!")
+            return None
+
+        return room_item.text()
 
     def process_checkout(self):
         selected_items = self.tableWidget_Room.selectedItems()
@@ -466,6 +531,13 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
             return
 
         room_code = room_code_item.text()
+        customer_code = customer_item.text()  # Lấy mã khách trước khi cập nhật
+
+        # Nếu phòng chưa có khách, không thực hiện check-out
+        if customer_code == "N/A":
+            self.show_error_message("No valid customer found for this room.")
+            return
+
         confirm = QMessageBox.question(
             self.MainWindow,
             "Confirm Check-out",
@@ -480,18 +552,12 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
 
             # Đổi màu nền thành xanh lá
             green_color = QColor(207, 244, 210)
-            status_item.setBackground(QBrush(green_color))
-            customer_item.setBackground(QBrush(green_color))
-            room_code_item.setBackground(QBrush(green_color))
-            roomtype_item.setBackground(QBrush(green_color))
+            for item in [status_item, customer_item, room_code_item, roomtype_item]:
+                if item:
+                    item.setBackground(QBrush(green_color))
 
-            # Xóa booking khỏi danh sách (nếu cần)
-            customer_code = customer_item.text()
-            self.bookings = [booking for booking in self.bookings
-                             if not (booking.room_code == room_code and booking.customer_code == customer_code)]
-
-            # Hiển thị giao diện hóa đơn
-            self.show_invoice_window(room_code, customer_code)  # Gọi hàm hiển thị hóa đơn
+            # Gọi hóa đơn nếu có khách
+            self.show_invoice_window(room_code, customer_code)
 
     def show_invoice_window(self, room_code, customer_code):
         """Hiển thị giao diện hóa đơn (cần thay thế bằng giao diện thực tế của bạn)."""
@@ -499,13 +565,11 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         self.invoice_window = MainWindowInvoicesEx(room_code, customer_code)
         self.invoice_window.show()
 
-
     def show_error_message(self, message):
         QMessageBox.critical(self.MainWindow, "ERROR", message)
 
-
     def save_data(self):
-        """Lưu dữ liệu vào JSON và cập nhật bảng """
+        """Lưu dữ liệu vào JSON và kiểm tra phòng trống trước khi cập nhật bảng"""
         try:
             customer_code = self.lineEdit_Cuscode.text().strip()
             customer_phone = self.lineEdit_Phone.text().strip()
@@ -516,17 +580,41 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
             start_date = self.CheckIn.text().strip()
             end_date = self.CheckOut.text().strip()
 
+            # Kiểm tra các trường bắt buộc
+            if not customer_code or not customer_name or not room_code:
+                QMessageBox.warning(self.MainWindow, "Warning",
+                                    "Customer Code, Customer Name, and Room Code cannot be empty!")
+                return
+
             customers = self.jff.read_data(self.customer_filename, Customer)
             bookings = self.jff.read_data(self.booking_filename, Booking)
 
+            # Chuyển đổi ngày thành dạng datetime để so sánh
+            start_date_dt = datetime.strptime(start_date, "%Y/%m/%d")
+            end_date_dt = datetime.strptime(end_date, "%Y/%m/%d")
+
+            # Kiểm tra xem phòng đã có đặt trước chưa
+            for booking in bookings:
+                if booking.room_code == room_code:
+                    booked_start = datetime.strptime(booking.start_date, "%Y/%m/%d")
+                    booked_end = datetime.strptime(booking.end_date, "%Y/%m/%d")
+
+                    # Nếu ngày đặt phòng mới bị trùng với khoảng thời gian đã có
+                    if not (end_date_dt < booked_start or start_date_dt > booked_end):
+                        QMessageBox.warning(self.MainWindow, "Warning", "Room is already booked for this period!")
+                        return  # Dừng lưu nếu phòng đã có khách
+
+            # Nếu phòng trống, tạo booking mới
             booking = Booking(customer_code, room_code, start_date, end_date)
             bookings.append(booking)
 
+            # Kiểm tra xem khách hàng đã tồn tại chưa
             existing_customer = next((c for c in customers if c.customer_code == customer_code), None)
             if not existing_customer:
                 c = Customer(customer_code, customer_name, customer_phone, customer_email, customer_identity)
                 customers.append(c)
 
+            # Lưu dữ liệu vào file JSON
             self.jff.write_data(customers, self.customer_filename)
             self.jff.write_data(bookings, self.booking_filename)
 
