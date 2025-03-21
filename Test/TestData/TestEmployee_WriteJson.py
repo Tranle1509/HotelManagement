@@ -11,7 +11,7 @@ employees.append(Employee("Emp6", "Staff", "Bao", "1811"))
 employees.append(Employee("Emp7", "Staff", "Khoa", "1705"))
 employees.append(Employee("Emp8", "Staff", "Huy", "0507"))
 
-print("Danh sách Employee:")
+print("List of Employee")
 for e in employees:
     print(e)
 jff=JsonFileFactory()
