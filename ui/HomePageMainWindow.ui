@@ -85,22 +85,6 @@ font: 63 14pt &quot;Sitka Heading Semibold&quot;;</string>
      <height>26</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuAbout">
-    <property name="title">
-     <string>About</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuSystem">
-    <property name="title">
-     <string>System</string>
-    </property>
-    <addaction name="separator"/>
-    <addaction name="separator"/>
-    <addaction name="actionImport_data"/>
-    <addaction name="actionExport_data"/>
-   </widget>
-   <addaction name="menuAbout"/>
-   <addaction name="menuSystem"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionImport_data">

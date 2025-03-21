@@ -5998,5 +5998,17 @@
         "room_code": "805",
         "start_date": "2025/10/20",
         "end_date": "2025/10/30"
+    },
+    {
+        "customer_code": "cus9999",
+        "room_code": "106",
+        "start_date": "2025/3/8",
+        "end_date": "2025/3/10"
+    },
+    {
+        "customer_code": "cus8888",
+        "room_code": "103",
+        "start_date": "2025/3/21",
+        "end_date": "2025/3/25"
     }
 ]

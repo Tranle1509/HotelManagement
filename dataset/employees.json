@@ -1,31 +1,31 @@
 [
     {
         "EmployeeId": "Emp1",
-        "EmployeeRole": "HR Manager",
+        "EmployeeRole": " Manager",
         "UserName": "Qanh",
         "Password": "1505"
     },
     {
         "EmployeeId": "Emp2",
-        "EmployeeRole": "Front Office Manager",
+        "EmployeeRole": " Manager",
         "UserName": "Tran",
         "Password": "1509"
     },
     {
         "EmployeeId": "Emp3",
-        "EmployeeRole": "Customer Service Manager",
+        "EmployeeRole": "Officer",
         "UserName": "Duyen",
         "Password": "0210"
     },
     {
         "EmployeeId": "Emp4",
-        "EmployeeRole": "Housekeeping Manager",
+        "EmployeeRole": "Officer",
         "UserName": "Tam",
         "Password": "1803"
     },
     {
         "EmployeeId": "Emp5",
-        "EmployeeRole": "Operations Manager",
+        "EmployeeRole": "Officer",
         "UserName": "Nguyen",
         "Password": "1512"
     },

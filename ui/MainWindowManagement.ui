@@ -1057,7 +1057,7 @@ QPushButton:pressed {
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>581</width>
+        <width>571</width>
         <height>81</height>
        </rect>
       </property>
@@ -1296,23 +1296,6 @@ color: rgb(0, 0, 0);</string>
         </property>
        </item>
       </widget>
-      <widget class="QLabel" name="label_150">
-       <property name="geometry">
-        <rect>
-         <x>640</x>
-         <y>70</y>
-         <width>151</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-background: transparent</string>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Check-out date :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_151">
        <property name="geometry">
         <rect>
@@ -1380,30 +1363,6 @@ background: transparent</string>
         <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);
 </string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_154">
-       <property name="geometry">
-        <rect>
-         <x>630</x>
-         <y>110</y>
-         <width>111</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-background: transparent
-</string>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Children :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
       </widget>
       <widget class="QDateEdit" name="CheckIn">
@@ -1618,30 +1577,6 @@ background: transparent
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Check-in date :&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_158">
-       <property name="geometry">
-        <rect>
-         <x>640</x>
-         <y>160</y>
-         <width>71</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-background: transparent
-</string>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Adult :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
       <widget class="QLineEdit" name="lineEditAdult">
        <property name="geometry">
         <rect>
@@ -1666,6 +1601,60 @@ background: transparent
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_167">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>80</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Check-out date :&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_177">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>120</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Children : &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_158">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>160</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Adult :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </widget>
@@ -1777,23 +1766,6 @@ background: transparent</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Date of birth :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_160">
-       <property name="geometry">
-        <rect>
-         <x>640</x>
-         <y>80</y>
-         <width>61</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-background: transparent</string>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Email :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_161">
        <property name="geometry">
         <rect>
@@ -1855,29 +1827,6 @@ background: transparent
         <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);
 </string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_164">
-       <property name="geometry">
-        <rect>
-         <x>640</x>
-         <y>110</y>
-         <width>81</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-background: transparent</string>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Phone&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
       </widget>
       <widget class="QLabel" name="label_165">
@@ -2100,29 +2049,6 @@ color: rgb(0, 0, 0);</string>
 color: rgb(0, 0, 0);</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_167">
-       <property name="geometry">
-        <rect>
-         <x>640</x>
-         <y>150</y>
-         <width>131</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
-background: transparent</string>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Requirement:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
       <widget class="QLineEdit" name="lineEdit_Requirement">
        <property name="geometry">
         <rect>
@@ -2230,6 +2156,57 @@ color: rgb(0, 0, 0);</string>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_176">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>80</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Email :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_160">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>120</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Phone :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_164">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>160</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;#9Slide03 SFU Toledo Bold&quot;;
+background: transparent</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Requirement :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </widget>
