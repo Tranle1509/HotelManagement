@@ -602,5 +602,3 @@ class MainWindowManagementEx(Ui_MainWindow, QMainWindow):
         plt.ylabel('Country', fontsize=12)
         plt.xticks(rotation=45)  # Rotate month labels for better readability
         plt.show()
-
-
