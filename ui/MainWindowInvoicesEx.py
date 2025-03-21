@@ -63,7 +63,7 @@ class MainWindowInvoicesEx(QMainWindow, Ui_MainWindow):
             QMessageBox.warning(self, "Error", f"Invalid date format: {e}")
 
         self.lineEdit_numberofdays.setText(str(days))
-        self.lineEdit_issuedate.setText(datetime.now().strftime("%Y/%m%d"))
+        self.lineEdit_issuedate.setText(datetime.now().strftime("%Y/%m/%d"))
 
         # Cập nhật bảng hóa đơn
         self.tableWidget_invoices.setRowCount(1)  # Chỉ có 1 dòng cho phòng này
