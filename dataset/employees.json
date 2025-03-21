@@ -1,13 +1,13 @@
 [
     {
         "EmployeeId": "Emp1",
-        "EmployeeRole": " Manager",
+        "EmployeeRole": "Manager",
         "UserName": "Qanh",
         "Password": "1505"
     },
     {
         "EmployeeId": "Emp2",
-        "EmployeeRole": " Manager",
+        "EmployeeRole": "Manager",
         "UserName": "Tran",
         "Password": "1509"
     },

@@ -2,8 +2,8 @@ from libs.FileFactory import JsonFileFactory
 from model.Employee import Employee
 
 employees=[]
-employees.append(Employee("Emp1"," Manager","Qanh","1505"))
-employees.append(Employee("Emp2", " Manager", "Tran", "1509"))
+employees.append(Employee("Emp1","Manager","Qanh","1505"))
+employees.append(Employee("Emp2", "Manager", "Tran", "1509"))
 employees.append(Employee("Emp3", "Officer", "Duyen", "0210"))
 employees.append(Employee("Emp4", "Officer", "Tam", "1803"))
 employees.append(Employee("Emp5", "Officer", "Nguyen", "1512"))
