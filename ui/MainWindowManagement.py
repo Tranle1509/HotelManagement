@@ -720,7 +720,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.lineEdit_Roomcode.setObjectName("lineEdit_Roomcode")
         self.label_157 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_157.setGeometry(QtCore.QRect(640, 40, 141, 31))
+        self.label_157.setGeometry(QtCore.QRect(650, 40, 141, 31))
         self.label_157.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
 "background: transparent\n"
 "")
@@ -733,19 +733,19 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.lineEditAdult.setObjectName("lineEditAdult")
         self.label_167 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_167.setGeometry(QtCore.QRect(630, 80, 171, 31))
+        self.label_167.setGeometry(QtCore.QRect(650, 80, 171, 31))
         self.label_167.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
 "background: transparent\n"
 "")
         self.label_167.setObjectName("label_167")
         self.label_177 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_177.setGeometry(QtCore.QRect(610, 120, 161, 31))
+        self.label_177.setGeometry(QtCore.QRect(650, 120, 81, 31))
         self.label_177.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
 "background: transparent\n"
 "")
         self.label_177.setObjectName("label_177")
         self.label_158 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_158.setGeometry(QtCore.QRect(620, 160, 121, 31))
+        self.label_158.setGeometry(QtCore.QRect(650, 160, 121, 31))
         self.label_158.setStyleSheet("font: 75 12pt \"#9Slide03 SFU Toledo Bold\";\n"
 "background: transparent\n"
 "")
@@ -871,8 +871,9 @@ class Ui_MainWindow(object):
         self.CheckInDateOfBirth.setMinimumSize(QtCore.QSize(450, 30))
         self.CheckInDateOfBirth.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);")
-        self.CheckInDateOfBirth.setMinimumDateTime(QtCore.QDateTime(QtCore.QDate(2025, 1, 1), QtCore.QTime(0, 0, 0)))
-        self.CheckInDateOfBirth.setDate(QtCore.QDate(2025, 1, 1))
+        self.CheckInDateOfBirth.setMinimumDateTime(QtCore.QDateTime(QtCore.QDate(1900, 1, 1), QtCore.QTime(0, 0, 0)))
+        self.CheckInDateOfBirth.setMinimumDate(QtCore.QDate(1900, 1, 1))
+        self.CheckInDateOfBirth.setDate(QtCore.QDate(2000, 1, 1))
         self.CheckInDateOfBirth.setObjectName("CheckInDateOfBirth")
         self.label_166 = QtWidgets.QLabel(parent=self.groupBox_6)
         self.label_166.setGeometry(QtCore.QRect(10, 120, 131, 31))
@@ -1032,7 +1033,7 @@ class Ui_MainWindow(object):
         self.pushButton_Logout.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1280, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1280, 22))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -1130,10 +1131,10 @@ class Ui_MainWindow(object):
         self.CheckIn.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
         self.CheckOut.setDisplayFormat(_translate("MainWindow", "yyyy/M/d"))
         self.label_156.setText(_translate("MainWindow", "<html><head/><body><p>Room code :</p></body></html>"))
-        self.label_157.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Check-in date :</p><p align=\"center\"><br/></p></body></html>"))
-        self.label_167.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Check-out date :</p><p align=\"center\"><br/></p></body></html>"))
-        self.label_177.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Children : </p></body></html>"))
-        self.label_158.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Adult :</p></body></html>"))
+        self.label_157.setText(_translate("MainWindow", "<html><head/><body><p>Check-in date :</p><p><br/></p></body></html>"))
+        self.label_167.setText(_translate("MainWindow", "<html><head/><body><p>Check-out date :</p><p><br/></p></body></html>"))
+        self.label_177.setText(_translate("MainWindow", "<html><head/><body><p>Children : </p></body></html>"))
+        self.label_158.setText(_translate("MainWindow", "<html><head/><body><p>Adult :</p></body></html>"))
         self.pushButton_Save.setText(_translate("MainWindow", "Submit"))
         self.groupBox_6.setTitle(_translate("MainWindow", "Customer details"))
         self.label_159.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Date of birth :</p></body></html>"))

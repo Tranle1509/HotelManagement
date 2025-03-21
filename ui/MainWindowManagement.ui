@@ -1562,7 +1562,7 @@ color: rgb(0, 0, 0);</string>
       <widget class="QLabel" name="label_157">
        <property name="geometry">
         <rect>
-         <x>640</x>
+         <x>650</x>
          <y>40</y>
          <width>141</width>
          <height>31</height>
@@ -1574,7 +1574,7 @@ background: transparent
 </string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Check-in date :&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check-in date :&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEditAdult">
@@ -1606,7 +1606,7 @@ color: rgb(0, 0, 0);</string>
       <widget class="QLabel" name="label_167">
        <property name="geometry">
         <rect>
-         <x>630</x>
+         <x>650</x>
          <y>80</y>
          <width>171</width>
          <height>31</height>
@@ -1618,15 +1618,15 @@ background: transparent
 </string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Check-out date :&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check-out date :&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_177">
        <property name="geometry">
         <rect>
-         <x>610</x>
+         <x>650</x>
          <y>120</y>
-         <width>161</width>
+         <width>81</width>
          <height>31</height>
         </rect>
        </property>
@@ -1636,13 +1636,13 @@ background: transparent
 </string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Children : &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Children : &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_158">
        <property name="geometry">
         <rect>
-         <x>620</x>
+         <x>650</x>
          <y>160</y>
          <width>121</width>
          <height>31</height>
@@ -1654,7 +1654,7 @@ background: transparent
 </string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Adult :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Adult :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </widget>
@@ -1917,17 +1917,24 @@ color: rgb(0, 0, 0);</string>
          <hour>0</hour>
          <minute>0</minute>
          <second>0</second>
-         <year>2025</year>
+         <year>1900</year>
          <month>1</month>
          <day>1</day>
         </datetime>
+       </property>
+       <property name="minimumDate">
+        <date>
+         <year>1900</year>
+         <month>1</month>
+         <day>1</day>
+        </date>
        </property>
        <property name="displayFormat">
         <string>yyyy/M/d</string>
        </property>
        <property name="date">
         <date>
-         <year>2025</year>
+         <year>2000</year>
          <month>1</month>
          <day>1</day>
         </date>
@@ -2321,7 +2328,7 @@ color: rgb(0, 0, 0);
      <x>0</x>
      <y>0</y>
      <width>1280</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
